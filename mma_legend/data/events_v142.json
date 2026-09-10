@@ -1,0 +1,356 @@
+[
+  {
+    "id": "v142_001",
+    "title": "Front-leg chess",
+    "description": "The dojang spends a full session on who owns the first step of kicking range.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "tkd",
+      "min_gym_weeks": 2,
+      "cooldown": 18
+    },
+    "effects": {
+      "distance_management": 1,
+      "specialty_gym_tech_xp": 1
+    }
+  },
+  {
+    "id": "v142_002",
+    "title": "Electronic-hogu rounds",
+    "description": "The chest protector only rewards clean contact, so sloppy power shots stop fooling anyone.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "tkd",
+      "min_gym_weeks": 4,
+      "cooldown": 18
+    },
+    "effects": {
+      "kicks": 1,
+      "fight_iq": 1
+    }
+  },
+  {
+    "id": "v142_003",
+    "title": "Spin without guessing",
+    "description": "Your coach makes you build the turn behind a side kick instead of throwing it naked.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "tkd",
+      "min_gym_weeks": 6,
+      "cooldown": 18
+    },
+    "effects": {
+      "specialty_gym_tech_xp": 2,
+      "discipline": 1
+    }
+  },
+  {
+    "id": "v142_004",
+    "title": "Axe-kick timing",
+    "description": "A taller teammate keeps forcing you to find the exact moment the guard opens.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "tkd",
+      "min_gym_weeks": 7,
+      "cooldown": 18
+    },
+    "effects": {
+      "kicks": 1,
+      "speed": 1
+    }
+  },
+  {
+    "id": "v142_005",
+    "title": "Dojang grading week",
+    "description": "Regular training is noticed. The grading itself is routine because the work was already done.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "tkd",
+      "min_gym_weeks": 8,
+      "cooldown": 18
+    },
+    "effects": {
+      "tkd_grade_points": 5,
+      "reputation": 1
+    }
+  },
+  {
+    "id": "v142_006",
+    "title": "Southpaw kicking rounds",
+    "description": "Everything is mirrored for an hour: exits, lead-leg battles and rear-side counters.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "tkd",
+      "min_gym_weeks": 10,
+      "cooldown": 18
+    },
+    "effects": {
+      "adaptability": 1,
+      "distance_management": 1
+    }
+  },
+  {
+    "id": "v142_007",
+    "title": "Back-kick counter",
+    "description": "A pressure fighter keeps walking into the line until you learn to punish the entry.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "tkd",
+      "min_gym_weeks": 12,
+      "cooldown": 18
+    },
+    "effects": {
+      "specialty_gym_tech_xp": 2,
+      "confidence": 1
+    }
+  },
+  {
+    "id": "v142_008",
+    "title": "Fast-kick specialist",
+    "description": "A younger competition athlete makes every exchange happen one beat sooner.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "tkd",
+      "min_gym_weeks": 14,
+      "cooldown": 18
+    },
+    "effects": {
+      "speed": 1,
+      "specialty_gym_tech_xp": 1
+    }
+  },
+  {
+    "id": "v142_009",
+    "title": "Head-kick restraint",
+    "description": "The coach pulls you up for throwing flashy head kicks with no setup.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "tkd",
+      "min_gym_weeks": 3,
+      "cooldown": 18
+    },
+    "effects": {
+      "fight_iq": 1,
+      "discipline": 1
+    }
+  },
+  {
+    "id": "v142_010",
+    "title": "Tournament poomsae room",
+    "description": "You borrow balance and chamber-control drills from the technical class, even though your focus is sparring.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "tkd",
+      "min_gym_weeks": 5,
+      "cooldown": 18
+    },
+    "effects": {
+      "kicks": 1,
+      "discipline": 1
+    }
+  },
+  {
+    "id": "v142_011",
+    "title": "Kicking-range sparring",
+    "description": "The whole session starts at long range; hands are only there to create the kick.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 5,
+      "cooldown": 18
+    },
+    "effects": {
+      "distance_management": 1,
+      "kicks": 1
+    }
+  },
+  {
+    "id": "v142_012",
+    "title": "Shin-check lesson",
+    "description": "Your low kick is getting predictable, and the room starts making you pay for it.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 4,
+      "cooldown": 18
+    },
+    "effects": {
+      "fight_iq": 1,
+      "striking_def": 1
+    }
+  },
+  {
+    "id": "v142_013",
+    "title": "Body-kick catch drill",
+    "description": "Every body kick ends with an immediate balance fight instead of admiring the shot.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 7,
+      "cooldown": 18
+    },
+    "effects": {
+      "takedown_def": 1,
+      "distance_management": 1
+    }
+  },
+  {
+    "id": "v142_014",
+    "title": "Kick-to-cross setup",
+    "description": "The pads force the feet and hands to work as one combination instead of two separate skill trees.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 3,
+      "cooldown": 18
+    },
+    "effects": {
+      "striking": 1,
+      "kicks": 1
+    }
+  },
+  {
+    "id": "v142_015",
+    "title": "Spinning risk",
+    "description": "You get countered hard after a naked spin and the lesson sticks.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "active_sport": "Taekwondo",
+      "cooldown": 18
+    },
+    "effects": {
+      "fight_iq": 1,
+      "health": -1
+    }
+  },
+  {
+    "id": "v142_016",
+    "title": "National-team kicking camp",
+    "description": "The pace jumps when federation athletes rotate through the room.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "active_sport": "Taekwondo",
+      "nt": true,
+      "cooldown": 18
+    },
+    "effects": {
+      "kicks": 1,
+      "speed": 1,
+      "reputation": 1
+    }
+  },
+  {
+    "id": "v142_017",
+    "title": "Head-kick confidence",
+    "description": "A clean high kick in sparring changes how willing you are to threaten upstairs.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "active_sport": "Taekwondo",
+      "cooldown": 18
+    },
+    "effects": {
+      "confidence": 1,
+      "kicks": 1
+    }
+  },
+  {
+    "id": "v142_018",
+    "title": "Footwork over power",
+    "description": "The coach bans hard shots and scores only clean entries and exits.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "active_sport": "Taekwondo",
+      "cooldown": 18
+    },
+    "effects": {
+      "distance_management": 1,
+      "speed": 1
+    }
+  }
+]

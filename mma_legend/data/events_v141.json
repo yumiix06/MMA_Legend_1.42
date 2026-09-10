@@ -1,0 +1,825 @@
+[
+  {
+    "id": "v141_001",
+    "title": "Visiting black belt",
+    "description": "A visiting black belt spends the evening fixing one detail at a time. Nothing flashy survives the rounds.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "bjj",
+      "min_gym_weeks": 2,
+      "cooldown": 14
+    },
+    "effects": {
+      "specialty_gym_tech_xp": 2,
+      "bjj_grade_points": 3,
+      "fight_iq": 1
+    }
+  },
+  {
+    "id": "v141_002",
+    "title": "Shark tank",
+    "description": "Fresh partners rotate every two minutes. The room is trying to expose the first bad decision you make.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "bjj",
+      "min_gym_weeks": 2,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stay in for every round",
+        "effects": {
+          "energy": -8,
+          "bjj_grade_points": 5,
+          "specialty_gym_tech_xp": 2,
+          "mental_toughness": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep it technical",
+        "effects": {
+          "energy": -3,
+          "bjj_grade_points": 3,
+          "fight_iq": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v141_003",
+    "title": "Guard passing lab",
+    "description": "Nobody rolls freely. Every round starts in the same guard until you solve it cleanly.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "bjj",
+      "min_gym_weeks": 2,
+      "cooldown": 15
+    },
+    "effects": {
+      "ground_control": 1,
+      "specialty_gym_tech_xp": 2
+    }
+  },
+  {
+    "id": "v141_004",
+    "title": "Submission chain night",
+    "description": "The coach bans isolated attacks. Every finish must connect to a second and third threat.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "bjj",
+      "min_gym_weeks": 2,
+      "cooldown": 18
+    },
+    "effects": {
+      "submissions": 1,
+      "specialty_gym_tech_xp": 2
+    }
+  },
+  {
+    "id": "v141_005",
+    "title": "Competition class",
+    "description": "The room turns serious for a local tournament camp. Score first, settle position, then hunt the finish.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "bjj",
+      "min_gym_weeks": 6,
+      "cooldown": 18
+    },
+    "effects": {
+      "discipline": 1,
+      "bjj_grade_points": 4,
+      "confidence": 1
+    }
+  },
+  {
+    "id": "v141_006",
+    "title": "Open mat regulars",
+    "description": "The same difficult partners keep showing up. You start recognizing their reactions before they happen.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "bjj",
+      "min_gym_weeks": 8,
+      "cooldown": 20
+    },
+    "effects": {
+      "adaptability": 1,
+      "friends": 2,
+      "specialty_gym_tech_xp": 1
+    }
+  },
+  {
+    "id": "v141_007",
+    "title": "Coach pulls you aside",
+    "description": "Your coach says the belt matters less than whether your fundamentals survive tired rounds.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "bjj",
+      "min_gym_weeks": 10,
+      "cooldown": 22
+    },
+    "effects": {
+      "relationships.coach": 3,
+      "bjj_grade_points": 4,
+      "discipline": 1
+    }
+  },
+  {
+    "id": "v141_008",
+    "title": "Bad position rounds",
+    "description": "Back control, mount, side control. You spend the whole session escaping instead of attacking.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "bjj",
+      "min_gym_weeks": 2,
+      "cooldown": 17
+    },
+    "effects": {
+      "submission_def": 1,
+      "mental_toughness": 1,
+      "bjj_grade_points": 3
+    }
+  },
+  {
+    "id": "v141_009",
+    "title": "Grip-fighting crossover",
+    "description": "A judoka from the next room shows how to make the standing phase less passive.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "bjj",
+      "min_gym_weeks": 5,
+      "cooldown": 24
+    },
+    "effects": {
+      "grappling": 1,
+      "specialty_gym_tech_xp": 1
+    }
+  },
+  {
+    "id": "v141_010",
+    "title": "Promotion wall",
+    "description": "New names go onto the belt board. Your own progress suddenly feels very visible.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "bjj",
+      "min_gym_weeks": 10,
+      "cooldown": 26
+    },
+    "effects": {
+      "work_ethic": 1,
+      "bjj_grade_points": 3
+    }
+  },
+  {
+    "id": "v141_011",
+    "title": "Grip-fighting clinic",
+    "description": "The entire session is sleeve, lapel and inside-position battles before a single throw is allowed.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "judo",
+      "min_gym_weeks": 2,
+      "cooldown": 14
+    },
+    "effects": {
+      "grappling": 1,
+      "judo_grade_points": 3,
+      "specialty_gym_tech_xp": 1
+    }
+  },
+  {
+    "id": "v141_012",
+    "title": "Randori gauntlet",
+    "description": "Fresh partners rotate in. The goal is clean entries while tired, not winning ugly exchanges.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "judo",
+      "min_gym_weeks": 2,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Take every round",
+        "effects": {
+          "energy": -8,
+          "judo_grade_points": 5,
+          "mental_toughness": 1,
+          "specialty_gym_tech_xp": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Work technical rounds",
+        "effects": {
+          "energy": -3,
+          "judo_grade_points": 3,
+          "fight_iq": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v141_013",
+    "title": "Visiting national player",
+    "description": "A national-team judoka spends an hour showing how little movement a good kuzushi actually needs.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "judo",
+      "min_gym_weeks": 5,
+      "cooldown": 22
+    },
+    "effects": {
+      "specialty_gym_tech_xp": 2,
+      "judo_grade_points": 4,
+      "fight_iq": 1
+    }
+  },
+  {
+    "id": "v141_014",
+    "title": "Throw chain",
+    "description": "Miss the first throw and you must connect immediately to the second. Stopping is the mistake.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "judo",
+      "min_gym_weeks": 2,
+      "cooldown": 17
+    },
+    "effects": {
+      "grappling": 1,
+      "specialty_gym_tech_xp": 2
+    }
+  },
+  {
+    "id": "v141_015",
+    "title": "Ukemi night",
+    "description": "The glamorous work disappears. An hour of falling correctly leaves your body much fresher than expected.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "judo",
+      "min_gym_weeks": 2,
+      "cooldown": 20
+    },
+    "effects": {
+      "health": 5,
+      "durability": 1,
+      "judo_grade_points": 2
+    }
+  },
+  {
+    "id": "v141_016",
+    "title": "Grading rehearsal",
+    "description": "The dojo runs formal grading material under pressure. Your coach watches every transition.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "judo",
+      "min_gym_weeks": 6,
+      "cooldown": 18
+    },
+    "effects": {
+      "judo_grade_points": 5,
+      "discipline": 1,
+      "relationships.coach": 2
+    }
+  },
+  {
+    "id": "v141_017",
+    "title": "Shiai preparation",
+    "description": "The competition group starts doing short, explosive rounds where one clean score changes everything.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "judo",
+      "min_gym_weeks": 7,
+      "cooldown": 20
+    },
+    "effects": {
+      "speed": 1,
+      "confidence": 1,
+      "judo_grade_points": 3
+    }
+  },
+  {
+    "id": "v141_018",
+    "title": "New heavyweight in the room",
+    "description": "A much heavier judoka forces you to stop muscling entries that are not actually there.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "judo",
+      "min_gym_weeks": 2,
+      "cooldown": 21
+    },
+    "effects": {
+      "fight_iq": 1,
+      "takedown_def": 1,
+      "specialty_gym_tech_xp": 1
+    }
+  },
+  {
+    "id": "v141_019",
+    "title": "Sensei corrects the entry",
+    "description": "The coach stops the whole line to fix your foot position. Embarrassing, useful, unforgettable.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "judo",
+      "min_gym_weeks": 2,
+      "cooldown": 18
+    },
+    "effects": {
+      "specialty_gym_tech_xp": 2,
+      "relationships.coach": 2
+    }
+  },
+  {
+    "id": "v141_020",
+    "title": "Dojo cleanup",
+    "description": "Everyone stays after training to clean the mats. The room feels a little more like yours afterward.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "judo",
+      "min_gym_weeks": 4,
+      "cooldown": 24
+    },
+    "effects": {
+      "friends": 3,
+      "happiness": 2,
+      "judo_grade_points": 1
+    }
+  },
+  {
+    "id": "v141_021",
+    "title": "Dutch combination day",
+    "description": "Every exchange ends with a kick. The coach keeps sending you back until the hands and legs flow together.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 2,
+      "cooldown": 14
+    },
+    "effects": {
+      "kicks": 1,
+      "specialty_gym_tech_xp": 2
+    }
+  },
+  {
+    "id": "v141_022",
+    "title": "Low-kick conditioning",
+    "description": "Pads, bag, partner drills. Your stance starts recovering automatically after every kick.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 2,
+      "cooldown": 17
+    },
+    "effects": {
+      "kicks": 1,
+      "durability": 1,
+      "specialty_gym_tech_xp": 1
+    }
+  },
+  {
+    "id": "v141_023",
+    "title": "Southpaw sparring rounds",
+    "description": "The room gives you three southpaws in a row and tells you to stop solving the matchup with guesses.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 2,
+      "cooldown": 20
+    },
+    "effects": {
+      "distance_management": 1,
+      "adaptability": 1,
+      "specialty_gym_tech_xp": 1
+    }
+  },
+  {
+    "id": "v141_024",
+    "title": "Veteran holds pads",
+    "description": "A veteran pro calls out the opening before you can see it yourself. By round six you finally see it too.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 5,
+      "cooldown": 22
+    },
+    "effects": {
+      "fight_iq": 1,
+      "specialty_gym_tech_xp": 2,
+      "relationships.coach": 1
+    }
+  },
+  {
+    "id": "v141_025",
+    "title": "Clinch-heavy session",
+    "description": "The kickboxing room turns into knees, frames and balance fighting for an hour.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 2,
+      "cooldown": 18
+    },
+    "effects": {
+      "striking": 1,
+      "grappling": 1,
+      "specialty_gym_tech_xp": 1
+    }
+  },
+  {
+    "id": "v141_026",
+    "title": "Hard sparring invitation",
+    "description": "The advanced group asks if you want the late rounds.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 6,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Join the hard rounds",
+        "effects": {
+          "energy": -8,
+          "confidence": 2,
+          "mental_toughness": 1,
+          "specialty_gym_tech_xp": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Stay technical",
+        "effects": {
+          "energy": -3,
+          "distance_management": 1,
+          "specialty_gym_tech_xp": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v141_027",
+    "title": "Coach films your rounds",
+    "description": "Watching yourself overreach is worse than being told about it. It also fixes the problem faster.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 8,
+      "cooldown": 23
+    },
+    "effects": {
+      "distance_management": 1,
+      "fight_iq": 1
+    }
+  },
+  {
+    "id": "v141_028",
+    "title": "Body-shot round",
+    "description": "Only body work scores today. Everyone leaves the room breathing carefully.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 2,
+      "cooldown": 19
+    },
+    "effects": {
+      "striking": 1,
+      "durability": 1,
+      "specialty_gym_tech_xp": 1
+    }
+  },
+  {
+    "id": "v141_029",
+    "title": "Pad-round breakthrough",
+    "description": "One combination finally stops feeling memorized and starts feeling automatic.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 2,
+      "cooldown": 17
+    },
+    "effects": {
+      "specialty_gym_tech_xp": 3
+    }
+  },
+  {
+    "id": "v141_030",
+    "title": "New prospect joins the team",
+    "description": "A fast young striker raises the pace of every technical round without turning it into a gym war.",
+    "category": "gym",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "gym": true,
+      "gym_type": "kb",
+      "min_gym_weeks": 10,
+      "cooldown": 24
+    },
+    "effects": {
+      "speed": 1,
+      "friends": 2,
+      "specialty_gym_tech_xp": 1
+    }
+  },
+  {
+    "id": "v141_031",
+    "title": "Teacher asks about the travel",
+    "description": "Your absences make more sense once the teacher realizes the tournaments are real, not an excuse.",
+    "category": "school",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "education_stage": "secondary",
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Explain the competition schedule",
+        "effects": {
+          "school_attendance": 2,
+          "relationships.family": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep it brief",
+        "effects": {
+          "school_grade": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v141_032",
+    "title": "Exam study group",
+    "description": "Classmates invite you to a study session on the only evening you were planning to recover.",
+    "category": "school",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "education_stage": "secondary",
+      "min_age": 16,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Go study",
+        "effects": {
+          "energy": -4,
+          "school_grade": 3,
+          "school_attendance": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Recover instead",
+        "effects": {
+          "energy": 5,
+          "school_grade": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v141_033",
+    "title": "Coach checks your grades",
+    "description": "The coach makes it clear that missing school for training only works if you are actually keeping up.",
+    "category": "school",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "education_stage": "secondary",
+      "gym": true,
+      "cooldown": 20
+    },
+    "effects": {
+      "discipline": 1,
+      "school_grade": 2,
+      "relationships.coach": 1
+    }
+  },
+  {
+    "id": "v141_034",
+    "title": "Athlete support meeting",
+    "description": "University athlete services finally treats the fight schedule like a real sporting commitment.",
+    "category": "school",
+    "trigger": {
+      "type": "random",
+      "chance": 0.045
+    },
+    "require": {
+      "education_stage": "university",
+      "cooldown": 20
+    },
+    "effects": {
+      "university_attendance": 2,
+      "university_average": 1,
+      "happiness": 2
+    }
+  },
+  {
+    "id": "v141_035",
+    "title": "Professor offers flexibility",
+    "description": "A professor agrees to move a small deadline if you submit the work before travel.",
+    "category": "school",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "education_stage": "university",
+      "min_rel_coach": 0,
+      "cooldown": 24
+    },
+    "effects": {
+      "university_average": 2,
+      "discipline": 1
+    }
+  },
+  {
+    "id": "v141_036",
+    "title": "Scholarship review",
+    "description": "The university reviews whether your academic work still matches the athlete support you receive.",
+    "category": "school",
+    "trigger": {
+      "type": "random",
+      "chance": 0.035
+    },
+    "require": {
+      "education_stage": "university",
+      "cooldown": 26
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Show the work",
+        "effects": {
+          "university_average": 2,
+          "discipline": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Focus on the next fight",
+        "effects": {
+          "university_average": -2,
+          "confidence": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "test_rules": {
+    "minimum_promotion_tier": 1,
+    "positive_chance_multiplier": 0.55,
+    "base_test_chance": 0.06
+  },
+  "penalties": {
+    "suspension_weeks": 8,
+    "fine": 2500,
+    "reputation": -25,
+    "fame": -15,
+    "confidence": -10,
+    "health": -15,
+    "doping_health": -12,
+    "legacy": -8
+  },
+  "clearance": {
+    "risk_decay_every_weeks": 4,
+    "risk_decay": 5
+  },
+  "categories": [
+    {
+      "name": "Legal",
+      "status": "allowed",
+      "description": "Normal sports nutrition; no anti-doping suspension risk."
+    },
+    {
+      "name": "Gray Area",
+      "status": "conditional",
+      "description": "May trigger testing scrutiny depending on promotion rules."
+    },
+    {
+      "name": "Banned PED",
+      "status": "banned",
+      "description": "Positive test can cause suspension, fines and career damage."
+    }
+  ]
+}

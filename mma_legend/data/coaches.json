@@ -1,0 +1,80 @@
+{
+  "personalities": [
+    "Strict",
+    "Technical",
+    "Aggressive",
+    "Patient",
+    "Old School",
+    "Encouraging",
+    "Demanding",
+    "Tactical"
+  ],
+  "mma_coach": {
+    "name": "Head Coach",
+    "discipline": "MMA",
+    "personality": "Tactical",
+    "technique_pool": [
+      "Jab",
+      "Cross",
+      "Double Leg Takedown",
+      "Sprawl",
+      "Rear Naked Choke",
+      "Low Kick",
+      "Clinched Dirty Boxing",
+      "Knee Slice Pass"
+    ]
+  },
+  "pools": {
+    "Boxing": [
+      "Jab",
+      "Cross",
+      "Hook",
+      "Check Hook",
+      "Shoulder Roll",
+      "Liver Shot",
+      "Body Jab"
+    ],
+    "Wrestling": [
+      "Double Leg Takedown",
+      "Single Leg Takedown",
+      "High Crotch",
+      "Sprawl",
+      "Mat Return",
+      "Inside Trip"
+    ],
+    "BJJ": [
+      "Rear Naked Choke",
+      "Armbar",
+      "Triangle Choke",
+      "Knee Slice Pass",
+      "Scissor Sweep",
+      "Kimura"
+    ],
+    "Muay Thai": [
+      "Teep to Body",
+      "Low Kick",
+      "Switch Kick",
+      "Long Guard",
+      "Knee to Body"
+    ],
+    "Kickboxing": [
+      "Low Kick",
+      "Switch Kick",
+      "Question-mark Kick",
+      "Check Hook"
+    ],
+    "Combat Sambo": [
+      "Hip Toss",
+      "Double Leg Takedown",
+      "Kneebar",
+      "Guillotine"
+    ],
+    "MMA": [
+      "Jab",
+      "Double Leg Takedown",
+      "Sprawl",
+      "Rear Naked Choke",
+      "Ground Hammerfist"
+    ]
+  }
+}

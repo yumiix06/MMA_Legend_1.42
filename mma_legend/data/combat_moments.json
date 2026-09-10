@@ -1,0 +1,1510 @@
+[
+  {
+    "id": 1,
+    "type": "striking",
+    "prompt": "You see an opening down the middle.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Jab → Cross",
+        "effects": {
+          "rating": 4,
+          "momentum": 2,
+          "energy": 3,
+          "damage": 4
+        }
+      },
+      {
+        "key": "B",
+        "label": "Wait and counter",
+        "effects": {
+          "rating": 2,
+          "momentum": 3,
+          "energy": 0,
+          "damage": 2
+        }
+      },
+      {
+        "key": "C",
+        "label": "Throw a big shot",
+        "effects": {
+          "rating": 7,
+          "momentum": 4,
+          "energy": 6,
+          "damage": 7,
+          "risk": 0.16
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 2,
+    "type": "kick",
+    "prompt": "Your opponent is backing toward the fence.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Attack the legs",
+        "effects": {
+          "rating": 4,
+          "momentum": 2,
+          "energy": 3,
+          "damage": 5
+        }
+      },
+      {
+        "key": "B",
+        "label": "Body kick",
+        "effects": {
+          "rating": 5,
+          "momentum": 1,
+          "energy": 4,
+          "damage": 6
+        }
+      },
+      {
+        "key": "C",
+        "label": "Head kick",
+        "effects": {
+          "rating": 9,
+          "momentum": 4,
+          "energy": 7,
+          "damage": 9,
+          "risk": 0.2
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 3,
+    "type": "grappling",
+    "prompt": "You have a chance to change levels.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Shoot the double",
+        "effects": {
+          "rating": 6,
+          "momentum": 3,
+          "energy": 5,
+          "damage": 3,
+          "grapple": 5
+        }
+      },
+      {
+        "key": "B",
+        "label": "Body lock",
+        "effects": {
+          "rating": 5,
+          "momentum": 2,
+          "energy": 4,
+          "damage": 4,
+          "grapple": 6
+        }
+      },
+      {
+        "key": "C",
+        "label": "Stay standing",
+        "effects": {
+          "rating": 2,
+          "momentum": 1,
+          "energy": 1,
+          "damage": 2
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "clinch"
+  },
+  {
+    "id": 4,
+    "type": "defense",
+    "prompt": "A clean counter is coming your way.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Slip and counter",
+        "effects": {
+          "rating": 5,
+          "momentum": 3,
+          "energy": 2,
+          "damage": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Cover up",
+        "effects": {
+          "rating": 1,
+          "momentum": 0,
+          "energy": 1,
+          "damage": 1
+        }
+      },
+      {
+        "key": "C",
+        "label": "Fire back immediately",
+        "effects": {
+          "rating": 6,
+          "momentum": 4,
+          "energy": 5,
+          "damage": 4,
+          "risk": 0.12
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 5,
+    "type": "clinch",
+    "prompt": "You enter a tight clinch exchange.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Knees to the body",
+        "effects": {
+          "rating": 5,
+          "momentum": 2,
+          "energy": 4,
+          "damage": 6
+        }
+      },
+      {
+        "key": "B",
+        "label": "Pummel for position",
+        "effects": {
+          "rating": 4,
+          "momentum": 2,
+          "energy": 3,
+          "damage": 2,
+          "grapple": 4
+        }
+      },
+      {
+        "key": "C",
+        "label": "Break and reset",
+        "effects": {
+          "rating": 2,
+          "momentum": 1,
+          "energy": 0,
+          "damage": 1
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "clinch"
+  },
+  {
+    "id": 6,
+    "type": "ground",
+    "prompt": "You scramble into top position.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Heavy hips, hold him",
+        "effects": {
+          "grapple": 6,
+          "momentum": 2,
+          "energy": 4,
+          "control": 3,
+          "position": "mount"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Advance to mount",
+        "effects": {
+          "grapple": 6,
+          "energy": 3,
+          "control": 3,
+          "position": "mount"
+        }
+      },
+      {
+        "key": "C",
+        "label": "Hunt the submission",
+        "effects": {
+          "sub": 7,
+          "rating": 5,
+          "energy": 5,
+          "attempted_sub": 1,
+          "position": "mount"
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "ground"
+  },
+  {
+    "id": 7,
+    "type": "submission",
+    "prompt": "Your opponent gives you a submission window.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Attack the choke",
+        "effects": {
+          "sub": 9,
+          "rating": 6,
+          "energy": 5,
+          "attempted_sub": 1,
+          "risk": 0.08
+        }
+      },
+      {
+        "key": "B",
+        "label": "Improve position first",
+        "effects": {
+          "sub": 5,
+          "grapple": 4,
+          "energy": 3,
+          "control": 3
+        }
+      },
+      {
+        "key": "C",
+        "label": "Keep the ride",
+        "effects": {
+          "grapple": 3,
+          "control": 3,
+          "energy": 2
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "ground"
+  },
+  {
+    "id": 8,
+    "type": "body",
+    "prompt": "Your opponent is protecting their head.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Invest in the body",
+        "effects": {
+          "rating": 5,
+          "momentum": 2,
+          "energy": 3,
+          "damage": 7,
+          "body": 7
+        }
+      },
+      {
+        "key": "B",
+        "label": "Attack the guard",
+        "effects": {
+          "rating": 3,
+          "momentum": 1,
+          "energy": 2,
+          "damage": 3
+        }
+      },
+      {
+        "key": "C",
+        "label": "Go upstairs anyway",
+        "effects": {
+          "rating": 6,
+          "momentum": 3,
+          "energy": 5,
+          "damage": 6,
+          "risk": 0.1
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 9,
+    "type": "leg",
+    "prompt": "You notice their lead leg is compromised.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Keep kicking the leg",
+        "effects": {
+          "rating": 5,
+          "momentum": 3,
+          "energy": 3,
+          "damage": 7,
+          "leg": 7
+        }
+      },
+      {
+        "key": "B",
+        "label": "Mix levels",
+        "effects": {
+          "rating": 6,
+          "momentum": 2,
+          "energy": 4,
+          "damage": 5,
+          "grapple": 3
+        }
+      },
+      {
+        "key": "C",
+        "label": "Save your gas",
+        "effects": {
+          "rating": 2,
+          "momentum": 0,
+          "energy": -2,
+          "damage": 1
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 10,
+    "type": "composure",
+    "prompt": "The crowd is getting loud after a big exchange.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stay disciplined",
+        "effects": {
+          "rating": 3,
+          "momentum": 2,
+          "energy": 0
+        }
+      },
+      {
+        "key": "B",
+        "label": "Feed off the crowd",
+        "effects": {
+          "rating": 5,
+          "momentum": 4,
+          "energy": 2
+        }
+      },
+      {
+        "key": "C",
+        "label": "Take a breath",
+        "effects": {
+          "rating": 1,
+          "momentum": 1,
+          "energy": -5,
+          "defense": 4
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 11,
+    "type": "finish",
+    "prompt": "Your opponent is hurt and you can smell the finish.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Swarm",
+        "effects": {
+          "rating": 9,
+          "momentum": 5,
+          "energy": 8,
+          "damage": 10,
+          "risk": 0.2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Pick clean shots",
+        "effects": {
+          "rating": 6,
+          "momentum": 3,
+          "energy": 4,
+          "damage": 7
+        }
+      },
+      {
+        "key": "C",
+        "label": "Stay safe",
+        "effects": {
+          "rating": 2,
+          "momentum": 1,
+          "energy": 0,
+          "damage": 3
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 12,
+    "type": "survival",
+    "prompt": "You are under pressure late in the round.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Circle and counter",
+        "effects": {
+          "rating": 4,
+          "momentum": 2,
+          "energy": 2,
+          "damage": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Tie up in the clinch",
+        "effects": {
+          "rating": 3,
+          "momentum": 1,
+          "energy": 1,
+          "damage": 1,
+          "grapple": 4
+        }
+      },
+      {
+        "key": "C",
+        "label": "Trade shots",
+        "effects": {
+          "rating": 7,
+          "momentum": 3,
+          "energy": 7,
+          "damage": 7,
+          "risk": 0.18
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 13,
+    "type": "striking",
+    "prompt": "He overcommits on a wild swing.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Slip and counter",
+        "effects": {
+          "rating": 6,
+          "momentum": 3,
+          "damage": 5
+        }
+      },
+      {
+        "key": "B",
+        "label": "Cover and reset",
+        "effects": {
+          "defense": 4,
+          "energy": -1
+        }
+      },
+      {
+        "key": "C",
+        "label": "Trade in the pocket",
+        "effects": {
+          "rating": 8,
+          "damage": 7,
+          "risk": 0.2,
+          "energy": 6
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 14,
+    "type": "grappling",
+    "prompt": "You secure a body lock against the fence.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Outside trip",
+        "effects": {
+          "grapple": 7,
+          "rating": 5,
+          "energy": 5,
+          "position": "half"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Mat return",
+        "effects": {
+          "grapple": 6,
+          "rating": 4,
+          "energy": 5,
+          "position": "half",
+          "control": 3
+        }
+      },
+      {
+        "key": "C",
+        "label": "Break and circle",
+        "effects": {
+          "defense": 3,
+          "momentum": 1,
+          "position": "standing"
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "clinch"
+  },
+  {
+    "id": 15,
+    "type": "ground",
+    "prompt": "You pass into side control cleanly.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Climb to mount",
+        "effects": {
+          "grapple": 6,
+          "momentum": 3,
+          "energy": 3,
+          "control": 3,
+          "position": "mount"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Crossface and flatten",
+        "effects": {
+          "grapple": 5,
+          "rating": 4,
+          "energy": 4,
+          "control": 3,
+          "position": "half"
+        }
+      },
+      {
+        "key": "C",
+        "label": "Kimura grip",
+        "effects": {
+          "sub": 7,
+          "rating": 4,
+          "energy": 4,
+          "attempted_sub": 1,
+          "position": "half"
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "ground"
+  },
+  {
+    "id": 16,
+    "type": "defense",
+    "prompt": "A heavy kick is coming toward your lead leg.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Check it",
+        "effects": {
+          "defense": 5,
+          "durability": 0,
+          "momentum": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Catch and sweep",
+        "effects": {
+          "grapple": 5,
+          "rating": 4,
+          "energy": 4
+        }
+      },
+      {
+        "key": "C",
+        "label": "Step offline",
+        "effects": {
+          "defense": 3,
+          "speed": 0
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 17,
+    "type": "finish",
+    "prompt": "His hands are low and his eyes are glassy.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Unload the combination",
+        "effects": {
+          "rating": 10,
+          "damage": 11,
+          "energy": 9,
+          "risk": 0.15
+        }
+      },
+      {
+        "key": "B",
+        "label": "Set up the rear-naked choke",
+        "effects": {
+          "sub": 9,
+          "rating": 6,
+          "energy": 5
+        }
+      },
+      {
+        "key": "C",
+        "label": "Stay composed and pick shots",
+        "effects": {
+          "rating": 5,
+          "damage": 5,
+          "momentum": 2
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 18,
+    "type": "clinch",
+    "prompt": "Underhooks are yours in the center of the cage.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Knee the body",
+        "effects": {
+          "damage": 6,
+          "rating": 4,
+          "energy": 4
+        }
+      },
+      {
+        "key": "B",
+        "label": "Mat return",
+        "effects": {
+          "grapple": 6,
+          "rating": 4,
+          "energy": 5
+        }
+      },
+      {
+        "key": "C",
+        "label": "Frame and exit",
+        "effects": {
+          "defense": 3,
+          "momentum": 1
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "clinch"
+  },
+  {
+    "id": 19,
+    "type": "composure",
+    "prompt": "You eat a clean shot and the crowd erupts.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Smile and keep walking him down",
+        "effects": {
+          "momentum": 4,
+          "rating": 3,
+          "confidence": 0
+        }
+      },
+      {
+        "key": "B",
+        "label": "Clinically reset the distance",
+        "effects": {
+          "defense": 4,
+          "fight_iq": 0,
+          "energy": -1
+        }
+      },
+      {
+        "key": "C",
+        "label": "Fire back immediately",
+        "effects": {
+          "rating": 6,
+          "damage": 5,
+          "risk": 0.14,
+          "energy": 5
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 20,
+    "type": "leg",
+    "prompt": "His stance is collapsing after calf kicks.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Keep chopping the leg",
+        "effects": {
+          "damage": 7,
+          "rating": 5,
+          "leg": 6,
+          "energy": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Shoot while he hops",
+        "effects": {
+          "grapple": 7,
+          "rating": 5,
+          "energy": 5
+        }
+      },
+      {
+        "key": "C",
+        "label": "Go upstairs with a head kick",
+        "effects": {
+          "rating": 8,
+          "damage": 8,
+          "risk": 0.18,
+          "energy": 6
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 21,
+    "type": "tech",
+    "requires_technique": "Double Leg",
+    "prompt": "You shoot a double-leg — level looks perfect.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Finish the shot",
+        "effects": {
+          "grapple": 8,
+          "rating": 5,
+          "energy": 5
+        }
+      },
+      {
+        "key": "B",
+        "label": "Chain to trip",
+        "effects": {
+          "grapple": 6,
+          "rating": 4,
+          "energy": 4
+        }
+      },
+      {
+        "key": "C",
+        "label": "Bait and sprawl reset",
+        "effects": {
+          "defense": 4,
+          "momentum": 1
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 22,
+    "type": "tech",
+    "requires_technique": "Rear Naked Choke",
+    "prompt": "You take the back — choke is there.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Sink the RNC",
+        "effects": {
+          "sub": 10,
+          "rating": 6,
+          "energy": 5
+        }
+      },
+      {
+        "key": "B",
+        "label": "Softten with punches",
+        "effects": {
+          "damage": 6,
+          "rating": 4,
+          "energy": 4
+        }
+      },
+      {
+        "key": "C",
+        "label": "Hold position",
+        "effects": {
+          "grapple": 5,
+          "momentum": 2
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": 23,
+    "type": "tech",
+    "requires_technique": "Leg Kick",
+    "prompt": "His lead leg is compromised.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Chop again",
+        "effects": {
+          "damage": 6,
+          "leg": 5,
+          "rating": 4,
+          "energy": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Fake low go high",
+        "effects": {
+          "rating": 7,
+          "damage": 6,
+          "risk": 0.12,
+          "energy": 5
+        }
+      },
+      {
+        "key": "C",
+        "label": "Shoot on the limp",
+        "effects": {
+          "grapple": 6,
+          "rating": 4,
+          "energy": 4
+        }
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": "cm_cut_eye",
+    "type": "survival",
+    "prompt": "Blood in the eye. Referee hovering.",
+    "choices": [
+      {
+        "label": "A) Paw it off and fire",
+        "effects": {
+          "damage": 6
+        },
+        "need": null,
+        "key": "A"
+      },
+      {
+        "label": "B) Clinch and hide",
+        "effects": {
+          "defense": 1
+        },
+        "key": "B"
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": "cm_calf",
+    "type": "kick",
+    "prompt": "Calf is already marked.",
+    "choices": [
+      {
+        "label": "A) Kick the same leg",
+        "effects": {
+          "damage": 7
+        },
+        "key": "A"
+      },
+      {
+        "label": "B) Mix a punch",
+        "effects": {
+          "damage": 3
+        },
+        "key": "B"
+      }
+    ],
+    "requires_technique": "Leg Kick",
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": "cm_fence",
+    "type": "clinch",
+    "prompt": "Pinned on the fence.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Mat return",
+        "effects": {
+          "rating": 4,
+          "grapple": 5,
+          "control": 3,
+          "energy": 5,
+          "position": "half"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Inside trip",
+        "effects": {
+          "rating": 4,
+          "grapple": 5,
+          "energy": 4,
+          "position": "half"
+        }
+      },
+      {
+        "key": "C",
+        "label": "Knee tap",
+        "effects": {
+          "rating": 3,
+          "grapple": 4,
+          "energy": 3,
+          "position": "half"
+        }
+      }
+    ],
+    "requires_technique": "Clinch",
+    "amateur_ok": true,
+    "phase": "clinch"
+  },
+  {
+    "id": "cm_scramble",
+    "type": "grappling",
+    "prompt": "Scramble. Winner gets the back.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Sit through to back",
+        "effects": {
+          "grapple": 6,
+          "control": 3,
+          "energy": 5,
+          "position": "back"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Stand up safe",
+        "effects": {
+          "defense": 3,
+          "energy": 2,
+          "position": "standing"
+        }
+      }
+    ],
+    "requires_technique": "Double Leg",
+    "amateur_ok": true,
+    "phase": "clinch"
+  },
+  {
+    "id": "cm_body",
+    "type": "body",
+    "prompt": "He is breathing with his mouth.",
+    "choices": [
+      {
+        "label": "A) Dig the body",
+        "effects": {
+          "damage": 8
+        },
+        "key": "A"
+      },
+      {
+        "label": "B) Headhunt",
+        "effects": {
+          "damage": 4
+        },
+        "key": "B"
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": "cm_sambo",
+    "type": "grappling",
+    "prompt": "Entry for a throw.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Sambo throw",
+        "effects": {
+          "grapple": 7,
+          "rating": 5,
+          "energy": 5,
+          "position": "half"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Snap to front headlock",
+        "effects": {
+          "grapple": 4,
+          "sub": 4,
+          "energy": 4,
+          "position": "half"
+        }
+      }
+    ],
+    "requires_technique": "Ouchi Gari",
+    "amateur_ok": true,
+    "phase": "clinch"
+  },
+  {
+    "id": "cm_judo",
+    "type": "grappling",
+    "prompt": "Collar and sleeve for a second.",
+    "choices": [
+      {
+        "label": "A) Trip",
+        "effects": {
+          "damage": 6
+        },
+        "key": "A"
+      },
+      {
+        "label": "B) Break grip",
+        "effects": {
+          "defense": 1
+        },
+        "key": "B"
+      }
+    ],
+    "requires_technique": "Knee Slice Pass",
+    "amateur_ok": true,
+    "phase": "clinch"
+  },
+  {
+    "id": "cm_hurt",
+    "type": "finish",
+    "prompt": "He is hurt and backing up.",
+    "choices": [
+      {
+        "label": "A) Close it",
+        "effects": {
+          "damage": 10
+        },
+        "key": "A"
+      },
+      {
+        "label": "B) Don't get sloppy",
+        "effects": {
+          "defense": 1
+        },
+        "key": "B"
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": "cm_stand",
+    "type": "striking",
+    "prompt": "Ref stands you up.",
+    "choices": [
+      {
+        "label": "A) First strike",
+        "effects": {
+          "damage": 5
+        },
+        "key": "A"
+      },
+      {
+        "label": "B) Feint wrestle",
+        "effects": {
+          "damage": 3
+        },
+        "key": "B"
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": "cm_tdd",
+    "type": "defense",
+    "prompt": "Shot incoming.",
+    "choices": [
+      {
+        "label": "A) Sprawl",
+        "effects": {
+          "defense": 1
+        },
+        "key": "A"
+      },
+      {
+        "label": "B) Whizzer and punch",
+        "effects": {
+          "damage": 4
+        },
+        "key": "B"
+      }
+    ],
+    "requires_technique": "Sprawl",
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": "cm_ground_elbow",
+    "type": "ground",
+    "prompt": "Posture in guard.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Shoulder pressure",
+        "effects": {
+          "grapple": 5,
+          "control": 3,
+          "energy": 4,
+          "position": "half"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Pass the guard",
+        "effects": {
+          "grapple": 5,
+          "control": 2,
+          "energy": 3,
+          "position": "mount"
+        }
+      },
+      {
+        "key": "C",
+        "label": "Front headlock",
+        "effects": {
+          "sub": 5,
+          "attempted_sub": 1,
+          "energy": 4,
+          "position": "half"
+        }
+      }
+    ],
+    "requires_technique": "Knee Slice Pass",
+    "amateur_ok": true,
+    "phase": "ground"
+  },
+  {
+    "id": "cm_late_gas",
+    "type": "survival",
+    "prompt": "Legs are gone.",
+    "choices": [
+      {
+        "label": "A) Tie up",
+        "effects": {
+          "defense": 1
+        },
+        "key": "A"
+      },
+      {
+        "label": "B) Swing anyway",
+        "effects": {
+          "damage": 5
+        },
+        "key": "B"
+      }
+    ],
+    "amateur_ok": true,
+    "phase": "stand"
+  },
+  {
+    "id": "cm_sub_pass",
+    "type": "grappling",
+    "amateur_ok": true,
+    "prompt": "You pass guard. He is flat.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Hold and flatten",
+        "effects": {
+          "rating": 3,
+          "grapple": 4,
+          "control": 3,
+          "energy": 3,
+          "position": "mount"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Hunt an armbar",
+        "effects": {
+          "rating": 4,
+          "sub": 6,
+          "attempted_sub": 1,
+          "energy": 5,
+          "risk": 0.1,
+          "position": "mount"
+        }
+      },
+      {
+        "key": "C",
+        "label": "Knee slice pass further",
+        "effects": {
+          "rating": 4,
+          "grapple": 5,
+          "control": 2,
+          "energy": 4,
+          "position": "mount"
+        }
+      }
+    ],
+    "phase": "ground"
+  },
+  {
+    "id": "cm_back",
+    "type": "grappling",
+    "amateur_ok": true,
+    "prompt": "You have the back. Hooks in.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Rear naked choke",
+        "effects": {
+          "rating": 5,
+          "sub": 8,
+          "attempted_sub": 1,
+          "energy": 5,
+          "position": "back"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Seatbelt and flatten",
+        "effects": {
+          "rating": 4,
+          "grapple": 4,
+          "control": 3,
+          "energy": 4,
+          "position": "back"
+        }
+      },
+      {
+        "key": "C",
+        "label": "Let him turn, keep top",
+        "effects": {
+          "rating": 2,
+          "grapple": 3,
+          "control": 3,
+          "energy": 2,
+          "position": "mount"
+        }
+      }
+    ],
+    "phase": "ground"
+  },
+  {
+    "id": "cm_guillotine",
+    "type": "grappling",
+    "amateur_ok": true,
+    "prompt": "He shoots. Your arm is around his neck.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Pull guillotine",
+        "effects": {
+          "rating": 4,
+          "sub": 7,
+          "attempted_sub": 1,
+          "energy": 5,
+          "risk": 0.12,
+          "position": "guard"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Sprawl and peek out",
+        "effects": {
+          "rating": 3,
+          "grapple": 3,
+          "energy": 4,
+          "position": "standing"
+        }
+      },
+      {
+        "key": "C",
+        "label": "Whizzer and walk him to the fence",
+        "effects": {
+          "rating": 3,
+          "control": 2,
+          "energy": 3,
+          "position": "clinch"
+        }
+      }
+    ],
+    "phase": "clinch"
+  },
+  {
+    "id": "cm_fence_control",
+    "type": "grappling",
+    "amateur_ok": true,
+    "prompt": "You have him on the fence.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Mat return",
+        "effects": {
+          "rating": 4,
+          "grapple": 5,
+          "control": 3,
+          "energy": 5,
+          "position": "half"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Inside trip",
+        "effects": {
+          "rating": 4,
+          "grapple": 5,
+          "energy": 4,
+          "position": "half"
+        }
+      },
+      {
+        "key": "C",
+        "label": "Knee tap",
+        "effects": {
+          "rating": 3,
+          "grapple": 4,
+          "energy": 3,
+          "position": "half"
+        }
+      }
+    ],
+    "phase": "clinch"
+  },
+  {
+    "id": "cm_brawl",
+    "type": "striking",
+    "amateur_ok": true,
+    "prompt": "The pocket turns into a brawl.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Sit down on a hook",
+        "effects": {
+          "rating": 6,
+          "damage": 6,
+          "energy": 6,
+          "big_shot": 1,
+          "risk": 0.14
+        }
+      },
+      {
+        "key": "B",
+        "label": "Clinched frames",
+        "effects": {
+          "rating": 3,
+          "defense": 3,
+          "energy": 3,
+          "position": "clinch"
+        }
+      },
+      {
+        "key": "C",
+        "label": "Change levels",
+        "effects": {
+          "rating": 3,
+          "grapple": 4,
+          "energy": 4,
+          "position": "half"
+        }
+      }
+    ],
+    "phase": "stand"
+  },
+  {
+    "id": "cm_heel",
+    "type": "grappling",
+    "amateur_ok": false,
+    "pro_only": true,
+    "prompt": "You isolate a leg. The heel is there.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Inside heel hook",
+        "effects": {
+          "rating": 6,
+          "sub": 9,
+          "attempted_sub": 1,
+          "energy": 5,
+          "risk": 0.12,
+          "position": "half"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Kneebar",
+        "effects": {
+          "rating": 5,
+          "sub": 7,
+          "attempted_sub": 1,
+          "energy": 5,
+          "position": "half"
+        }
+      },
+      {
+        "key": "C",
+        "label": "Pass instead",
+        "effects": {
+          "rating": 3,
+          "grapple": 3,
+          "control": 2,
+          "energy": 3,
+          "position": "mount"
+        }
+      }
+    ],
+    "phase": "ground"
+  },
+  {
+    "id": "cm_body_open",
+    "type": "striking",
+    "amateur_ok": true,
+    "prompt": "His hands are high. The body is open.",
+    "choices": [
+      {
+        "key": "A",
+        "label": "Liver shot",
+        "effects": {
+          "rating": 5,
+          "damage": 5,
+          "energy": 4,
+          "kind": "body"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Body kick",
+        "effects": {
+          "rating": 4,
+          "damage": 4,
+          "energy": 4,
+          "kind": "body"
+        }
+      },
+      {
+        "key": "C",
+        "label": "Go back upstairs",
+        "effects": {
+          "rating": 3,
+          "damage": 3,
+          "energy": 3,
+          "big_shot": 1
+        }
+      }
+    ],
+    "phase": "stand"
+  }
+]

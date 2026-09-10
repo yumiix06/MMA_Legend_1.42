@@ -1,0 +1,223 @@
+[
+  {
+    "id": "v19_ufc_01",
+    "title": "Ranked opponent calls you out",
+    "category": "rivalry",
+    "description": "A ranked contender names you in a post-fight interview. The clip is everywhere.",
+    "trigger": {"chance": 0.14},
+    "require": {"pro": true, "min_pro_wins": 1, "min_fame": 20, "cooldown": 10},
+    "choices": [
+      {"key": "A", "label": "Answer him publicly", "effects": {"fame": 4, "press_hype": 8, "confidence": 3}},
+      {"key": "B", "label": "Say nothing, let the record talk", "effects": {"fame": 1, "confidence": 2, "fight_iq": 1}},
+      {"key": "C", "label": "Ask the matchmaker for the fight", "effects": {"fame": 3, "press_hype": 5, "energy": -4}}
+    ]
+  },
+  {
+    "id": "v19_ufc_02",
+    "title": "Media day in the host city",
+    "category": "media",
+    "description": "Open workouts, a wall of cameras, and eight interviews back to back.",
+    "trigger": {"chance": 0.13},
+    "require": {"pro": true, "min_fame": 18, "cooldown": 8},
+    "choices": [
+      {"key": "A", "label": "Work the room properly", "effects": {"fame": 3, "energy": -8, "press_hype": 6}},
+      {"key": "B", "label": "Do the minimum and get back to the hotel", "effects": {"energy": -2, "fame": 1}},
+      {"key": "C", "label": "Skip it and train", "effects": {"fame": -2, "striking": 1, "grappling": 1}}
+    ]
+  },
+  {
+    "id": "v19_ufc_03",
+    "title": "Performance bonus talk",
+    "category": "money",
+    "description": "Your coach mentions the finish bonus. It is four times your show money.",
+    "trigger": {"chance": 0.12},
+    "require": {"pro": true, "min_pro_wins": 2, "min_fame": 15, "cooldown": 12},
+    "choices": [
+      {"key": "A", "label": "Hunt the finish", "effects": {"ko_power": 1, "confidence": 3, "fight_iq": -1}},
+      {"key": "B", "label": "Fight your fight, take the win", "effects": {"fight_iq": 2, "confidence": 1}}
+    ]
+  },
+  {
+    "id": "v19_ufc_04",
+    "title": "Short-notice main event",
+    "category": "career",
+    "description": "Someone pulled out. They want you on eleven days, up a weight class.",
+    "trigger": {"chance": 0.09},
+    "require": {"pro": true, "min_pro_wins": 3, "min_fame": 22, "cooldown": 20},
+    "choices": [
+      {"key": "A", "label": "Take it — this is the door", "effects": {"fame": 8, "press_hype": 10, "energy": -14, "confidence": 4}},
+      {"key": "B", "label": "Decline, stay on your own schedule", "effects": {"fame": -2, "energy": 4, "fight_iq": 1}}
+    ]
+  },
+  {
+    "id": "v19_ufc_05",
+    "title": "Drug testing pool",
+    "category": "life",
+    "description": "A tester is at your door at 6am. Whereabouts filing is part of the job now.",
+    "trigger": {"chance": 0.10},
+    "require": {"pro": true, "min_fame": 16, "cooldown": 14},
+    "choices": [
+      {"key": "A", "label": "Cooperate, keep the paperwork clean", "effects": {"energy": -3, "happiness": -2}},
+      {"key": "B", "label": "Complain about the hour", "effects": {"happiness": -1, "fame": -1}}
+    ]
+  },
+  {
+    "id": "v19_ufc_06",
+    "title": "Title eliminator talk",
+    "category": "career",
+    "description": "The matchmaker uses the word 'eliminator'. Win and you are one fight from the belt.",
+    "trigger": {"chance": 0.10},
+    "require": {"pro": true, "min_pro_wins": 5, "min_fame": 28, "cooldown": 18},
+    "choices": [
+      {"key": "A", "label": "Push for it", "effects": {"press_hype": 8, "confidence": 4, "fame": 3}},
+      {"key": "B", "label": "Ask for one more tune-up first", "effects": {"confidence": -1, "fight_iq": 2}}
+    ]
+  },
+  {
+    "id": "v19_ufc_07",
+    "title": "Sponsor wants a long-term deal",
+    "category": "sponsor",
+    "description": "A real brand, not a supplement scam. They want two years.",
+    "trigger": {"chance": 0.10},
+    "require": {"pro": true, "min_fame": 24, "cooldown": 16},
+    "choices": [
+      {"key": "A", "label": "Sign the two years", "effects": {"money": 2200, "fame": 2}},
+      {"key": "B", "label": "Hold out for a better rate", "effects": {"money": 400, "confidence": 1}}
+    ]
+  },
+  {
+    "id": "v19_ufc_08",
+    "title": "Veteran teammate retires",
+    "category": "life",
+    "description": "The man who held pads for you since the regional days is done. Last session tonight.",
+    "trigger": {"chance": 0.09},
+    "require": {"pro": true, "min_pro_wins": 3, "cooldown": 30, "once": true},
+    "choices": [
+      {"key": "A", "label": "Stay late with him", "effects": {"happiness": 6, "fight_iq": 2, "energy": -5}},
+      {"key": "B", "label": "Keep to your schedule", "effects": {"happiness": -3, "cardio": 1}}
+    ]
+  },
+  {
+    "id": "v19_gen_01",
+    "title": "Training partner outgrows the room",
+    "category": "gym",
+    "description": "The kid you used to handle is beating you up in sparring now.",
+    "trigger": {"chance": 0.13},
+    "require": {"cooldown": 10},
+    "choices": [
+      {"key": "A", "label": "Use him — go hard every week", "effects": {"striking": 2, "grappling": 1, "energy": -8, "health": -3}},
+      {"key": "B", "label": "Manage the rounds", "effects": {"fight_iq": 2, "energy": -3}},
+      {"key": "C", "label": "Avoid him", "effects": {"confidence": -3, "energy": 2}}
+    ]
+  },
+  {
+    "id": "v19_gen_02",
+    "title": "Nagging injury you have not mentioned",
+    "category": "health",
+    "description": "The shoulder has been wrong for three weeks. You have been quiet about it.",
+    "trigger": {"chance": 0.12},
+    "require": {"cooldown": 12},
+    "choices": [
+      {"key": "A", "label": "Tell the coach and scale back", "effects": {"health": 8, "energy": 4, "striking": -1}},
+      {"key": "B", "label": "Keep quiet and train through", "effects": {"health": -8, "durability": 1, "confidence": 1}}
+    ]
+  },
+  {
+    "id": "v19_gen_03",
+    "title": "Gym fees went up",
+    "category": "money",
+    "description": "New mats, new rent, new number on the board by the door.",
+    "trigger": {"chance": 0.12},
+    "require": {"cooldown": 14},
+    "choices": [
+      {"key": "A", "label": "Pay it", "effects": {"money": -120, "happiness": -1}},
+      {"key": "B", "label": "Trade cleaning shifts for the difference", "effects": {"money": -40, "energy": -8}},
+      {"key": "C", "label": "Train at the cheap gym across town", "effects": {"money": -30, "striking": -1, "grappling": -1}}
+    ]
+  },
+  {
+    "id": "v19_gen_04",
+    "title": "Old coach passes through town",
+    "category": "gym",
+    "description": "The man who taught you to stand still and hit. One session, no charge.",
+    "trigger": {"chance": 0.10},
+    "require": {"cooldown": 20},
+    "choices": [
+      {"key": "A", "label": "Take the session", "effects": {"fight_iq": 3, "striking": 1, "happiness": 4}},
+      {"key": "B", "label": "You are busy", "effects": {"happiness": -2}}
+    ]
+  },
+  {
+    "id": "v19_gen_05",
+    "title": "Amateur asks you to corner him",
+    "category": "life",
+    "description": "A kid from the gym has his first fight Saturday and wants you in the corner.",
+    "trigger": {"chance": 0.11},
+    "require": {"min_wins": 2, "cooldown": 12},
+    "choices": [
+      {"key": "A", "label": "Corner him", "effects": {"fight_iq": 2, "happiness": 4, "energy": -5}},
+      {"key": "B", "label": "You need the weekend", "effects": {"energy": 4, "happiness": -2}}
+    ]
+  },
+  {
+    "id": "v19_gen_06",
+    "title": "Weight is climbing between camps",
+    "category": "health",
+    "description": "You are walking around heavier than you should be and you know it.",
+    "trigger": {"chance": 0.12},
+    "require": {"cooldown": 10},
+    "choices": [
+      {"key": "A", "label": "Tighten the diet now", "effects": {"cardio": 2, "energy": -3, "happiness": -2}},
+      {"key": "B", "label": "Deal with it in camp", "effects": {"happiness": 2, "cardio": -1}}
+    ]
+  },
+  {
+    "id": "v19_gen_07",
+    "title": "Family asks how long you will do this",
+    "category": "life",
+    "description": "Not an argument. A quiet question over dinner that you cannot answer well.",
+    "trigger": {"chance": 0.10},
+    "require": {"min_age": 21, "cooldown": 18},
+    "choices": [
+      {"key": "A", "label": "Give them a real timeline", "effects": {"happiness": 3, "confidence": 2}},
+      {"key": "B", "label": "Change the subject", "effects": {"happiness": -3}},
+      {"key": "C", "label": "Tell them you are all in", "effects": {"confidence": 4, "happiness": -1}}
+    ]
+  },
+  {
+    "id": "v19_gen_08",
+    "title": "Sparring gone wrong",
+    "category": "health",
+    "description": "A clash of heads in the third round. Nobody's fault, everybody's problem.",
+    "trigger": {"chance": 0.10},
+    "require": {"cooldown": 12},
+    "choices": [
+      {"key": "A", "label": "Stop the session", "effects": {"health": 4, "energy": -2}},
+      {"key": "B", "label": "Finish the rounds", "effects": {"health": -10, "durability": 2, "confidence": 2}}
+    ]
+  },
+  {
+    "id": "v19_gen_09",
+    "title": "A local reporter wants ten minutes",
+    "category": "media",
+    "description": "Small outlet, real interest. It is not television but it is a start.",
+    "trigger": {"chance": 0.11},
+    "require": {"min_wins": 2, "cooldown": 10},
+    "choices": [
+      {"key": "A", "label": "Give him the time", "effects": {"fame": 2, "energy": -2}},
+      {"key": "B", "label": "Not yet", "effects": {"fame": -1, "energy": 1}}
+    ]
+  },
+  {
+    "id": "v19_gen_10",
+    "title": "Technique that keeps failing",
+    "category": "gym",
+    "description": "The shot you drilled all camp has not landed in three fights.",
+    "trigger": {"chance": 0.12},
+    "require": {"min_wins": 1, "cooldown": 14},
+    "choices": [
+      {"key": "A", "label": "Rebuild it from the entry", "effects": {"grappling": 2, "fight_iq": 2, "energy": -6}},
+      {"key": "B", "label": "Shelve it and build around what works", "effects": {"striking": 2, "confidence": 2}}
+    ]
+  }
+]

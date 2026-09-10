@@ -1,0 +1,2101 @@
+[
+  {
+    "id": "v123_001",
+    "phase3_group": "wins",
+    "title": "The room feels different",
+    "category": "career",
+    "description": "Two wins in a row change how people look at you. Coach asks whether you want harder matchups now.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "W",
+      "min_wins": 2,
+      "min_streak": 2,
+      "cooldown": 12
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Ask for the harder test",
+        "effects": {
+          "confidence": 2,
+          "reputation": 1,
+          "energy": -3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep building quietly",
+        "effects": {
+          "fight_iq": 1,
+          "discipline": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_002",
+    "phase3_group": "wins",
+    "title": "Regional buzz after the win",
+    "category": "career",
+    "description": "A local promoter mentions your name while talking about the next amateur card.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "W",
+      "amateur": true,
+      "min_wins": 4,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Lean into the attention",
+        "effects": {
+          "fame": 2,
+          "confidence": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Stay focused on training",
+        "effects": {
+          "discipline": 2,
+          "energy": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_003",
+    "phase3_group": "wins",
+    "title": "A clean win changes the tape",
+    "category": "training",
+    "description": "Coach points out that your best sequence is starting to look like a real weapon instead of a lucky moment.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "W",
+      "min_wins": 3,
+      "cooldown": 11
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Drill the sequence again",
+        "effects": {
+          "striking": 1,
+          "fight_iq": 1,
+          "energy": -4
+        }
+      },
+      {
+        "key": "B",
+        "label": "Work the weakness it hides",
+        "effects": {
+          "adaptability": 1,
+          "takedown_def": 1,
+          "energy": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_004",
+    "phase3_group": "wins",
+    "title": "Expectations rise with the streak",
+    "category": "coach",
+    "description": "Coach stops congratulating you and starts talking about what will fail against better opposition.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "W",
+      "min_streak": 3,
+      "min_rel_coach": 35,
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Ask for the harsh version",
+        "effects": {
+          "fight_iq": 2,
+          "confidence": -1,
+          "relationships.coach": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Protect the momentum",
+        "effects": {
+          "confidence": 2,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_005",
+    "phase3_group": "wins",
+    "title": "The win bonus is still in your pocket",
+    "category": "money",
+    "description": "You have enough money to feel comfortable for the first time in weeks, which makes the next decision matter.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "W",
+      "pro": true,
+      "min_money": 1000,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Put it into recovery and camp",
+        "effects": {
+          "money": -250,
+          "health": 4,
+          "energy": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Enjoy a little of it",
+        "effects": {
+          "money": -120,
+          "happiness": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_006",
+    "phase3_group": "wins",
+    "title": "Opponents are studying you now",
+    "category": "career",
+    "description": "A teammate notices upcoming opponents mimicking your favorite entries during open mat.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "W",
+      "pro": true,
+      "min_wins": 6,
+      "min_streak": 2,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Build a second layer",
+        "effects": {
+          "adaptability": 2,
+          "fight_iq": 1,
+          "energy": -5
+        }
+      },
+      {
+        "key": "B",
+        "label": "Sharpen the first layer anyway",
+        "effects": {
+          "confidence": 2,
+          "striking": 1,
+          "energy": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_007",
+    "phase3_group": "losses",
+    "title": "Nobody talks on the ride home",
+    "category": "life",
+    "description": "The loss sits in the car with you. There is no crowd now, only the replay in your head.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "L",
+      "min_losses": 1,
+      "cooldown": 10
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Call someone close",
+        "effects": {
+          "happiness": 4,
+          "relationships.family": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Watch the fight again tonight",
+        "effects": {
+          "fight_iq": 1,
+          "confidence": -2,
+          "energy": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_008",
+    "phase3_group": "losses",
+    "title": "Coach circles the same mistake",
+    "category": "coach",
+    "description": "The tape session keeps returning to one exchange. Coach wants a decision, not an excuse.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "L",
+      "min_losses": 1,
+      "cooldown": 12
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Own the mistake",
+        "effects": {
+          "fight_iq": 2,
+          "relationships.coach": 2,
+          "confidence": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ask to drill it immediately",
+        "effects": {
+          "takedown_def": 1,
+          "energy": -5,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_009",
+    "phase3_group": "losses",
+    "title": "Two losses feel heavier than one",
+    "category": "career",
+    "description": "A losing streak changes the tone around every future matchup.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "L",
+      "max_streak": -2,
+      "min_losses": 2,
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Reset the goals",
+        "effects": {
+          "mental_toughness": 2,
+          "happiness": 2,
+          "confidence": -2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Train through the frustration",
+        "effects": {
+          "discipline": 2,
+          "energy": -7,
+          "confidence": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_010",
+    "phase3_group": "losses",
+    "title": "The gym has seen this before",
+    "category": "gym",
+    "description": "An older fighter tells you that the worst mistake after a loss is trying to become a different fighter overnight.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "L",
+      "min_losses": 1,
+      "cooldown": 15
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Listen to the veteran",
+        "effects": {
+          "fight_iq": 1,
+          "adaptability": 1,
+          "relationships.friends": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Double down on your identity",
+        "effects": {
+          "confidence": 2,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_011",
+    "phase3_group": "losses",
+    "title": "A close loss starts arguments",
+    "category": "life",
+    "description": "Friends insist you won. Coach says the judges are irrelevant now.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "L",
+      "min_wins": 2,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Let the anger go",
+        "effects": {
+          "happiness": 3,
+          "mental_toughness": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Use it as fuel",
+        "effects": {
+          "discipline": 2,
+          "energy": -4,
+          "confidence": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_012",
+    "phase3_group": "losses",
+    "title": "The next booking suddenly matters",
+    "category": "career",
+    "description": "One more bad performance could change how matchmakers see your trajectory.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "L",
+      "pro": true,
+      "min_losses": 2,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Ask for a measured matchup",
+        "effects": {
+          "fight_iq": 1,
+          "reputation": -1,
+          "confidence": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Refuse to look protected",
+        "effects": {
+          "reputation": 2,
+          "confidence": 2,
+          "energy": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_013",
+    "phase3_group": "injuries",
+    "title": "The scan is not free",
+    "category": "health",
+    "description": "The injury is manageable, but the clinic bill lands before the swelling does.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "injured": true,
+      "min_money": 250,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Pay for the proper follow-up",
+        "effects": {
+          "money": -180,
+          "health": 5,
+          "discipline": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Wait and monitor it",
+        "effects": {
+          "money": 0,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_014",
+    "phase3_group": "injuries",
+    "title": "Recovery gets boring",
+    "category": "health",
+    "description": "Another week without hard training makes the walls feel closer.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "injured": true,
+      "cooldown": 10
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Study tape instead",
+        "effects": {
+          "fight_iq": 2,
+          "happiness": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Spend time away from fighting",
+        "effects": {
+          "happiness": 4,
+          "relationships.friends": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_015",
+    "phase3_group": "injuries",
+    "title": "A teammate checks in",
+    "category": "life",
+    "description": "{teammate} messages after training and asks whether you need anything while you are hurt.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "injured": true,
+      "teammate": true,
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Ask for company",
+        "effects": {
+          "happiness": 4,
+          "relationships.friends": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ask for footage from practice",
+        "effects": {
+          "fight_iq": 1,
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_016",
+    "phase3_group": "injuries",
+    "title": "Family wants you to slow down",
+    "category": "life",
+    "description": "The people closest to you have seen enough limping and ice packs for one month.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "injured": true,
+      "max_rel_family": 75,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Promise to respect recovery",
+        "effects": {
+          "relationships.family": 5,
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Tell them this is the job",
+        "effects": {
+          "relationships.family": -3,
+          "confidence": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_017",
+    "phase3_group": "injuries",
+    "title": "The first movement feels strange",
+    "category": "health",
+    "description": "Light technical work is allowed, but the injured area makes every familiar motion feel slightly wrong.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "injured": true,
+      "min_health": 45,
+      "cooldown": 12
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Move carefully and rebuild trust",
+        "effects": {
+          "adaptability": 1,
+          "health": 2,
+          "energy": -2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Stop when it feels wrong",
+        "effects": {
+          "health": 3,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_018",
+    "phase3_group": "injuries",
+    "title": "Injury exposes a technical hole",
+    "category": "training",
+    "description": "Working around the injury forces you into positions you normally avoid.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "injured": true,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Use the limitation as a lesson",
+        "effects": {
+          "fight_iq": 1,
+          "grappling": 1,
+          "energy": -3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep the session purely rehab",
+        "effects": {
+          "health": 3,
+          "energy": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_019",
+    "phase3_group": "camps",
+    "title": "The specialist keeps one detail",
+    "category": "camp",
+    "description": "A specialist coach stops the whole round to fix one small mistake you repeat under pressure.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "camp": true,
+      "cooldown": 8
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stay after and rep it",
+        "effects": {
+          "fight_iq": 1,
+          "adaptability": 1,
+          "energy": -5
+        }
+      },
+      {
+        "key": "B",
+        "label": "Save the legs for tomorrow",
+        "effects": {
+          "energy": 4,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_020",
+    "phase3_group": "camps",
+    "title": "Hard rounds pile up",
+    "category": "camp",
+    "description": "Three difficult rounds in a row turn the room quiet. Coach asks whether you still want one more.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "camp": true,
+      "max_energy": 75,
+      "cooldown": 8
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Take one more round",
+        "effects": {
+          "cardio": 1,
+          "mental_toughness": 1,
+          "energy": -8
+        }
+      },
+      {
+        "key": "B",
+        "label": "Call it before quality drops",
+        "effects": {
+          "energy": 4,
+          "fight_iq": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_021",
+    "phase3_group": "camps",
+    "title": "Homesick in a foreign room",
+    "category": "camp",
+    "description": "The training is excellent, but the hotel and gym have started to feel like the same four walls.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "intl_camp": true,
+      "cooldown": 10
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Call home after practice",
+        "effects": {
+          "happiness": 4,
+          "relationships.family": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Stay locked into camp",
+        "effects": {
+          "discipline": 2,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_022",
+    "phase3_group": "camps",
+    "title": "The recovery session is optional",
+    "category": "camp",
+    "description": "Half the room wants another hard session. The physio table is finally empty.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "camp": true,
+      "max_health": 90,
+      "cooldown": 9
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Take the recovery slot",
+        "effects": {
+          "health": 5,
+          "energy": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Join the extra work",
+        "effects": {
+          "energy": -6,
+          "discipline": 2,
+          "cardio": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_023",
+    "phase3_group": "camps",
+    "title": "Film room after dinner",
+    "category": "camp",
+    "description": "A coach has footage of the exact style you are preparing to face.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "camp": true,
+      "booked": true,
+      "cooldown": 9
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Watch every round",
+        "effects": {
+          "opponent_read": 2,
+          "fight_iq": 1,
+          "energy": -2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Sleep early instead",
+        "effects": {
+          "energy": 5,
+          "health": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_024",
+    "phase3_group": "camps",
+    "title": "A local connection opens a door",
+    "category": "camp",
+    "description": "Someone from the room offers to introduce you to another coach before you leave.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "intl_camp": true,
+      "min_money": 150,
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Pay for the private session",
+        "effects": {
+          "money": -150,
+          "adaptability": 2,
+          "reputation": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep the trip on budget",
+        "effects": {
+          "money": 0,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_025",
+    "phase3_group": "money",
+    "title": "The account is nearly empty",
+    "category": "money",
+    "description": "Training costs keep moving even when income does not.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "max_money": 150,
+      "cooldown": 12
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Cut every optional expense",
+        "effects": {
+          "happiness": -3,
+          "discipline": 2,
+          "money": 40
+        }
+      },
+      {
+        "key": "B",
+        "label": "Take a small side job",
+        "effects": {
+          "money": 120,
+          "energy": -7
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_026",
+    "phase3_group": "money",
+    "title": "Debt starts shaping decisions",
+    "category": "money",
+    "description": "You catch yourself thinking about the next payday before the next opponent.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "min_debt": 300,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Make a repayment plan",
+        "effects": {
+          "discipline": 2,
+          "happiness": -1,
+          "money": 40
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ignore it until the next purse",
+        "effects": {
+          "confidence": 1,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_027",
+    "phase3_group": "money",
+    "title": "New gear or another week of savings",
+    "category": "money",
+    "description": "The old equipment still works, but not comfortably.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "min_money": 350,
+      "max_money": 1800,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Replace the worst of it",
+        "effects": {
+          "money": -140,
+          "happiness": 3,
+          "health": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep saving",
+        "effects": {
+          "discipline": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_028",
+    "phase3_group": "money",
+    "title": "A good purse changes the month",
+    "category": "money",
+    "description": "For once, rent, food and training can all be paid without juggling the order.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "min_money": 2500,
+      "cooldown": 22
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Build a real emergency fund",
+        "effects": {
+          "discipline": 3,
+          "happiness": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Upgrade recovery for the month",
+        "effects": {
+          "money": -300,
+          "health": 5,
+          "energy": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_029",
+    "phase3_group": "money",
+    "title": "A teammate asks for a small loan",
+    "category": "money",
+    "description": "{teammate} is short on travel money for an upcoming bout.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "teammate": true,
+      "min_money": 700,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Help out",
+        "effects": {
+          "money": -120,
+          "relationships.friends": 5,
+          "reputation": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Say you cannot mix money and the gym",
+        "effects": {
+          "relationships.friends": -2,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_030",
+    "phase3_group": "money",
+    "title": "The hidden cost of being a pro",
+    "category": "money",
+    "description": "Travel, medicals and small fees eat into a purse that looked much bigger on paper.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "min_pro_wins": 1,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Track every expense",
+        "effects": {
+          "discipline": 2,
+          "money": 25
+        }
+      },
+      {
+        "key": "B",
+        "label": "Stop thinking about it for tonight",
+        "effects": {
+          "happiness": 3,
+          "money": -35
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_031",
+    "phase3_group": "gyms",
+    "title": "Coach gives you the good rounds",
+    "category": "gym",
+    "description": "Your relationship with the coaching staff is strong enough that the room is being built around your development.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "gym": true,
+      "min_rel_coach": 65,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Use the attention well",
+        "effects": {
+          "fight_iq": 1,
+          "relationships.coach": 2,
+          "energy": -4
+        }
+      },
+      {
+        "key": "B",
+        "label": "Share the best rounds with others",
+        "effects": {
+          "reputation": 2,
+          "relationships.friends": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_032",
+    "phase3_group": "gyms",
+    "title": "Tension with the coaching staff",
+    "category": "gym",
+    "description": "Small disagreements have started turning into shorter conversations after practice.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "gym": true,
+      "max_rel_coach": 35,
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Clear the air",
+        "effects": {
+          "relationships.coach": 6,
+          "confidence": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep your head down",
+        "effects": {
+          "discipline": 2,
+          "relationships.coach": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_033",
+    "phase3_group": "gyms",
+    "title": "The gym upgrades its equipment",
+    "category": "gym",
+    "description": "New bags, pads and a cleaner strength area make the room feel more serious.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "gym": true,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stay late to use it",
+        "effects": {
+          "strength": 1,
+          "striking": 1,
+          "energy": -5
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep the normal schedule",
+        "effects": {
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_034",
+    "phase3_group": "gyms",
+    "title": "Another gym starts talking",
+    "category": "gym",
+    "description": "A rival room has been telling people your team avoids hard rounds.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "gym": true,
+      "min_wins": 3,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Ignore the noise",
+        "effects": {
+          "discipline": 2,
+          "reputation": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Invite them for rounds",
+        "effects": {
+          "confidence": 2,
+          "energy": -5,
+          "reputation": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_035",
+    "phase3_group": "gyms",
+    "title": "The room needs help with expenses",
+    "category": "gym",
+    "description": "Coach asks the regulars to contribute a little extra toward the gym this month.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "gym": true,
+      "min_money": 300,
+      "cooldown": 24
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Pay your share",
+        "effects": {
+          "money": -120,
+          "relationships.coach": 4,
+          "reputation": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Offer extra work instead",
+        "effects": {
+          "energy": -6,
+          "relationships.coach": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_036",
+    "phase3_group": "gyms",
+    "title": "A brutal room makes you better",
+    "category": "training",
+    "description": "The specialty gym is full of people who punish the part of your game you least trust.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "gym": true,
+      "max_energy": 85,
+      "cooldown": 13
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Seek out the worst matchup",
+        "effects": {
+          "adaptability": 2,
+          "energy": -7,
+          "confidence": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Choose technical partners",
+        "effects": {
+          "fight_iq": 1,
+          "energy": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_037",
+    "phase3_group": "teammates",
+    "title": "{teammate} asks for rounds",
+    "category": "gym",
+    "description": "Your teammate wants a specific look for an upcoming fight and thinks you can give it.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "teammate": true,
+      "cooldown": 12
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Give the hard rounds",
+        "effects": {
+          "relationships.friends": 4,
+          "energy": -6,
+          "fight_iq": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep it technical",
+        "effects": {
+          "relationships.friends": 2,
+          "energy": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_038",
+    "phase3_group": "teammates",
+    "title": "Corner duty for {teammate}",
+    "category": "life",
+    "description": "Your teammate asks you to be part of the corner team this weekend.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "teammate": true,
+      "min_wins": 2,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Work the corner",
+        "effects": {
+          "fight_iq": 1,
+          "relationships.friends": 4,
+          "energy": -4
+        }
+      },
+      {
+        "key": "B",
+        "label": "Protect your own schedule",
+        "effects": {
+          "energy": 3,
+          "relationships.friends": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_039",
+    "phase3_group": "teammates",
+    "title": "A teammate comes back with a win",
+    "category": "life",
+    "description": "{teammate} walks into the gym carrying the kind of energy everybody notices.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "teammate": true,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Celebrate with the team",
+        "effects": {
+          "happiness": 4,
+          "relationships.friends": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ask what worked",
+        "effects": {
+          "fight_iq": 1,
+          "relationships.friends": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_040",
+    "phase3_group": "teammates",
+    "title": "A teammate comes back hurting",
+    "category": "life",
+    "description": "{teammate} had a rough night and is trying not to show how much it bothers them.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "teammate": true,
+      "cooldown": 17
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Check in privately",
+        "effects": {
+          "relationships.friends": 5,
+          "reputation": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Give them space",
+        "effects": {
+          "relationships.friends": 1,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_041",
+    "phase3_group": "teammates",
+    "title": "Sparring gets personal",
+    "category": "gym",
+    "description": "A hard exchange with {teammate} keeps going one beat too long after the coach says break.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "teammate": true,
+      "max_energy": 80,
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Apologize and reset",
+        "effects": {
+          "relationships.friends": 4,
+          "confidence": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Refuse to back down",
+        "effects": {
+          "confidence": 3,
+          "relationships.friends": -4,
+          "health": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_042",
+    "phase3_group": "teammates",
+    "title": "Your teammate steals a trick",
+    "category": "training",
+    "description": "{teammate} starts landing a setup you have been using for months.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "teammate": true,
+      "min_wins": 3,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Show the detail openly",
+        "effects": {
+          "reputation": 2,
+          "relationships.friends": 3,
+          "fight_iq": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Add a counter to your own version",
+        "effects": {
+          "adaptability": 2,
+          "energy": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_043",
+    "phase3_group": "family",
+    "title": "Dinner without fight talk",
+    "category": "life",
+    "description": "Your family asks for one evening where nobody talks about opponents, weight or injuries.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "min_rel_family": 30,
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Give them the evening",
+        "effects": {
+          "relationships.family": 4,
+          "happiness": 4,
+          "energy": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "You are too focused right now",
+        "effects": {
+          "discipline": 2,
+          "relationships.family": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_044",
+    "phase3_group": "family",
+    "title": "They notice how tired you look",
+    "category": "life",
+    "description": "Someone at home asks whether training is supposed to leave you this exhausted all the time.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "max_energy": 45,
+      "min_rel_family": 20,
+      "cooldown": 12
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Take the concern seriously",
+        "effects": {
+          "energy": 5,
+          "relationships.family": 3,
+          "discipline": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Say you are fine",
+        "effects": {
+          "confidence": 2,
+          "relationships.family": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_045",
+    "phase3_group": "family",
+    "title": "A small family expense appears",
+    "category": "money",
+    "description": "Home needs help with something ordinary and badly timed.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "min_rel_family": 35,
+      "min_money": 250,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Help without making it a thing",
+        "effects": {
+          "money": -120,
+          "relationships.family": 5,
+          "happiness": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Explain that camp comes first",
+        "effects": {
+          "relationships.family": -3,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_046",
+    "phase3_group": "family",
+    "title": "They finally understand the schedule",
+    "category": "life",
+    "description": "After months of missed weekends, your family starts planning around camp instead of fighting it.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "min_rel_family": 65,
+      "min_week": 30,
+      "cooldown": 24
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Thank them",
+        "effects": {
+          "relationships.family": 4,
+          "happiness": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Use the quiet support to work",
+        "effects": {
+          "discipline": 2,
+          "energy": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_047",
+    "phase3_group": "family",
+    "title": "Winning does not erase the worry",
+    "category": "life",
+    "description": "The last victory made everyone proud, but the damage on your face is what they keep looking at.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "last": "W",
+      "min_damage": 25,
+      "min_rel_family": 25,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Talk honestly about the risks",
+        "effects": {
+          "relationships.family": 4,
+          "mental_toughness": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Change the subject",
+        "effects": {
+          "happiness": 1,
+          "relationships.family": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_048",
+    "phase3_group": "family",
+    "title": "A losing streak follows you home",
+    "category": "life",
+    "description": "The people around you can tell that the last few results have changed your mood.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "max_streak": -2,
+      "min_rel_family": 20,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Let them support you",
+        "effects": {
+          "happiness": 5,
+          "relationships.family": 4,
+          "confidence": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep the frustration private",
+        "effects": {
+          "mental_toughness": 2,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_049",
+    "phase3_group": "media",
+    "title": "The interview clip travels",
+    "category": "media",
+    "description": "A short answer from your last interview gets reposted far beyond the original audience.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "min_fame": 8,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Post a follow-up",
+        "effects": {
+          "followers": 120,
+          "press_hype": 2,
+          "fame": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Let the clip breathe",
+        "effects": {
+          "reputation": 1,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_050",
+    "phase3_group": "media",
+    "title": "A reporter wants the rivalry angle",
+    "category": "media",
+    "description": "The easiest headline is to make the next opponent personal.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "min_fame": 10,
+      "min_wins": 5,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Give them a sharp quote",
+        "effects": {
+          "press_hype": 4,
+          "fame": 2,
+          "reputation": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep it about the fight",
+        "effects": {
+          "reputation": 2,
+          "press_hype": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_051",
+    "phase3_group": "media",
+    "title": "Hometown feature request",
+    "category": "media",
+    "description": "A local outlet wants to film a day at the gym and show where your career started.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "min_fame": 8,
+      "min_wins": 4,
+      "cooldown": 22
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Let them into the room",
+        "effects": {
+          "followers": 160,
+          "fame": 2,
+          "relationships.coach": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Protect the camp",
+        "effects": {
+          "discipline": 2,
+          "press_hype": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_052",
+    "phase3_group": "media",
+    "title": "A bad clip gets traction",
+    "category": "media",
+    "description": "Ten seconds of a rough sparring exchange is spreading without the rounds around it.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "min_fame": 9,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Laugh it off publicly",
+        "effects": {
+          "charisma": 1,
+          "followers": 80,
+          "confidence": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ignore it completely",
+        "effects": {
+          "discipline": 2,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_053",
+    "phase3_group": "media",
+    "title": "Long-form podcast invitation",
+    "category": "media",
+    "description": "They want an hour on your career, family, money and what comes next.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "min_fame": 12,
+      "cooldown": 26
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Be unusually open",
+        "effects": {
+          "followers": 220,
+          "fame": 2,
+          "happiness": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep the answers professional",
+        "effects": {
+          "reputation": 2,
+          "press_hype": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_054",
+    "phase3_group": "media",
+    "title": "Cameras arrive after a streak",
+    "category": "media",
+    "description": "Three straight wins make ordinary training suddenly look like content.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "min_streak": 3,
+      "min_fame": 8,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Use the moment",
+        "effects": {
+          "fame": 2,
+          "followers": 180,
+          "confidence": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ask them to leave before sparring",
+        "effects": {
+          "relationships.coach": 3,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_055",
+    "phase3_group": "career",
+    "title": "The first pro win settles something",
+    "category": "career",
+    "description": "The result does not make you established, but it proves you belong in professional rounds.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "last": "W",
+      "min_pro_wins": 1,
+      "max_wins": 8,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Mark the moment",
+        "effects": {
+          "confidence": 4,
+          "happiness": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Treat it like one step",
+        "effects": {
+          "discipline": 2,
+          "fight_iq": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_056",
+    "phase3_group": "career",
+    "title": "Your name enters the rankings talk",
+    "category": "career",
+    "description": "People around the promotion start using contender language instead of prospect language.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "org": true,
+      "min_pro_wins": 5,
+      "min_streak": 2,
+      "cooldown": 22
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Ask what the next step is",
+        "effects": {
+          "reputation": 2,
+          "confidence": 2,
+          "press_hype": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Say nothing and keep winning",
+        "effects": {
+          "discipline": 2,
+          "fight_iq": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_057",
+    "phase3_group": "career",
+    "title": "The manager wants a bigger conversation",
+    "category": "career",
+    "description": "The next contract discussion is no longer just about getting another fight.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "manager": true,
+      "min_pro_wins": 4,
+      "min_fame": 8,
+      "cooldown": 24
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Push for better terms",
+        "effects": {
+          "confidence": 2,
+          "reputation": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Prioritize the right opponents",
+        "effects": {
+          "fight_iq": 2,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_058",
+    "phase3_group": "career",
+    "title": "A promotion scout stays after the card",
+    "category": "career",
+    "description": "The scout does not promise anything, but asks your coach about availability.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "min_pro_wins": 3,
+      "min_streak": 2,
+      "cooldown": 22
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Introduce yourself",
+        "effects": {
+          "reputation": 2,
+          "fame": 1,
+          "confidence": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Let coach handle it",
+        "effects": {
+          "relationships.coach": 3,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_059",
+    "phase3_group": "career",
+    "title": "The contender path gets narrow",
+    "category": "career",
+    "description": "At this level every opponent has something dangerous enough to derail a year of work.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "pro": true,
+      "org": true,
+      "min_pro_wins": 8,
+      "min_fame": 12,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Study the division deeply",
+        "effects": {
+          "fight_iq": 2,
+          "opponent_read": 1,
+          "energy": -3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Trust the style that got you here",
+        "effects": {
+          "confidence": 3,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v123_060",
+    "phase3_group": "career",
+    "title": "You are becoming the veteran",
+    "category": "career",
+    "description": "Younger fighters in the room ask questions they used to ask someone else.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "min_wins": 10,
+      "min_age": 24,
+      "cooldown": 26
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Take time to teach",
+        "effects": {
+          "reputation": 3,
+          "relationships.friends": 3,
+          "fight_iq": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Protect your own training time",
+        "effects": {
+          "discipline": 2,
+          "energy": 2
+        }
+      }
+    ]
+  }
+]

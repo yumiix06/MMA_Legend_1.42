@@ -1,0 +1,17 @@
+[
+  {"name":"Brawler","description":"Swings for power, lacks technical defense.","modifiers":{"striking":1.2,"ko_power":1.3,"speed":0.8,"durability":0.9,"fight_iq":0.8}},
+  {"name":"Counter-Striker","description":"Waits for mistakes, precise and fast.","modifiers":{"striking":1.1,"speed":1.2,"fight_iq":1.2,"ko_power":0.9,"durability":0.9}},
+  {"name":"Submission Artist","description":"Elite on the ground, weak on the feet.","modifiers":{"submissions":1.4,"ground_control":1.3,"grappling":1.1,"striking":0.8,"takedown_def":0.8}},
+  {"name":"Wrestler","description":"Dominant takedowns and control, average striking.","modifiers":{"grappling":1.3,"takedown_def":1.2,"strength":1.2,"striking":0.9,"submissions":0.8}},
+  {"name":"Muay Thai Specialist","description":"Devastating kicks, knees, and elbows.","modifiers":{"kicks":1.4,"striking":1.1,"durability":1.1,"speed":1.0,"grappling":0.8}},
+  {"name":"Kickboxer","description":"Fast hands and feet, good cardio.","modifiers":{"striking":1.2,"kicks":1.2,"speed":1.2,"cardio":1.1,"grappling":0.7}},
+  {"name":"Balanced","description":"No major weaknesses, no major strengths.","modifiers":{"all":1.0}},
+  {"name":"Boxer","description":"Elite hands, limited kicks and grappling.","modifiers":{"striking":1.3,"speed":1.2,"fight_iq":1.1,"kicks":0.7,"grappling":0.7}},
+  {"name":"Combat Sambo Specialist","description":"Combines grappling with powerful throws.","modifiers":{"grappling":1.2,"submissions":1.1,"strength":1.2,"kicks":0.9,"striking":0.9}},
+  {"name":"Pressure Fighter","description":"Never stops moving forward, endless cardio.","modifiers":{"cardio":1.4,"striking":1.1,"durability":1.2,"speed":0.9,"ko_power":0.9}},
+  {"name":"Submission Defender","description":"Nearly impossible to submit, but lacks offense.","modifiers":{"takedown_def":1.3,"ground_control":1.2,"submissions":1.3,"grappling":1.1,"striking":0.8,"ko_power":0.8}},
+  {"name":"Ring General","description":"Controls distance and octagon, high Fight IQ.","modifiers":{"fight_iq":1.4,"durability":1.2,"striking":1.0,"speed":1.0,"ko_power":0.9}},
+  {"name":"Clinch Specialist","description":"Dominates in the clinch, average elsewhere.","modifiers":{"grappling":1.3,"striking":1.0,"durability":1.1,"kicks":0.9,"speed":0.9}},
+  {"name":"Berserker","description":"All-out offense, no defense.","modifiers":{"striking":1.4,"ko_power":1.4,"durability":0.7,"speed":0.9,"fight_iq":0.7}},
+  {"name":"Tactician","description":"Out-thinks opponents, physically average.","modifiers":{"fight_iq":1.5,"adaptability":1.3,"striking":0.9,"speed":0.9,"ko_power":0.8}}
+]

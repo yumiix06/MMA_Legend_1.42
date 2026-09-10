@@ -1,0 +1,494 @@
+{
+  "chains": [
+    {
+      "id": "first_real_test",
+      "name": "First Real Test",
+      "priority": 10,
+      "start_when": {
+        "min_wins": 2,
+        "max_wins": 5,
+        "not_pro": true,
+        "chance": 0.35
+      },
+      "steps": [
+        {
+          "id": 0,
+          "title": "Coach's Challenge",
+          "description": "Your coach says the next fight will show if you're a real prospect or just another gym fighter.",
+          "choices": [
+            {
+              "key": "A",
+              "label": "A) Accept the pressure",
+              "effects": {
+                "confidence": 5,
+                "press_hype": 5
+              },
+              "next": 1
+            },
+            {
+              "key": "B",
+              "label": "B) Stay quiet and train",
+              "effects": {
+                "discipline": 5
+              },
+              "next": 1
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "The Test Week",
+          "description": "Sparring is harder. Everyone is watching. Win your next bout and the gym will treat you differently.",
+          "effects": {
+            "energy": -5
+          },
+          "flag_on_end": "passed_first_test_pending",
+          "next": null,
+          "tag_on_complete": "prospect"
+        }
+      ]
+    },
+    {
+      "id": "callout",
+      "name": "Callout",
+      "priority": 8,
+      "start_when": {
+        "min_wins": 3,
+        "chance": 0.22
+      },
+      "steps": [
+        {
+          "id": 0,
+          "title": "Someone Wants Smoke",
+          "description": "A fighter from another gym calls you out on social media. The comments are piling up.",
+          "choices": [
+            {
+              "key": "A",
+              "label": "A) Fire back publicly",
+              "effects": {
+                "press_hype": 10,
+                "fame": 2,
+                "rival_heat": 15
+              },
+              "next": 1,
+              "set_rival_from": "callout"
+            },
+            {
+              "key": "B",
+              "label": "B) Ignore it",
+              "effects": {
+                "discipline": 3,
+                "reputation": 2
+              },
+              "next": null
+            },
+            {
+              "key": "C",
+              "label": "C) Tell them to book the fight",
+              "effects": {
+                "confidence": 5,
+                "press_hype": 8,
+                "rival_heat": 20
+              },
+              "next": 1,
+              "set_rival_from": "callout"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Heat Building",
+          "description": "The callout is still circulating. Your next fight will feel personal whether or not it's against them.",
+          "effects": {
+            "press_hype": 3
+          },
+          "next": null
+        }
+      ]
+    },
+    {
+      "id": "injury_fork",
+      "name": "Injury Scare",
+      "priority": 12,
+      "start_when": {
+        "min_health_below": 55,
+        "chance": 0.4
+      },
+      "steps": [
+        {
+          "id": 0,
+          "title": "Something's Not Right",
+          "description": "A nagging issue flares up in training. Pushing through could cost you months.",
+          "choices": [
+            {
+              "key": "A",
+              "label": "A) Rest and treat it",
+              "effects": {
+                "health": 12,
+                "energy": 8,
+                "discipline": 3
+              },
+              "next": null
+            },
+            {
+              "key": "B",
+              "label": "B) Fight through it",
+              "effects": {
+                "health": -10,
+                "confidence": 5,
+                "mental_toughness": 5,
+                "durability": -2
+              },
+              "next": 1
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Paying for It",
+          "description": "The issue hasn't gone away. You're tougher for it — or stubborn.",
+          "effects": {
+            "health": -5,
+            "energy": -8
+          },
+          "next": null
+        }
+      ]
+    },
+    {
+      "id": "sponsor_interest",
+      "name": "Sponsor Interest",
+      "priority": 6,
+      "start_when": {
+        "min_fame": 8,
+        "chance": 0.2
+      },
+      "steps": [
+        {
+          "id": 0,
+          "title": "Brand Outreach",
+          "description": "A small brand wants you to wear their gear for a modest fee — if you post about it.",
+          "choices": [
+            {
+              "key": "A",
+              "label": "A) Take the deal",
+              "effects": {
+                "money": 150,
+                "fame": 2
+              },
+              "next": 1
+            },
+            {
+              "key": "B",
+              "label": "B) Hold out for better",
+              "effects": {
+                "reputation": 2
+              },
+              "next": null
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Obligation",
+          "description": "They remind you about the posts. Skipping them risks the relationship.",
+          "choices": [
+            {
+              "key": "A",
+              "label": "A) Post as agreed",
+              "effects": {
+                "followers": 2,
+                "energy": -3
+              },
+              "next": null
+            },
+            {
+              "key": "B",
+              "label": "B) Ghost them",
+              "effects": {
+                "reputation": -5,
+                "money": -50
+              },
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turn_pro_arc",
+      "name": "Crossing Over",
+      "priority": 15,
+      "start_when": {
+        "manual_only": true
+      },
+      "steps": [
+        {
+          "id": 0,
+          "title": "The Decision",
+          "description": "Amateur chapter closed. Pros don't care about your local titles — only the next fight.",
+          "choices": [
+            {
+              "key": "A",
+              "label": "A) Embrace the grind",
+              "effects": {
+                "discipline": 5,
+                "confidence": 5
+              },
+              "next": 1,
+              "tag": "pro"
+            },
+            {
+              "key": "B",
+              "label": "B) Feel the weight of it",
+              "effects": {
+                "mental_toughness": 5,
+                "happiness": -3
+              },
+              "next": 1,
+              "tag": "pro"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "First Pro Camp Mindset",
+          "description": "Everything costs more. Everyone hits harder. Your coach says identity is earned in the cage now.",
+          "effects": {
+            "press_hype": 5,
+            "fame": 3
+          },
+          "next": null,
+          "tag_on_complete": "pro"
+        }
+      ]
+    },
+    {
+      "id": "nt_pressure",
+      "name": "National Team Eyes",
+      "priority": 9,
+      "start_when": {
+        "national_team": true,
+        "chance": 0.25
+      },
+      "steps": [
+        {
+          "id": 0,
+          "title": "NT Standard",
+          "description": "National team staff expect sharper camps and cleaner weight. Represent the flag.",
+          "choices": [
+            {
+              "key": "A",
+              "label": "A) Raise your standards",
+              "effects": {
+                "discipline": 6,
+                "nutrition": 5
+              },
+              "next": null
+            },
+            {
+              "key": "B",
+              "label": "B) Same as always",
+              "effects": {
+                "happiness": 3
+              },
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rematch_noise",
+      "name": "Rematch Talk",
+      "priority": 11,
+      "start_when": {
+        "min_wins": 4,
+        "chance": 0.18
+      },
+      "steps": [
+        {
+          "id": 0,
+          "title": "They Want It Back",
+          "description": "Someone you already beat (or who beat you) is lobbying for a rematch. Media loves a sequel.",
+          "choices": [
+            {
+              "key": "A",
+              "label": "A) Run it back",
+              "effects": {
+                "press_hype": 8,
+                "rival_heat": 20
+              },
+              "next": 1,
+              "set_rival_from": "callout"
+            },
+            {
+              "key": "B",
+              "label": "B) Move on",
+              "effects": {
+                "discipline": 4
+              },
+              "next": null
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Sequel Week",
+          "description": "The rematch narrative is the only thing gym talk covers.",
+          "effects": {
+            "press_hype": 4,
+            "confidence": 3
+          },
+          "next": null
+        }
+      ]
+    },
+    {
+      "id": "ufc_notice",
+      "name": "UFC Notice",
+      "priority": 13,
+      "start_when": {
+        "min_wins": 6,
+        "chance": 0.12
+      },
+      "steps": [
+        {
+          "id": 0,
+          "title": "Scout in the Building",
+          "description": "A matchmaker is asking around about you. One clean win could open a real door.",
+          "choices": [
+            {
+              "key": "A",
+              "label": "A) Stay sharp and available",
+              "effects": {
+                "discipline": 5,
+                "fame": 3
+              },
+              "next": null,
+              "tag": "prospect"
+            },
+            {
+              "key": "B",
+              "label": "B) Demand a ranked name",
+              "effects": {
+                "confidence": 5,
+                "press_hype": 6
+              },
+              "next": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "title_buildup",
+      "name": "Title Buildup",
+      "priority": 14,
+      "start_when": {
+        "min_promotion_tier": 4,
+        "chance": 0.3,
+        "requires_pro": true,
+        "min_pro_wins": 3,
+        "max_org_rank": 4
+      },
+      "steps": [
+        {
+          "id": 0,
+          "title": "The Belt Talk",
+          "description": "Media keeps asking if you're next in line for a title shot. Your manager wants you to lean into it.",
+          "choices": [
+            {
+              "key": "A",
+              "label": "A) Call for the title shot publicly",
+              "effects": {
+                "press_hype": 8,
+                "fame": 4,
+                "confidence": 3
+              },
+              "next": 1
+            },
+            {
+              "key": "B",
+              "label": "B) Let your record do the talking",
+              "effects": {
+                "reputation": 5,
+                "discipline": 3
+              },
+              "next": 1
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Camp Pressure",
+          "description": "Whether or not the shot is signed yet, the gym treats every session like a title camp now.",
+          "effects": {
+            "energy": -5,
+            "mental_toughness": 3
+          },
+          "tag_on_complete": "title_contender",
+          "next": null
+        }
+      ]
+    },
+    {
+      "id": "comeback_arc",
+      "name": "The Comeback",
+      "priority": 13,
+      "start_when": {
+        "min_losses": 1,
+        "requires_injury": true,
+        "chance": 0.35
+      },
+      "steps": [
+        {
+          "id": 0,
+          "title": "After the Loss",
+          "description": "Banged up and coming off a loss, it's easy to spiral. How you handle this week says something about who you are.",
+          "choices": [
+            {
+              "key": "A",
+              "label": "A) Go back to basics, rebuild slow",
+              "effects": {
+                "discipline": 5,
+                "mental_toughness": 4,
+                "confidence": -2
+              },
+              "next": 1
+            },
+            {
+              "key": "B",
+              "label": "B) Tell everyone you're coming back angrier",
+              "effects": {
+                "press_hype": 5,
+                "confidence": 5,
+                "mental_toughness": -2
+              },
+              "next": 1
+            },
+            {
+              "key": "C",
+              "label": "C) Take space, lean on people around you",
+              "effects": {
+                "happiness": 6,
+                "mental_toughness": 2
+              },
+              "next": 1
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "title": "Back in the Gym",
+          "description": "First hard session back. The coach is watching how you respond to adversity more than how hard you hit.",
+          "effects": {
+            "energy": -4
+          },
+          "tag_on_complete": "comeback_story",
+          "next": null
+        }
+      ]
+    }
+  ]
+}

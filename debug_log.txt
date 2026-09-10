@@ -1,0 +1,20 @@
+[16:07:24] ERROR in CRASH in game_loop | week=3 name=Umur Panteleev record=[0, 0, 0] energy=49 health=100: module 'mma_legend.career' has no attribute 'rest_week'
+Traceback (most recent call last):
+  File "/private/var/mobile/Containers/Shared/AppGroup/64048387-BD6F-4474-8B32-4DC4F68095B1/File Provider Storage/games/MMA_Legend_1.42.0/mma_legend/app.py", line 912, in main
+    game_loop(console, fighter, pool)
+  File "/private/var/mobile/Containers/Shared/AppGroup/64048387-BD6F-4474-8B32-4DC4F68095B1/File Provider Storage/games/MMA_Legend_1.42.0/mma_legend/app.py", line 682, in game_loop
+    if _dispatch_action(console, fighter, pool, choice):
+  File "/private/var/mobile/Containers/Shared/AppGroup/64048387-BD6F-4474-8B32-4DC4F68095B1/File Provider Storage/games/MMA_Legend_1.42.0/mma_legend/app.py", line 766, in _dispatch_action
+    career.rest_week(console, fighter)
+AttributeError: module 'mma_legend.career' has no attribute 'rest_week'
+
+[16:08:16] ERROR in CRASH in game_loop (loaded career) | week=6 name=Umur Panteleev record=[0, 0, 0] energy=28 health=100: module 'mma_legend.career' has no attribute 'rest_week'
+Traceback (most recent call last):
+  File "/private/var/mobile/Containers/Shared/AppGroup/64048387-BD6F-4474-8B32-4DC4F68095B1/File Provider Storage/games/MMA_Legend_1.42.0/mma_legend/app.py", line 929, in main
+    game_loop(console, fighter, pool)
+  File "/private/var/mobile/Containers/Shared/AppGroup/64048387-BD6F-4474-8B32-4DC4F68095B1/File Provider Storage/games/MMA_Legend_1.42.0/mma_legend/app.py", line 682, in game_loop
+    if _dispatch_action(console, fighter, pool, choice):
+  File "/private/var/mobile/Containers/Shared/AppGroup/64048387-BD6F-4474-8B32-4DC4F68095B1/File Provider Storage/games/MMA_Legend_1.42.0/mma_legend/app.py", line 766, in _dispatch_action
+    career.rest_week(console, fighter)
+AttributeError: module 'mma_legend.career' has no attribute 'rest_week'
+

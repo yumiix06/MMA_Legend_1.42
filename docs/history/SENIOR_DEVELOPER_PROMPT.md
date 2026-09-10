@@ -1,0 +1,11 @@
+You are the senior/lead developer for my text-based Python MMA career simulator. I am giving you MMA Legend v1.25.0, a junior-developer handoff candidate built from the stable v1.24.0 release after a real human playtest.
+
+Before changing anything, read these files in this order: SENIOR_DEVELOPER_HANDOFF.md, PLAYTEST_AUDIT_1.24.md, the top v1.25.0 section of VERSION_HISTORY.md, SYSTEM_MAP.md, ARCHITECTURE.md, and CHANGELOG.md. Treat the included source as a candidate patch, not an automatically trusted release. The old playtest save is diagnostic only and is intentionally not included; do not optimize for backward save compatibility.
+
+Your first job is validation and code review. Run the complete regression suite, especially `python -m mma_legend.tests`, `python -m mma_legend.tests_194`, `python -m mma_legend.tests_125`, and `python -m mma_legend.diagnostics`. The junior environment could not finish the full long tests_194 engine-fairness run, although reduced clone fairness was healthy, so you must complete it.
+
+Audit the 1.25 changes deeply: UFC/DWCS contract identity and exclusivity; UFC-specific ranking/title eligibility; stale previous-promotion belts; weight/nutrition campaign tracking and performance/balanced/weight-bully strategies; fight-week cut/rehydration tradeoffs; weekly economy/debt transaction truth; event frequency/effect balance and 36 new contextual events; Enter-to-continue UI pacing on phone; automatic media direction; and supplement-sponsor free-product QoL. Look for interactions with every existing system, not just local unit tests.
+
+Preserve the architectural intent unless evidence says it is wrong: one source of truth for promotion identity, one weight-camp pipeline, one recurring money ledger, and no hidden flat combat buff for being a weight bully. You may change numerical thresholds if simulations/playtests justify it. Do not reintroduce generic `org_rank` into UFC title logic.
+
+After validation, fix any regressions or design problems you find, run large combat/career/event/economy simulations, update VERSION_HISTORY.md with exactly what you changed and why, and package the next clean phone-ready ZIP. Do not include saves/debug logs/cache files. Tell me clearly whether you approve 1.25 as the new stable baseline or whether you changed it before approval.

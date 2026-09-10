@@ -1,0 +1,330 @@
+{
+  "coaches": [
+    {
+      "id": 1,
+      "name": "Striking Coach",
+      "cost": 200,
+      "boost": "striking",
+      "boost_percent": 50
+    },
+    {
+      "id": 2,
+      "name": "Grappling Coach",
+      "cost": 200,
+      "boost": "grappling",
+      "boost_percent": 50
+    },
+    {
+      "id": 3,
+      "name": "S&C Coach",
+      "cost": 150,
+      "boost": "cardio",
+      "boost_percent": 40
+    },
+    {
+      "id": 4,
+      "name": "Wrestling Coach",
+      "cost": 250,
+      "boost": "takedown_def",
+      "boost_percent": 60
+    },
+    {
+      "id": 5,
+      "name": "BJJ Specialist",
+      "cost": 300,
+      "boost": "submissions",
+      "boost_percent": 70
+    },
+    {
+      "id": 6,
+      "name": "Boxing Coach",
+      "cost": 250,
+      "boost": "striking",
+      "boost_percent": 60
+    },
+    {
+      "id": 7,
+      "name": "Kickboxing Coach",
+      "cost": 250,
+      "boost": "kicks",
+      "boost_percent": 60
+    },
+    {
+      "id": 8,
+      "name": "Muay Thai Coach",
+      "cost": 300,
+      "boost": "kicks",
+      "boost_percent": 70
+    },
+    {
+      "id": 9,
+      "name": "Speed Coach",
+      "cost": 200,
+      "boost": "speed",
+      "boost_percent": 50
+    },
+    {
+      "id": 10,
+      "name": "Strength Coach",
+      "cost": 200,
+      "boost": "strength",
+      "boost_percent": 50
+    },
+    {
+      "id": 11,
+      "name": "Fight IQ Coach",
+      "cost": 250,
+      "boost": "fight_iq",
+      "boost_percent": 60
+    },
+    {
+      "id": 12,
+      "name": "Nutritionist",
+      "cost": 150,
+      "boost": "health",
+      "boost_percent": 30
+    }
+  ],
+  "promotions": [
+    {
+      "name": "Local Amateur",
+      "tier": 0,
+      "purse_multiplier": 0.5,
+      "fame_bonus": 1,
+      "required_record": 0,
+      "description": "Small local events"
+    },
+    {
+      "name": "Regional Pro",
+      "tier": 1,
+      "purse_multiplier": 1.0,
+      "fame_bonus": 3,
+      "required_record": 3,
+      "description": "Growing regional promotions"
+    },
+    {
+      "name": "National",
+      "tier": 2,
+      "purse_multiplier": 1.5,
+      "fame_bonus": 5,
+      "required_record": 6,
+      "description": "Top national level"
+    },
+    {
+      "name": "International",
+      "tier": 3,
+      "purse_multiplier": 2.0,
+      "fame_bonus": 8,
+      "required_record": 10,
+      "description": "International events"
+    },
+    {
+      "name": "Global Elite",
+      "tier": 4,
+      "purse_multiplier": 3.0,
+      "fame_bonus": 12,
+      "required_record": 15,
+      "description": "UFC, Bellator, ONE"
+    }
+  ],
+  "bjj_gyms": [
+    {
+      "id": 1,
+      "name": "Riverside Gi",
+      "coach": "Marco Varela",
+      "city": "your city",
+      "weekly_dues": 35,
+      "belt_track": true,
+      "technique_pool": [
+        "Knee Slice Pass",
+        "Rear Naked Choke",
+        "Arm Triangle",
+        "Butterfly Sweep",
+        "Scissor Sweep"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Northside No-Gi",
+      "coach": "Helen Kade",
+      "city": "your city",
+      "weekly_dues": 40,
+      "belt_track": true,
+      "technique_pool": [
+        "Rear Naked Choke",
+        "Body Lock to Back",
+        "Knee Slice Pass",
+        "Guillotine",
+        "Arm Drag to Back"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Eastgate Room",
+      "coach": "Daisuke Mori",
+      "city": "your city",
+      "weekly_dues": 45,
+      "belt_track": true,
+      "technique_pool": [
+        "Kimura",
+        "Triangle Choke",
+        "Wristlock",
+        "Armbar",
+        "Toreando Pass"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Southport Room",
+      "coach": "Priya Nair",
+      "city": "your city",
+      "weekly_dues": 38,
+      "belt_track": true,
+      "technique_pool": [
+        "Triangle Choke",
+        "Armbar",
+        "Knee Slice Pass",
+        "Omoplata",
+        "Tripod Sweep"
+      ]
+    }
+  ],
+  "kb_gyms": [
+    {
+      "id": 1,
+      "name": "Harbour Kickboxing",
+      "coach": "Jonas Feld",
+      "city": "your city",
+      "weekly_dues": 30,
+      "belt_track": false,
+      "technique_pool": [
+        "Leg Kick",
+        "Switch Kick",
+        "Teep to Body",
+        "Body Kick",
+        "Question Mark Kick"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Westwall Muay",
+      "coach": "Anton Vuk",
+      "city": "your city",
+      "weekly_dues": 35,
+      "belt_track": false,
+      "technique_pool": [
+        "Teep",
+        "Knee",
+        "Long Guard",
+        "Roundhouse Kick",
+        "Muay Thai Clinch"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dutch Corner",
+      "coach": "Mara de Vries",
+      "city": "your city",
+      "weekly_dues": 38,
+      "belt_track": false,
+      "technique_pool": [
+        "Leg Kick",
+        "Body Kick",
+        "Switch Stance",
+        "Superman Punch",
+        "Low Kick Accumulation"
+      ]
+    }
+  ],
+  "judo_gyms": [
+    {
+      "id": 1,
+      "name": "Community Judo Dojo",
+      "coach": "Sensei Mori",
+      "city": "your city",
+      "weekly_dues": 30,
+      "belt_track": true,
+      "technique_pool": [
+        "Uchi Mata",
+        "Seoi Nage",
+        "Kesa Gatame",
+        "Sasae Tsurikomi Ashi"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Central Kodokan Club",
+      "coach": "Petar Iliev",
+      "city": "your city",
+      "weekly_dues": 34,
+      "belt_track": true,
+      "technique_pool": [
+        "Tai Otoshi",
+        "Harai Goshi",
+        "Juji Gatame",
+        "Seoi Nage"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Railway Judo Academy",
+      "coach": "Mila Stoyanova",
+      "city": "your city",
+      "weekly_dues": 32,
+      "belt_track": true,
+      "technique_pool": [
+        "Uchi Mata",
+        "Sasae Tsurikomi Ashi",
+        "Kesa Gatame",
+        "Tai Otoshi"
+      ]
+    }
+  ],
+  "tkd_gyms": [
+    {
+      "id": 1,
+      "name": "Olympic Taekwondo Club",
+      "coach": "Master Park",
+      "city": "your city",
+      "weekly_dues": 32,
+      "belt_track": true,
+      "technique_pool": [
+        "Side Kick",
+        "Roundhouse to Body",
+        "Axe Kick",
+        "Spinning Back Kick",
+        "Spinning Hook Kick"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Blue Dragon Dojang",
+      "coach": "Elena Kim",
+      "city": "your city",
+      "weekly_dues": 36,
+      "belt_track": true,
+      "technique_pool": [
+        "Cut Kick",
+        "Roundhouse to Head",
+        "Back Kick",
+        "Tornado Kick",
+        "Spinning Hook Kick"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Phoenix Kyorugi Team",
+      "coach": "Jae-min Lee",
+      "city": "your city",
+      "weekly_dues": 40,
+      "belt_track": true,
+      "technique_pool": [
+        "Side Kick",
+        "Roundhouse to Body",
+        "Spinning Back Kick",
+        "Roundhouse to Head",
+        "Tornado Kick"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "id": "v7_exam",
+    "title": "Exam Morning",
+    "description": "School wants a chair. Gym wants pads.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "require": {
+      "max_wins": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Sit the exam",
+        "effects": {
+          "energy": -6
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Gym",
+        "effects": {
+          "discipline": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v7_physio",
+    "title": "Physio Slot",
+    "description": "They can take the swelling down.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Pay $45",
+        "effects": {
+          "money": -45,
+          "health": 10
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Ice at home",
+        "effects": {
+          "health": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v7_dues",
+    "title": "Gym Dues",
+    "description": "Coach does not do IOUs forever.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Pay $20",
+        "effects": {
+          "money": -20,
+          "coach": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Short them",
+        "effects": {
+          "coach": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v7_walk",
+    "title": "Walk-around Scale",
+    "description": "The kitchen scale is not kind.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Tighten food",
+        "effects": {
+          "nutrition": 6,
+          "happiness": -3
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Ignore it",
+        "effects": {
+          "nutrition": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v7_mgr",
+    "title": "Manager Handshake",
+    "description": "A guy with a polo wants 15 percent.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 4
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Hear him out",
+        "effects": {
+          "fame": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Not now",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "v7_rehab",
+    "title": "Rehab Day",
+    "description": "No hero sparring.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Band work",
+        "effects": {
+          "health": 6,
+          "energy": -4
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Hard pads anyway",
+        "effects": {
+          "health": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "v7_showcase_mail",
+    "title": "Contender Night Email",
+    "description": "Not the UFC. A look.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "min_wins": 4
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Stay ready",
+        "effects": {
+          "confidence": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Ask for money first",
+        "effects": {
+          "press_hype": 2
+        }
+      }
+    ]
+  }
+]

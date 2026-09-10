@@ -1,0 +1,429 @@
+{
+  "sponsors": [
+    {
+      "id": 1,
+      "name": "Local Gym",
+      "min_fame": 0,
+      "money": 100,
+      "obligation": "post logo",
+      "fame_req": 0
+    },
+    {
+      "id": 2,
+      "name": "Mom & Pop Shop",
+      "min_fame": 0,
+      "money": 50,
+      "obligation": "wear their shirt",
+      "fame_req": 0
+    },
+    {
+      "id": 3,
+      "name": "Protein Co.",
+      "min_fame": 10,
+      "money": 250,
+      "obligation": "use product",
+      "fame_req": 10,
+      "benefits": ["legal_supplements"]
+    },
+    {
+      "id": 4,
+      "name": "Monster Energy",
+      "min_fame": 20,
+      "money": 500,
+      "obligation": "wear logo",
+      "fame_req": 20
+    },
+    {
+      "id": 5,
+      "name": "Reebok",
+      "min_fame": 25,
+      "money": 600,
+      "obligation": "wear Reebok gear",
+      "fame_req": 25
+    },
+    {
+      "id": 6,
+      "name": "Venum",
+      "min_fame": 30,
+      "money": 700,
+      "obligation": "wear Venum apparel",
+      "fame_req": 30
+    },
+    {
+      "id": 7,
+      "name": "Hayabusa",
+      "min_fame": 30,
+      "money": 650,
+      "obligation": "use Hayabusa gloves",
+      "fame_req": 30
+    },
+    {
+      "id": 8,
+      "name": "Gatorade",
+      "min_fame": 35,
+      "money": 800,
+      "obligation": "promote drink",
+      "fame_req": 35
+    },
+    {
+      "id": 9,
+      "name": "Nike",
+      "min_fame": 40,
+      "money": 1000,
+      "obligation": "wear Nike shoes",
+      "fame_req": 40
+    },
+    {
+      "id": 10,
+      "name": "Adidas",
+      "min_fame": 40,
+      "money": 950,
+      "obligation": "wear Adidas apparel",
+      "fame_req": 40
+    },
+    {
+      "id": 11,
+      "name": "Under Armour",
+      "min_fame": 45,
+      "money": 900,
+      "obligation": "UA gear",
+      "fame_req": 45
+    },
+    {
+      "id": 12,
+      "name": "MuscleTech",
+      "min_fame": 45,
+      "money": 850,
+      "obligation": "use supplements",
+      "fame_req": 45,
+      "benefits": ["legal_supplements"]
+    },
+    {
+      "id": 13,
+      "name": "Optimum Nutrition",
+      "min_fame": 50,
+      "money": 1000,
+      "obligation": "protein ads",
+      "fame_req": 50,
+      "benefits": ["legal_supplements"]
+    },
+    {
+      "id": 14,
+      "name": "UFC Official Sponsor",
+      "min_fame": 55,
+      "money": 1200,
+      "obligation": "UFC brand partner",
+      "fame_req": 55
+    },
+    {
+      "id": 15,
+      "name": "Puma",
+      "min_fame": 55,
+      "money": 1100,
+      "obligation": "Puma athlete",
+      "fame_req": 55
+    },
+    {
+      "id": 16,
+      "name": "Modelo",
+      "min_fame": 65,
+      "money": 1500,
+      "obligation": "beer commercials",
+      "fame_req": 65
+    },
+    {
+      "id": 17,
+      "name": "Amazon",
+      "min_fame": 70,
+      "money": 2000,
+      "obligation": "e-commerce promos",
+      "fame_req": 70
+    },
+    {
+      "id": 18,
+      "name": "Meta / Facebook",
+      "min_fame": 70,
+      "money": 1900,
+      "obligation": "social media content",
+      "fame_req": 70
+    },
+    {
+      "id": 19,
+      "name": "Instagram",
+      "min_fame": 75,
+      "money": 2200,
+      "obligation": "Instagram influencer",
+      "fame_req": 75
+    },
+    {
+      "id": 20,
+      "name": "YouTube",
+      "min_fame": 80,
+      "money": 2500,
+      "obligation": "YouTube channel",
+      "fame_req": 80
+    },
+    {
+      "id": 21,
+      "name": "Pepsi",
+      "min_fame": 80,
+      "money": 2800,
+      "obligation": "commercials",
+      "fame_req": 80
+    },
+    {
+      "id": 22,
+      "name": "Coca-Cola",
+      "min_fame": 85,
+      "money": 3000,
+      "obligation": "global ads",
+      "fame_req": 85
+    },
+    {
+      "id": 23,
+      "name": "Mercedes-Benz",
+      "min_fame": 85,
+      "money": 3500,
+      "obligation": "car commercials",
+      "fame_req": 85
+    },
+    {
+      "id": 24,
+      "name": "BMW",
+      "min_fame": 90,
+      "money": 4000,
+      "obligation": "lifestyle brand",
+      "fame_req": 90
+    },
+    {
+      "id": 25,
+      "name": "Lamborghini",
+      "min_fame": 95,
+      "money": 5000,
+      "obligation": "exclusive deal",
+      "fame_req": 95
+    },
+    {
+      "id": 26,
+      "name": "Rolex",
+      "min_fame": 95,
+      "money": 6000,
+      "obligation": "watch ambassador",
+      "fame_req": 95
+    },
+    {
+      "id": 27,
+      "name": "Corn Nuts",
+      "min_fame": 20,
+      "money": 400,
+      "obligation": "snack promos",
+      "fame_req": 20
+    },
+    {
+      "id": 28,
+      "name": "American Fighter",
+      "min_fame": 25,
+      "money": 500,
+      "obligation": "wear AF clothing",
+      "fame_req": 25
+    },
+    {
+      "id": 29,
+      "name": "Dethrone Royalty",
+      "min_fame": 25,
+      "money": 550,
+      "obligation": "wear Dethrone",
+      "fame_req": 25
+    },
+    {
+      "id": 30,
+      "name": "Onnit",
+      "min_fame": 50,
+      "money": 1000,
+      "obligation": "Onnit supplements",
+      "fame_req": 50,
+      "benefits": ["legal_supplements"]
+    },
+    {
+      "id": 31,
+      "name": "Rival Boxing",
+      "min_fame": 25,
+      "money": 500,
+      "obligation": "Rival gloves",
+      "fame_req": 25
+    },
+    {
+      "id": 32,
+      "name": "Everlast",
+      "min_fame": 35,
+      "money": 750,
+      "obligation": "Everlast gear",
+      "fame_req": 35
+    },
+    {
+      "id": 33,
+      "name": "Fairtex",
+      "min_fame": 30,
+      "money": 700,
+      "obligation": "Fairtex Muay Thai gear",
+      "fame_req": 30
+    },
+    {
+      "id": 34,
+      "name": "Gymshark",
+      "min_fame": 45,
+      "money": 900,
+      "obligation": "Gymshark apparel",
+      "fame_req": 45
+    },
+    {
+      "id": 35,
+      "name": "Bodybuilding.com",
+      "min_fame": 45,
+      "money": 900,
+      "obligation": "website promos",
+      "fame_req": 45,
+      "benefits": ["legal_supplements"]
+    },
+    {
+      "id": 36,
+      "name": "G FUEL",
+      "min_fame": 30,
+      "money": 600,
+      "obligation": "energy drink promos",
+      "fame_req": 30
+    },
+    {
+      "id": 37,
+      "name": "C4",
+      "min_fame": 30,
+      "money": 600,
+      "obligation": "pre-workout ads",
+      "fame_req": 30,
+      "benefits": ["legal_supplements"]
+    },
+    {
+      "id": 38,
+      "name": "Quest Nutrition",
+      "min_fame": 40,
+      "money": 800,
+      "obligation": "protein bar ads",
+      "fame_req": 40,
+      "benefits": ["legal_supplements"]
+    },
+    {
+      "id": 39,
+      "name": "Fight Like A Girl",
+      "min_fame": 20,
+      "money": 450,
+      "obligation": "women's gear promos",
+      "fame_req": 20
+    }
+  ],
+  "amateur_tournaments": [
+    {
+      "level": "Local",
+      "min_wins": 0,
+      "min_reputation": 0,
+      "prize": 100,
+      "fame": 2,
+      "opponents": 3
+    },
+    {
+      "level": "National Amateur",
+      "min_wins": 4,
+      "min_reputation": 8,
+      "prize": 500,
+      "fame": 10,
+      "opponents": 4
+    },
+    {
+      "level": "European Amateur",
+      "min_wins": 8,
+      "min_reputation": 20,
+      "prize": 1000,
+      "fame": 25,
+      "opponents": 5
+    },
+    {
+      "level": "IMMAF World Amateur",
+      "min_wins": 12,
+      "min_reputation": 40,
+      "prize": 2500,
+      "fame": 50,
+      "opponents": 6
+    }
+  ],
+  "pro_organizations": [
+    {
+      "name": "Local Fight Nights",
+      "tier": 4,
+      "purse_multiplier": 1.0,
+      "fame_multiplier": 1.0,
+      "min_wins": 0
+    },
+    {
+      "name": "Regional FC",
+      "tier": 5,
+      "purse_multiplier": 1.5,
+      "fame_multiplier": 1.5,
+      "min_wins": 3
+    },
+    {
+      "name": "National MMA",
+      "tier": 6,
+      "purse_multiplier": 2.0,
+      "fame_multiplier": 2.0,
+      "min_wins": 5
+    },
+    {
+      "name": "European Championship",
+      "tier": 7,
+      "purse_multiplier": 2.5,
+      "fame_multiplier": 2.5,
+      "min_wins": 8
+    },
+    {
+      "name": "Bellator",
+      "tier": 8,
+      "purse_multiplier": 3.0,
+      "fame_multiplier": 3.5,
+      "min_wins": 10
+    },
+    {
+      "name": "ONE Championship",
+      "tier": 9,
+      "purse_multiplier": 3.5,
+      "fame_multiplier": 4.0,
+      "min_wins": 12
+    },
+    {
+      "name": "PFL",
+      "tier": 10,
+      "purse_multiplier": 4.0,
+      "fame_multiplier": 4.5,
+      "min_wins": 15
+    },
+    {
+      "name": "Rizin FF",
+      "tier": 11,
+      "purse_multiplier": 4.5,
+      "fame_multiplier": 5.0,
+      "min_wins": 18
+    },
+    {
+      "name": "UFC",
+      "tier": 12,
+      "purse_multiplier": 5.0,
+      "fame_multiplier": 6.0,
+      "min_wins": 20
+    },
+    {
+      "name": "UFC Championship",
+      "tier": 13,
+      "purse_multiplier": 6.0,
+      "fame_multiplier": 8.0,
+      "min_wins": 25
+    }
+  ]
+}

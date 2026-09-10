@@ -1,0 +1,889 @@
+[
+  {
+    "id": "v111_broke_01",
+    "title": "Rent is late",
+    "category": "money",
+    "description": "The landlord texts again. The number at the bottom of the message is not friendly.",
+    "trigger": {
+      "chance": 0.16
+    },
+    "require": {
+      "max_money": 80,
+      "cooldown": 8
+    },
+    "choices": [
+      {
+        "label": "A) Pay what you can",
+        "effects": {
+          "money": -40,
+          "happiness": -2
+        }
+      },
+      {
+        "label": "B) Stall a week",
+        "effects": {
+          "happiness": -6,
+          "discipline": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_broke_02",
+    "title": "Gym dues reminder",
+    "category": "money",
+    "description": "The front desk slides a slip across. You are two weeks behind.",
+    "trigger": {
+      "chance": 0.15
+    },
+    "require": {
+      "max_money": 120,
+      "cooldown": 8
+    },
+    "choices": [
+      {
+        "label": "A) Pay the dues",
+        "effects": {
+          "money": -25,
+          "relationships.coach": 2
+        }
+      },
+      {
+        "label": "B) Ask to work it off",
+        "effects": {
+          "energy": -8,
+          "relationships.coach": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_broke_03",
+    "title": "Empty fridge",
+    "category": "money",
+    "description": "Rice and a sad egg. That is dinner.",
+    "trigger": {
+      "chance": 0.15
+    },
+    "require": {
+      "max_money": 60,
+      "cooldown": 6
+    },
+    "choices": [
+      {
+        "label": "A) Cheap shop run",
+        "effects": {
+          "money": -18,
+          "nutrition": 4
+        }
+      },
+      {
+        "label": "B) Skip meals",
+        "effects": {
+          "nutrition": -8,
+          "energy": -6,
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_broke_04",
+    "title": "Bus fare or walk",
+    "category": "money",
+    "description": "The gym is across town and the card reader just beeped red.",
+    "trigger": {
+      "chance": 0.12
+    },
+    "require": {
+      "max_money": 40,
+      "cooldown": 7
+    },
+    "choices": [
+      {
+        "label": "A) Walk it",
+        "effects": {
+          "energy": -6,
+          "cardio": 1
+        }
+      },
+      {
+        "label": "B) Borrow from a teammate",
+        "effects": {
+          "money": -5,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_broke_05",
+    "title": "Phone bill cutoff",
+    "category": "money",
+    "description": "Your manager cannot reach you if the phone is dead.",
+    "trigger": {
+      "chance": 0.12
+    },
+    "require": {
+      "max_money": 90,
+      "cooldown": 10
+    },
+    "choices": [
+      {
+        "label": "A) Pay the minimum",
+        "effects": {
+          "money": -20
+        }
+      },
+      {
+        "label": "B) Let it lapse",
+        "effects": {
+          "fame": -1,
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_broke_06",
+    "title": "Second-hand wraps",
+    "category": "money",
+    "description": "Yours are shredded. A teammate offers a used pair for cash.",
+    "trigger": {
+      "chance": 0.11
+    },
+    "require": {
+      "max_money": 70,
+      "cooldown": 12
+    },
+    "choices": [
+      {
+        "label": "A) Buy them",
+        "effects": {
+          "money": -12,
+          "health": 1
+        }
+      },
+      {
+        "label": "B) Tape the old ones",
+        "effects": {
+          "health": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_broke_07",
+    "title": "Family asks for help",
+    "category": "money",
+    "description": "Home needs a little. You do not have a little.",
+    "trigger": {
+      "chance": 0.1
+    },
+    "require": {
+      "max_money": 100,
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "label": "A) Send what you can",
+        "effects": {
+          "money": -30,
+          "relationships.family": 6,
+          "happiness": 2
+        }
+      },
+      {
+        "label": "B) Say you are broke too",
+        "effects": {
+          "relationships.family": -4,
+          "happiness": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_broke_08",
+    "title": "Night shift offer",
+    "category": "money",
+    "description": "A warehouse text: load vans, cash same night, legs gone tomorrow.",
+    "trigger": {
+      "chance": 0.14
+    },
+    "require": {
+      "max_money": 150,
+      "cooldown": 7
+    },
+    "choices": [
+      {
+        "label": "A) Take the shift",
+        "effects": {
+          "money": 70,
+          "energy": -16,
+          "happiness": -2
+        }
+      },
+      {
+        "label": "B) Protect the camp",
+        "effects": {
+          "discipline": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_broke_09",
+    "title": "Coach spots you lunch",
+    "category": "money",
+    "description": "He puts a tray down and does not make a speech about it.",
+    "trigger": {
+      "chance": 0.1
+    },
+    "require": {
+      "max_money": 50,
+      "cooldown": 10
+    },
+    "choices": [
+      {
+        "label": "A) Take it",
+        "effects": {
+          "nutrition": 5,
+          "relationships.coach": 3,
+          "happiness": 3
+        }
+      },
+      {
+        "label": "B) Refuse out of pride",
+        "effects": {
+          "confidence": 1,
+          "nutrition": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_broke_10",
+    "title": "Pawn shop look",
+    "category": "money",
+    "description": "The old medal in the drawer would cover a week of food.",
+    "trigger": {
+      "chance": 0.08
+    },
+    "require": {
+      "max_money": 30,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "label": "A) Pawn it",
+        "effects": {
+          "money": 80,
+          "happiness": -6
+        }
+      },
+      {
+        "label": "B) Keep it",
+        "effects": {
+          "mental_toughness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_rich_01",
+    "title": "Private chef pitch",
+    "category": "money",
+    "description": "A nutritionist wants a retainer. The quote is a regional purse.",
+    "trigger": {
+      "chance": 0.12
+    },
+    "require": {
+      "min_money": 4000,
+      "cooldown": 12
+    },
+    "choices": [
+      {
+        "label": "A) Hire them",
+        "effects": {
+          "money": -600,
+          "nutrition": 10,
+          "bodyfat": -1
+        }
+      },
+      {
+        "label": "B) Keep cooking at home",
+        "effects": {
+          "discipline": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_rich_02",
+    "title": "Watch advert",
+    "category": "money",
+    "description": "A brand wants you to wear a watch to the weigh-in. They will pay.",
+    "trigger": {
+      "chance": 0.12
+    },
+    "require": {
+      "min_money": 2500,
+      "min_fame": 8,
+      "cooldown": 10
+    },
+    "choices": [
+      {
+        "label": "A) Take the cheque",
+        "effects": {
+          "money": 900,
+          "fame": 2
+        }
+      },
+      {
+        "label": "B) Pass",
+        "effects": {
+          "reputation": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_rich_03",
+    "title": "Business class upgrade",
+    "category": "money",
+    "description": "Camp is overseas. Economy wrecks the hips. First class is sitting there.",
+    "trigger": {
+      "chance": 0.1
+    },
+    "require": {
+      "min_money": 3500,
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "label": "A) Upgrade",
+        "effects": {
+          "money": -400,
+          "energy": 8,
+          "health": 3
+        }
+      },
+      {
+        "label": "B) Fly cheap",
+        "effects": {
+          "money": -80,
+          "energy": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_rich_04",
+    "title": "House down payment talk",
+    "category": "money",
+    "description": "An uncle says buy a flat before the next bad camp blows the stash.",
+    "trigger": {
+      "chance": 0.08
+    },
+    "require": {
+      "min_money": 8000,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "label": "A) Park some cash",
+        "effects": {
+          "money": -2500,
+          "happiness": 4,
+          "discipline": 2
+        }
+      },
+      {
+        "label": "B) Keep it liquid",
+        "effects": {
+          "confidence": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_rich_05",
+    "title": "Charity card appearance",
+    "category": "money",
+    "description": "A dinner wants you at the top table. Appearance fee, photos, a speech.",
+    "trigger": {
+      "chance": 0.11
+    },
+    "require": {
+      "min_money": 2000,
+      "min_fame": 6,
+      "cooldown": 12
+    },
+    "choices": [
+      {
+        "label": "A) Go, take the fee",
+        "effects": {
+          "money": 400,
+          "fame": 3,
+          "energy": -4
+        }
+      },
+      {
+        "label": "B) Stay in camp",
+        "effects": {
+          "discipline": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_rich_06",
+    "title": "Custom recovery suite",
+    "category": "money",
+    "description": "Ice bath, pneumatic boots, a quiet room. Monthly.",
+    "trigger": {
+      "chance": 0.1
+    },
+    "require": {
+      "min_money": 5000,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "label": "A) Subscribe",
+        "effects": {
+          "money": -350,
+          "health": 6,
+          "energy": 4
+        }
+      },
+      {
+        "label": "B) Ice at the gym is fine",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "v111_rich_07",
+    "title": "Friend asks for a loan",
+    "category": "money",
+    "description": "They know you have it. They need two thousand by Friday.",
+    "trigger": {
+      "chance": 0.1
+    },
+    "require": {
+      "min_money": 3000,
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "label": "A) Lend it",
+        "effects": {
+          "money": -2000,
+          "relationships.friends": 8
+        }
+      },
+      {
+        "label": "B) Say no",
+        "effects": {
+          "relationships.friends": -5,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_rich_08",
+    "title": "Supercar weekend",
+    "category": "money",
+    "description": "A rental place will put you in something loud for the walkout clip.",
+    "trigger": {
+      "chance": 0.09
+    },
+    "require": {
+      "min_money": 6000,
+      "min_fame": 10,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "label": "A) Rent it",
+        "effects": {
+          "money": -700,
+          "fame": 4,
+          "press_hype": 6,
+          "happiness": 3
+        }
+      },
+      {
+        "label": "B) Keep the hatchback",
+        "effects": {
+          "discipline": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_rich_09",
+    "title": "Tax letter",
+    "category": "money",
+    "description": "The purse from two cards ago was not as clean as it looked.",
+    "trigger": {
+      "chance": 0.1
+    },
+    "require": {
+      "min_money": 2500,
+      "pro": true,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "label": "A) Pay the bill",
+        "effects": {
+          "money": -800,
+          "happiness": -2
+        }
+      },
+      {
+        "label": "B) Hire an accountant",
+        "effects": {
+          "money": -300,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v111_rich_10",
+    "title": "Silent partner",
+    "category": "money",
+    "description": "Someone wants to invest in you. They talk about percentages like a manager.",
+    "trigger": {
+      "chance": 0.08
+    },
+    "require": {
+      "min_money": 4500,
+      "min_fame": 12,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "label": "A) Take the cash, keep control",
+        "effects": {
+          "money": 2000,
+          "reputation": -2
+        }
+      },
+      {
+        "label": "B) Pass",
+        "effects": {
+          "discipline": 2,
+          "reputation": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v112_food_01",
+    "title": "Sunday roast at home",
+    "category": "life",
+    "description": "Family piles the plate. Camp diet is a rumour in this kitchen.",
+    "trigger": {
+      "chance": 0.14
+    },
+    "require": {
+      "cooldown": 8
+    },
+    "choices": [
+      {
+        "label": "A) Eat like a civilian",
+        "effects": {
+          "nutrition": 4,
+          "happiness": 5,
+          "walking_weight": 0.6,
+          "bodyfat": 0.4
+        }
+      },
+      {
+        "label": "B) Take the chicken, skip the gravy",
+        "effects": {
+          "nutrition": 2,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v112_food_02",
+    "title": "Late kebab after sparring",
+    "category": "life",
+    "description": "The shop is open and your legs are empty.",
+    "trigger": {
+      "chance": 0.13
+    },
+    "require": {
+      "cooldown": 7
+    },
+    "choices": [
+      {
+        "label": "A) Get the large",
+        "effects": {
+          "nutrition": 3,
+          "happiness": 4,
+          "walking_weight": 0.5,
+          "bodyfat": 0.3,
+          "energy": 2
+        }
+      },
+      {
+        "label": "B) Walk past it",
+        "effects": {
+          "discipline": 2,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v112_food_03",
+    "title": "Dietitian at the gym",
+    "category": "training",
+    "description": "She wants weekly weigh-ins and a food log. It costs.",
+    "trigger": {
+      "chance": 0.12
+    },
+    "require": {
+      "cooldown": 12
+    },
+    "choices": [
+      {
+        "label": "A) Hire her",
+        "effects": {
+          "money": -80,
+          "nutrition": 8,
+          "bodyfat": -0.6
+        }
+      },
+      {
+        "label": "B) Guess the macros",
+        "effects": {
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v112_food_04",
+    "title": "Camp cook-up",
+    "category": "training",
+    "description": "The team is on rice and chicken for the fifth night.",
+    "trigger": {
+      "chance": 0.12
+    },
+    "require": {
+      "cooldown": 8
+    },
+    "choices": [
+      {
+        "label": "A) Stay on the plan",
+        "effects": {
+          "nutrition": 5,
+          "bodyfat": -0.4,
+          "walking_weight": -0.3,
+          "happiness": -2
+        }
+      },
+      {
+        "label": "B) Order pizza with the boys",
+        "effects": {
+          "happiness": 6,
+          "nutrition": -3,
+          "walking_weight": 0.4,
+          "bodyfat": 0.3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v112_food_05",
+    "title": "Off-week hunger",
+    "category": "life",
+    "description": "No fight booked. The scale is light and you want food that has a name.",
+    "trigger": {
+      "chance": 0.14
+    },
+    "require": {
+      "cooldown": 9
+    },
+    "choices": [
+      {
+        "label": "A) Eat up, fill the frame",
+        "effects": {
+          "walking_weight": 0.8,
+          "bodyfat": 0.5,
+          "nutrition": 4,
+          "happiness": 3
+        }
+      },
+      {
+        "label": "B) Stay tight",
+        "effects": {
+          "discipline": 2,
+          "happiness": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v112_food_06",
+    "title": "Stomach bug",
+    "category": "life",
+    "description": "Whatever the canteen served is coming back up.",
+    "trigger": {
+      "chance": 0.08
+    },
+    "require": {
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "label": "A) Rest and fluids",
+        "effects": {
+          "walking_weight": -0.7,
+          "nutrition": -6,
+          "energy": -10,
+          "health": -4
+        }
+      },
+      {
+        "label": "B) Train through it",
+        "effects": {
+          "health": -8,
+          "energy": -12,
+          "discipline": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v113_food_07",
+    "title": "Mother sends a parcel",
+    "category": "nutrition",
+    "description": "Cake, sausage, a jar of something yellow. The note says eat.",
+    "trigger": {
+      "chance": 0.12
+    },
+    "require": {
+      "cooldown": 10
+    },
+    "choices": [
+      {
+        "label": "A) Eat the parcel",
+        "effects": {
+          "nutrition": 5,
+          "happiness": 6,
+          "walking_weight": 0.7,
+          "bodyfat": 0.4,
+          "relationships.family": 2
+        }
+      },
+      {
+        "label": "B) Share it at the gym",
+        "effects": {
+          "happiness": 3,
+          "relationships.friends": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v113_food_08",
+    "title": "Weigh-in week fridge raid",
+    "category": "nutrition",
+    "description": "You are cutting and someone left ice cream in the freezer.",
+    "trigger": {
+      "chance": 0.11
+    },
+    "require": {
+      "cooldown": 8
+    },
+    "choices": [
+      {
+        "label": "A) Stay on the plan",
+        "effects": {
+          "discipline": 3,
+          "happiness": -2,
+          "walking_weight": -0.2
+        }
+      },
+      {
+        "label": "B) Two spoons become the tub",
+        "effects": {
+          "happiness": 4,
+          "walking_weight": 0.5,
+          "bodyfat": 0.3,
+          "nutrition": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v113_food_09",
+    "title": "Off-camp bakery run",
+    "category": "nutrition",
+    "description": "No date booked. The bakery smells like a different sport.",
+    "trigger": {
+      "chance": 0.13
+    },
+    "require": {
+      "cooldown": 9
+    },
+    "choices": [
+      {
+        "label": "A) Fill out",
+        "effects": {
+          "walking_weight": 0.9,
+          "bodyfat": 0.5,
+          "nutrition": 3,
+          "happiness": 4
+        }
+      },
+      {
+        "label": "B) Black coffee only",
+        "effects": {
+          "discipline": 2,
+          "happiness": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v113_food_10",
+    "title": "Sauna and salt",
+    "category": "nutrition",
+    "description": "A teammate swears five kilos will come off tonight.",
+    "trigger": {
+      "chance": 0.09
+    },
+    "require": {
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "label": "A) Sit in it",
+        "effects": {
+          "walking_weight": -1.1,
+          "energy": -10,
+          "health": -5,
+          "bodyfat": -0.2
+        }
+      },
+      {
+        "label": "B) That is not a diet",
+        "effects": {
+          "discipline": 1
+        }
+      }
+    ]
+  }
+]

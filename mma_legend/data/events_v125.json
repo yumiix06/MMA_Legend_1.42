@@ -1,0 +1,772 @@
+[
+  {
+    "id": "v125_001",
+    "title": "Local podcast follow-up",
+    "category": "media",
+    "description": "A local MMA podcast asks what changed since your last appearance.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "pro": true,
+      "min_fame": 6,
+      "cooldown": 16
+    },
+    "effects": {
+      "fame": 1,
+      "followers": 5
+    }
+  },
+  {
+    "id": "v125_002",
+    "title": "Training clip catches on",
+    "category": "media",
+    "description": "A short clip from the gym gets shared beyond your usual audience.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_wins": 3,
+      "min_followers": 5,
+      "cooldown": 18
+    },
+    "effects": {
+      "followers": 10,
+      "fame": 1
+    }
+  },
+  {
+    "id": "v125_003",
+    "title": "Post-fight microphone",
+    "category": "media",
+    "description": "A reporter wants one clean sentence after the result.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "pro": true,
+      "min_pro_wins": 1,
+      "cooldown": 10
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Keep it measured",
+        "effects": {
+          "reputation": 1,
+          "followers": 6
+        }
+      },
+      {
+        "key": "B",
+        "label": "Sell the next fight",
+        "effects": {
+          "fame": 1,
+          "confidence": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v125_004",
+    "title": "Quiet week, useful interview",
+    "category": "media",
+    "description": "A regional outlet wants technique talk rather than trash talk.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "pro": true,
+      "min_fame": 4,
+      "cooldown": 18
+    },
+    "effects": {
+      "reputation": 1,
+      "followers": 6
+    }
+  },
+  {
+    "id": "v125_005",
+    "title": "Film-study breakdown",
+    "category": "media",
+    "description": "A tactics channel breaks down one sequence from your last fight.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "pro": true,
+      "min_pro_wins": 2,
+      "cooldown": 20
+    },
+    "effects": {
+      "fight_iq": 1,
+      "followers": 8
+    }
+  },
+  {
+    "id": "v125_006",
+    "title": "Headline after a loss",
+    "category": "media",
+    "description": "The media cycle is still there after defeat; the tone is harsher now.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "pro": true,
+      "last": "L",
+      "cooldown": 14
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Keep it measured",
+        "effects": {
+          "reputation": 1,
+          "followers": 6
+        }
+      },
+      {
+        "key": "B",
+        "label": "Sell the next fight",
+        "effects": {
+          "fame": 1,
+          "confidence": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v125_007",
+    "title": "Winner's quote travels",
+    "category": "media",
+    "description": "A post-fight quote gets repeated by several combat-sports pages.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "pro": true,
+      "last": "W",
+      "min_fame": 8,
+      "cooldown": 16
+    },
+    "effects": {
+      "followers": 12,
+      "fame": 1
+    }
+  },
+  {
+    "id": "v125_008",
+    "title": "Gym documentary day",
+    "category": "media",
+    "description": "A small crew follows the team through one training day.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "gym": true,
+      "min_fame": 8,
+      "cooldown": 24
+    },
+    "effects": {
+      "followers": 10,
+      "relationships.coach": 1
+    }
+  },
+  {
+    "id": "v125_009",
+    "title": "Radio call-in",
+    "category": "media",
+    "description": "A sports radio station brings you on for a short live segment.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "pro": true,
+      "min_fame": 10,
+      "cooldown": 22
+    },
+    "effects": {
+      "fame": 1,
+      "followers": 8
+    }
+  },
+  {
+    "id": "v125_010",
+    "title": "Fan Q&A",
+    "category": "media",
+    "description": "Your growing audience sends enough questions to justify a proper Q&A.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_followers": 60,
+      "cooldown": 20
+    },
+    "effects": {
+      "followers": 10,
+      "happiness": 2
+    }
+  },
+  {
+    "id": "v125_011",
+    "title": "UFC embedded camera",
+    "category": "media",
+    "description": "A UFC camera crew asks for a short camp segment, not a full documentary.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "org": "UFC",
+      "pro": true,
+      "min_fame": 12,
+      "cooldown": 20
+    },
+    "effects": {
+      "followers": 16,
+      "fame": 1
+    }
+  },
+  {
+    "id": "v125_012",
+    "title": "UFC post-fight desk mention",
+    "category": "media",
+    "description": "Your name comes up on the desk after the card, for better or worse.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "org": "UFC",
+      "pro": true,
+      "cooldown": 16
+    },
+    "effects": {
+      "followers": 12
+    }
+  },
+  {
+    "id": "v125_013",
+    "title": "Scale trend check",
+    "category": "nutrition",
+    "description": "The weekly average finally matters more than one morning weigh-in.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "booked": true,
+      "cooldown": 10
+    },
+    "effects": {
+      "discipline": 1
+    }
+  },
+  {
+    "id": "v125_014",
+    "title": "Diet fatigue creeps in",
+    "category": "nutrition",
+    "description": "The deficit is working, but the routine is getting mentally heavy.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "booked": true,
+      "max_energy": 65,
+      "cooldown": 12
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stick to the plan",
+        "effects": {
+          "discipline": 2,
+          "happiness": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ease the pressure",
+        "effects": {
+          "happiness": 2,
+          "nutrition": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v125_015",
+    "title": "Meal prep saves the week",
+    "category": "nutrition",
+    "description": "Planning meals keeps the cut boring and predictable.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "booked": true,
+      "cooldown": 16
+    },
+    "effects": {
+      "nutrition": 2,
+      "discipline": 1
+    }
+  },
+  {
+    "id": "v125_016",
+    "title": "Weight bully temptation",
+    "category": "nutrition",
+    "description": "You could stay bigger and leave more for fight week, but the margin shrinks.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "booked": true,
+      "pro": true,
+      "cooldown": 18,
+      "cutting": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stick to the plan",
+        "effects": {
+          "discipline": 2,
+          "happiness": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ease the pressure",
+        "effects": {
+          "happiness": 2,
+          "nutrition": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v125_017",
+    "title": "Coach wants a smaller final cut",
+    "category": "nutrition",
+    "description": "The team would rather lose real mass now than gamble on dehydration later.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "booked": true,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stick to the plan",
+        "effects": {
+          "discipline": 2,
+          "happiness": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ease the pressure",
+        "effects": {
+          "happiness": 2,
+          "nutrition": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v125_018",
+    "title": "Restaurant during camp",
+    "category": "nutrition",
+    "description": "A team dinner lands in the middle of the weight plan.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "booked": true,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stick to the plan",
+        "effects": {
+          "discipline": 2,
+          "happiness": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ease the pressure",
+        "effects": {
+          "happiness": 2,
+          "nutrition": -1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v125_019",
+    "title": "Nutrition sponsor consult",
+    "category": "nutrition",
+    "description": "A sponsor dietitian offers a basic camp review.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_sponsors": 1,
+      "booked": true,
+      "cooldown": 24
+    },
+    "effects": {
+      "nutrition": 3,
+      "weight_cut_health": 2
+    }
+  },
+  {
+    "id": "v125_020",
+    "title": "Morning weight finally settles",
+    "category": "nutrition",
+    "description": "Several disciplined weeks put the scale where the plan expected it.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "booked": true,
+      "min_streak": 0,
+      "cooldown": 20
+    },
+    "effects": {
+      "confidence": 2,
+      "discipline": 1
+    }
+  },
+  {
+    "id": "v125_021",
+    "title": "Debt statement arrives",
+    "category": "money",
+    "description": "Interest makes the number harder to ignore this month.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_debt": 500,
+      "cooldown": 16,
+      "min_money": 100
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Put extra cash toward it",
+        "effects": {
+          "money": -100,
+          "debt": -100,
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep cash liquid",
+        "effects": {
+          "happiness": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v125_022",
+    "title": "Manager asks about cashflow",
+    "category": "money",
+    "description": "Your manager wants to know whether camp costs are forcing bad decisions.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "manager": true,
+      "max_money": 1200,
+      "cooldown": 18
+    },
+    "effects": {
+      "discipline": 1
+    }
+  },
+  {
+    "id": "v125_023",
+    "title": "Small equipment replacement",
+    "category": "money",
+    "description": "A boring but necessary piece of kit finally gives up.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_wins": 2,
+      "cooldown": 20
+    },
+    "effects": {
+      "money": -90
+    }
+  },
+  {
+    "id": "v125_024",
+    "title": "Travel cost surprise",
+    "category": "money",
+    "description": "A last-minute transport change adds a modest bill.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "booked": true,
+      "pro": true,
+      "cooldown": 20
+    },
+    "effects": {
+      "money": -120
+    }
+  },
+  {
+    "id": "v125_025",
+    "title": "Local seminar pays",
+    "category": "money",
+    "description": "The gym pays you to help with a small seminar.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "pro": true,
+      "gym": true,
+      "min_rep": 20,
+      "cooldown": 24
+    },
+    "effects": {
+      "money": 180,
+      "reputation": 1
+    }
+  },
+  {
+    "id": "v125_026",
+    "title": "Debt repayment milestone",
+    "category": "money",
+    "description": "The balance is still there, but visibly smaller than it was.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_debt": 200,
+      "min_money": 300,
+      "cooldown": 22
+    },
+    "effects": {
+      "confidence": 1,
+      "discipline": 1
+    }
+  },
+  {
+    "id": "v125_027",
+    "title": "Supplement box at the gym",
+    "category": "sponsor",
+    "description": "One of your nutrition partners drops off the month's product allocation.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_sponsors": 1,
+      "pro": true,
+      "cooldown": 20
+    },
+    "effects": {
+      "happiness": 2
+    }
+  },
+  {
+    "id": "v125_028",
+    "title": "Sponsor content day",
+    "category": "sponsor",
+    "description": "A partner wants a short, low-key training clip rather than a fake commercial.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_sponsors": 1,
+      "cooldown": 18
+    },
+    "effects": {
+      "followers": 8,
+      "money": 80
+    }
+  },
+  {
+    "id": "v125_029",
+    "title": "Sponsor checks the contract",
+    "category": "sponsor",
+    "description": "A brand rep confirms what is actually included instead of promising vague perks.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_sponsors": 2,
+      "cooldown": 24
+    },
+    "effects": {
+      "reputation": 1
+    }
+  },
+  {
+    "id": "v125_030",
+    "title": "Local sponsor renews",
+    "category": "sponsor",
+    "description": "A smaller partner stays because you kept showing up professionally.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_sponsors": 1,
+      "min_rep": 20,
+      "cooldown": 26
+    },
+    "effects": {
+      "money": 120
+    }
+  },
+  {
+    "id": "v125_031",
+    "title": "Brand conflict warning",
+    "category": "sponsor",
+    "description": "Your manager spots two categories that could become awkward before signing anything new.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "manager": true,
+      "min_sponsors": 2,
+      "cooldown": 28
+    },
+    "effects": {
+      "fight_iq": 1
+    }
+  },
+  {
+    "id": "v125_032",
+    "title": "UFC debut week settles in",
+    "category": "career",
+    "description": "The contract is real now; the job is to establish yourself before anyone talks belts.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "org": "UFC",
+      "pro": true,
+      "cooldown": 30
+    },
+    "effects": {
+      "confidence": 1
+    }
+  },
+  {
+    "id": "v125_033",
+    "title": "UFC roster reality check",
+    "category": "career",
+    "description": "Being signed changes the platform, not the number of fights you have earned inside it.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "org": "UFC",
+      "pro": true,
+      "max_streak": 1,
+      "cooldown": 24
+    },
+    "effects": {
+      "discipline": 2
+    }
+  },
+  {
+    "id": "v125_034",
+    "title": "Ranked names are still ahead",
+    "category": "career",
+    "description": "Your manager explains that UFC ranking position has to be earned through UFC results.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "org": "UFC",
+      "pro": true,
+      "min_pro_wins": 3,
+      "cooldown": 28
+    },
+    "effects": {
+      "fight_iq": 1
+    }
+  },
+  {
+    "id": "v125_035",
+    "title": "Rebuild after a UFC loss",
+    "category": "career",
+    "description": "One loss does not erase the contract, but it changes what a sensible next matchup looks like.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "org": "UFC",
+      "pro": true,
+      "last": "L",
+      "cooldown": 18
+    },
+    "effects": {
+      "mental_toughness": 2
+    }
+  },
+  {
+    "id": "v125_036",
+    "title": "Momentum inside the UFC",
+    "category": "career",
+    "description": "A real UFC win streak starts changing the level of names the matchmaker mentions.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "org": "UFC",
+      "pro": true,
+      "last": "W",
+      "min_streak": 2,
+      "cooldown": 22
+    },
+    "effects": {
+      "reputation": 2,
+      "confidence": 1
+    }
+  }
+]

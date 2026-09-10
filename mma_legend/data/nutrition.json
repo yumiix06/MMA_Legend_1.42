@@ -1,0 +1,12 @@
+{
+  "meal_plans": [
+    {"id":1,"name":"Fight Camp Clean","quality_target":90,"quality_step":4,"weekly_energy":1,"weekly_health":1,"weekly_happiness":0,"weekly_mass_kg":-0.35,"cut_health":1,"description":"High-quality camp food with a controlled deficit."},
+    {"id":2,"name":"High Protein Performance","quality_target":86,"quality_step":4,"weekly_energy":2,"weekly_health":1,"weekly_happiness":1,"weekly_mass_kg":0.05,"cut_health":1,"description":"Recovery-focused maintenance with plenty of protein."},
+    {"id":3,"name":"Balanced Athlete","quality_target":78,"quality_step":3,"weekly_energy":1,"weekly_health":1,"weekly_happiness":1,"weekly_mass_kg":0.00,"cut_health":1,"description":"Sustainable maintenance diet for year-round training."},
+    {"id":4,"name":"Carb-Up","quality_target":72,"quality_step":3,"weekly_energy":3,"weekly_health":0,"weekly_happiness":1,"weekly_mass_kg":0.25,"cut_health":0,"description":"More glycogen and scale weight; useful before hard sessions, poor for cutting."},
+    {"id":5,"name":"Mediterranean","quality_target":84,"quality_step":3,"weekly_energy":1,"weekly_health":2,"weekly_happiness":1,"weekly_mass_kg":-0.15,"cut_health":2,"description":"Slow recomposition with strong recovery and health."},
+    {"id":6,"name":"Comfort Food","quality_target":48,"quality_step":3,"weekly_energy":1,"weekly_health":-1,"weekly_happiness":2,"weekly_mass_kg":0.35,"cut_health":-1,"description":"Good for morale, poor for composition and fight preparation."},
+    {"id":7,"name":"Cheat Meal","quality_target":38,"quality_step":4,"weekly_energy":1,"weekly_health":-1,"weekly_happiness":3,"weekly_mass_kg":0.55,"cut_health":-2,"description":"Fast morale, fast scale gain, weak recovery quality."},
+    {"id":8,"name":"Weight-Cut Strict","quality_target":74,"quality_step":3,"weekly_energy":-2,"weekly_health":0,"weekly_happiness":-2,"weekly_mass_kg":-0.65,"cut_health":-2,"description":"Aggressive deficit. Gets weight off quickly but erodes cut resilience."}
+  ]
+}

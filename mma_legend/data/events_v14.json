@@ -1,0 +1,26 @@
+[
+  {"id": "v14_01", "title": "School exam week", "category": "school", "description": "Tests stack up. The gym still wants you.", "trigger": {"chance": 0.12}, "require": {"max_age": 19}, "choices": [
+    {"key": "A", "label": "Study", "effects": {"school_grade": 5, "energy": -6}},
+    {"key": "B", "label": "Skip for sparring", "effects": {"school_grade": -6, "striking": 1}}
+  ]},
+  {"id": "v14_02", "title": "Local paper wants a quote", "category": "media", "description": "A small Bulgarian sports desk calls after the bronze.", "trigger": {"chance": 0.1}, "require": {"min_wins": 4}, "choices": [
+    {"key": "A", "label": "Talk politely", "effects": {"fame": 1, "reputation": 1}},
+    {"key": "B", "label": "Call someone out", "effects": {"fame": 2, "press_hype": 2}}
+  ]},
+  {"id": "v14_03", "title": "Regional booker in the gym", "category": "career", "description": "He is watching amateurs, not signing contracts.", "trigger": {"chance": 0.08}, "require": {"min_wins": 6}, "effects": {"reputation": 2}},
+  {"id": "v14_04", "title": "Parents ask about grades", "category": "school", "description": "Dinner turns into a meeting.", "trigger": {"chance": 0.1}, "require": {"max_age": 19}, "choices": [
+    {"key": "A", "label": "Promise to study", "effects": {"school_grade": 3, "relationships.family": 3}},
+    {"key": "B", "label": "Double down on fighting", "effects": {"relationships.family": -4, "confidence": 2}}
+  ]},
+  {"id": "v14_05", "title": "Hall of Fame night on TV", "category": "life", "description": "Old champions get a video package. You watch from the sofa.", "trigger": {"chance": 0.07}, "effects": {"fight_iq": 1}},
+  {"id": "v14_06", "title": "Sparring partner moves up", "category": "gym", "description": "He turns pro. The room feels emptier.", "trigger": {"chance": 0.08}, "require": {"min_wins": 5}, "effects": {"mood": -2, "work_ethic": 1}},
+  {"id": "v14_07", "title": "Cut man offers advice", "category": "gym", "description": "Ice, grease, breathe through the nose.", "trigger": {"chance": 0.09}, "effects": {"durability": 1}},
+  {"id": "v14_08", "title": "Weight check at home", "category": "cut", "description": "The kitchen scale is not kind.", "trigger": {"chance": 0.1}, "effects": {"nutrition": 2}},
+  {"id": "v14_09", "title": "Amateur card volunteer", "category": "career", "description": "They need a body on a small show. Short notice, small purse.", "trigger": {"chance": 0.07}, "require": {"min_wins": 3}, "choices": [
+    {"key": "A", "label": "Take it if you have gas", "effects": {"reputation": 1, "energy": -4}},
+    {"key": "B", "label": "Pass", "effects": {"discipline": 1}}
+  ]},
+  {"id": "v14_10", "title": "Coach film night", "category": "gym", "description": "He pauses your last loss on a takedown you walked into.", "trigger": {"chance": 0.11}, "effects": {"takedown_def": 1, "fight_iq": 1}},
+  {"id": "v14_11", "title": "City tournament flyer", "category": "career", "description": "Four-man bracket next month. Entry is cheap.", "trigger": {"chance": 0.09}, "require": {"min_wins": 2}, "effects": {"press_hype": 1}},
+  {"id": "v14_12", "title": "Fame is still local", "category": "media", "description": "The cashier knows your name. Instagram does not.", "trigger": {"chance": 0.08}, "effects": {"happiness": 2}}
+]

@@ -1,0 +1,4158 @@
+[
+  {
+    "id": 1,
+    "title": "Family Support",
+    "description": "Your family calls to cheer you on. They're proud of your journey.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.2
+    },
+    "effects": {
+      "happiness": 10,
+      "confidence": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 2,
+    "title": "Injury Scare",
+    "description": "You feel a sharp pain in your knee during training.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.1
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Take a week off",
+        "effects": {
+          "energy": 10,
+          "health": 5,
+          "happiness": -5
+        }
+      },
+      {
+        "label": "B) Push through",
+        "effects": {
+          "health": -10,
+          "confidence": 5
+        }
+      },
+      {
+        "label": "C) See a doctor ($200)",
+        "effects": {
+          "money": -200,
+          "health": 15
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 3,
+    "title": "Sponsor Offer",
+    "description": "A local supplement company offers you $500 for promotional posts.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 3
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Accept",
+        "effects": {
+          "money": 500,
+          "reputation": 5,
+          "energy": -10
+        }
+      },
+      {
+        "label": "B) Decline",
+        "effects": {
+          "discipline": 10
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {
+      "min_wins": 2,
+      "min_fame": 5
+    }
+  },
+  {
+    "id": 4,
+    "title": "Social Media Drama",
+    "description": "A rival calls you out on Twitter.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Fire back",
+        "effects": {
+          "confidence": 10,
+          "reputation": 5,
+          "rival": 20
+        }
+      },
+      {
+        "label": "B) Ignore",
+        "effects": {
+          "discipline": 5,
+          "happiness": 5
+        }
+      },
+      {
+        "label": "C) Apologize",
+        "effects": {
+          "mental_toughness": 5,
+          "reputation": -5
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 5,
+    "title": "Training Breakthrough",
+    "description": "A technique suddenly clicks. You feel a leap in skill.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "effects": {
+      "fight_iq": 3,
+      "confidence": 3
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 6,
+    "title": "Media Interview",
+    "description": "You're invited for a short interview.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Be humble",
+        "effects": {
+          "fame": 5,
+          "happiness": 2
+        }
+      },
+      {
+        "label": "B) Be cocky",
+        "effects": {
+          "fame": 10,
+          "confidence": 5,
+          "rival": 10
+        }
+      },
+      {
+        "label": "C) Avoid",
+        "effects": {
+          "happiness": -5
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {
+      "min_wins": 4,
+      "min_fame": 8
+    }
+  },
+  {
+    "id": 7,
+    "title": "Teammate Leaves",
+    "description": "Your favorite training partner moves to another gym.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "happiness": -10,
+      "discipline": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 8,
+    "title": "Injury Recurrence",
+    "description": "An old injury flares up.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {
+      "health": -15,
+      "happiness": -10
+    },
+    "choices": [
+      {
+        "label": "A) Rest fully",
+        "effects": {
+          "energy": 10,
+          "health": 5
+        }
+      },
+      {
+        "label": "B) Train light",
+        "effects": {
+          "health": -5,
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 9,
+    "title": "Fan Letter",
+    "description": "A young fan writes a heartfelt letter.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "effects": {
+      "happiness": 15,
+      "fame": 2
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 10,
+    "title": "Sponsor Renewal",
+    "description": "Your sponsor wants to renew with better terms.",
+    "category": "career",
+    "trigger": {
+      "type": "fame",
+      "min": 30
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Accept",
+        "effects": {
+          "money": 300,
+          "fame": 5,
+          "energy": -5
+        }
+      },
+      {
+        "label": "B) Decline",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {
+      "min_wins": 2,
+      "min_fame": 5
+    }
+  },
+  {
+    "id": 11,
+    "title": "Coaching Change",
+    "description": "Your head coach announces he's retiring.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "discipline": -10,
+      "happiness": -10
+    },
+    "choices": [
+      {
+        "label": "A) Find a new coach",
+        "effects": {
+          "money": -200,
+          "coach": 20
+        }
+      },
+      {
+        "label": "B) Go solo",
+        "effects": {
+          "discipline": 10
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 12,
+    "title": "Weight Cut Success",
+    "description": "You made weight easily this time.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "effects": {
+      "energy": 10,
+      "confidence": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 13,
+    "title": "Weight Cut Struggle",
+    "description": "The cut was brutal. You're drained.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "effects": {
+      "energy": -20,
+      "health": -10
+    },
+    "choices": [
+      {
+        "label": "A) Rehydrate carefully",
+        "effects": {
+          "health": 5
+        }
+      },
+      {
+        "label": "B) Push harder next time",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 14,
+    "title": "Fight Offer",
+    "description": "A promotion offers you a big fight.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 10
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Accept",
+        "effects": {
+          "money": 1000,
+          "fame": 15
+        }
+      },
+      {
+        "label": "B) Decline, not ready",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {
+      "min_wins": 3,
+      "min_fame": 8
+    }
+  },
+  {
+    "id": 15,
+    "title": "Rival Sighting",
+    "description": "You see your rival at a restaurant.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Confront him",
+        "effects": {
+          "rival": 20,
+          "confidence": 5
+        }
+      },
+      {
+        "label": "B) Walk away",
+        "effects": {
+          "mental_toughness": 5
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 16,
+    "title": "Equipment Malfunction",
+    "description": "Your glove tears during sparring.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "money": -50,
+      "health": -5
+    },
+    "choices": [
+      {
+        "label": "A) Buy new gear",
+        "effects": {
+          "money": -100,
+          "discipline": 5
+        }
+      },
+      {
+        "label": "B) Borrow",
+        "effects": {
+          "happiness": -5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 17,
+    "title": "Healthy Eating",
+    "description": "You start a new diet plan.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "effects": {
+      "health": 5,
+      "cardio": 2
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 18,
+    "title": "Gym Closed",
+    "description": "Your gym is closed for renovations.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "energy": -10,
+      "happiness": -5
+    },
+    "choices": [
+      {
+        "label": "A) Find a new gym",
+        "effects": {
+          "money": -100,
+          "discipline": 5
+        }
+      },
+      {
+        "label": "B) Train at home",
+        "effects": {
+          "strength": -2,
+          "cardio": -2
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 19,
+    "title": "Inspirational Speech",
+    "description": "Your coach gives a motivational talk.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "effects": {
+      "confidence": 10,
+      "discipline": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 20,
+    "title": "Social Media Buzz",
+    "description": "Your training video goes viral.",
+    "category": "fame",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "fame": 15,
+      "happiness": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {
+      "min_wins": 3,
+      "min_fame": 8
+    }
+  },
+  {
+    "id": 21,
+    "title": "Injury Recovery",
+    "description": "You're finally fully healed.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "health": 15,
+      "confidence": 10
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 22,
+    "title": "Early Morning Workout",
+    "description": "You wake up early and feel great.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "effects": {
+      "energy": 10,
+      "cardio": 2
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 23,
+    "title": "Training Camp Invite",
+    "description": "You get invited to a prestigious training camp.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 8
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Accept",
+        "effects": {
+          "money": -500,
+          "striking": 5,
+          "grappling": 5
+        }
+      },
+      {
+        "label": "B) Decline",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 24,
+    "title": "Depression",
+    "description": "You feel a wave of sadness.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "happiness": -20,
+      "confidence": -10
+    },
+    "choices": [
+      {
+        "label": "A) Talk to someone",
+        "effects": {
+          "happiness": 15,
+          "mental_toughness": 10
+        }
+      },
+      {
+        "label": "B) Train harder",
+        "effects": {
+          "discipline": 10,
+          "health": -5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 25,
+    "title": "Sponsor Conflict",
+    "description": "Two sponsors want exclusivity.",
+    "category": "career",
+    "trigger": {
+      "type": "fame",
+      "min": 40
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Keep both",
+        "effects": {
+          "money": 200,
+          "fame": -5
+        }
+      },
+      {
+        "label": "B) Choose one",
+        "effects": {
+          "money": 100,
+          "fame": 5
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {
+      "min_wins": 2,
+      "min_fame": 5
+    }
+  },
+  {
+    "id": 26,
+    "title": "Unexpected Injury",
+    "description": "You trip and sprain your ankle.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {
+      "health": -15,
+      "energy": -10
+    },
+    "choices": [
+      {
+        "label": "A) Rest",
+        "effects": {
+          "health": 5
+        }
+      },
+      {
+        "label": "B) Ignore",
+        "effects": {
+          "health": -10,
+          "discipline": 10
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 27,
+    "title": "Fight Cancelled",
+    "description": "Your opponent pulls out.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "money": -100,
+      "happiness": -5
+    },
+    "choices": [
+      {
+        "label": "A) Find a replacement",
+        "effects": {
+          "fame": 5,
+          "money": -50
+        }
+      },
+      {
+        "label": "B) Take a break",
+        "effects": {
+          "energy": 10
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 28,
+    "title": "New Sparring Partner",
+    "description": "A new, tough sparring partner joins the gym.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {
+      "striking": 2,
+      "grappling": 2,
+      "happiness": -5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 29,
+    "title": "Tournament Scouting",
+    "description": "A promoter watches your training.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "fame": 5,
+      "reputation": 5
+    },
+    "choices": [
+      {
+        "label": "A) Impress",
+        "effects": {
+          "fame": 10,
+          "energy": -15
+        }
+      },
+      {
+        "label": "B) Focus on technique",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 30,
+    "title": "Gym Upgrade",
+    "description": "Your gym buys new equipment.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "strength": 2,
+      "speed": 2
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 31,
+    "title": "Nutritionist Advice",
+    "description": "You get professional dietary advice.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "effects": {
+      "cardio": 3,
+      "health": 3
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 32,
+    "title": "School/Work Balance",
+    "description": "You struggle to balance training with other responsibilities.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {
+      "energy": -10,
+      "happiness": -5
+    },
+    "choices": [
+      {
+        "label": "A) Prioritize training",
+        "effects": {
+          "discipline": 10,
+          "happiness": -5
+        }
+      },
+      {
+        "label": "B) Take a break",
+        "effects": {
+          "happiness": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 33,
+    "title": "Prospect Spotlight",
+    "description": "A major promotion profiles you as a rising star.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 5
+    },
+    "effects": {
+      "fame": 10,
+      "reputation": 10,
+      "happiness": 10
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 34,
+    "title": "Pressure Builds",
+    "description": "You feel the weight of expectations.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {
+      "confidence": -10,
+      "mental_toughness": 5
+    },
+    "choices": [
+      {
+        "label": "A) Embrace it",
+        "effects": {
+          "confidence": 5,
+          "fame": 5
+        }
+      },
+      {
+        "label": "B) Ignore it",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 35,
+    "title": "Weather Report",
+    "description": "A storm delays your flight to a fight.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "energy": -10,
+      "happiness": -10
+    },
+    "choices": [
+      {
+        "label": "A) Wait it out",
+        "effects": {
+          "happiness": -5
+        }
+      },
+      {
+        "label": "B) Drive instead",
+        "effects": {
+          "energy": -20
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 36,
+    "title": "Championship Belt",
+    "description": "You get to hold a championship belt for a photo.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 15
+    },
+    "effects": {
+      "fame": 20,
+      "confidence": 10
+    },
+    "choices": null,
+    "min_age": 20,
+    "require": {}
+  },
+  {
+    "id": 37,
+    "title": "Lost Dog",
+    "description": "You find a lost dog and return it to its owner.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "happiness": 15,
+      "fame": 2
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 38,
+    "title": "Snow Day",
+    "description": "A snowstorm cancels training.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "energy": 10,
+      "happiness": 5
+    },
+    "choices": [
+      {
+        "label": "A) Train indoors",
+        "effects": {
+          "discipline": 5
+        }
+      },
+      {
+        "label": "B) Rest",
+        "effects": {
+          "energy": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 39,
+    "title": "Endorsement Deal",
+    "description": "A major brand wants to endorse you.",
+    "category": "career",
+    "trigger": {
+      "type": "fame",
+      "min": 60
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Accept",
+        "effects": {
+          "money": 2000,
+          "fame": 10,
+          "energy": -20
+        }
+      },
+      {
+        "label": "B) Decline",
+        "effects": {
+          "discipline": 10
+        }
+      }
+    ],
+    "min_age": 20,
+    "require": {}
+  },
+  {
+    "id": 40,
+    "title": "Birthday Surprise",
+    "description": "Your friends throw you a surprise party.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "happiness": 20,
+      "energy": 10
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 41,
+    "title": "Coach's Daughter",
+    "description": "Your coach's daughter has a crush on you.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Date her",
+        "effects": {
+          "happiness": 10,
+          "coach": 10
+        }
+      },
+      {
+        "label": "B) Focus on training",
+        "effects": {
+          "discipline": 10
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 42,
+    "title": "Interview Gone Viral",
+    "description": "Your post-fight interview goes viral for all the wrong reasons.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "fame": -10,
+      "reputation": -10
+    },
+    "choices": [
+      {
+        "label": "A) Clarify your words",
+        "effects": {
+          "fame": 5,
+          "reputation": 5
+        }
+      },
+      {
+        "label": "B) Double down",
+        "effects": {
+          "fame": 10,
+          "confidence": 10
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {
+      "min_wins": 4
+    }
+  },
+  {
+    "id": 43,
+    "title": "Dream Match",
+    "description": "Your dream opponent is offered.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 12
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Accept",
+        "effects": {
+          "money": 2000,
+          "fame": 20
+        }
+      },
+      {
+        "label": "B) Decline",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 20,
+    "require": {}
+  },
+  {
+    "id": 44,
+    "title": "Night Out",
+    "description": "You go out with friends and have a great time.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "happiness": 10,
+      "energy": -5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 45,
+    "title": "Confidence Boost",
+    "description": "You receive a message from a legend.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "confidence": 15,
+      "mental_toughness": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 46,
+    "title": "Gym Rival",
+    "description": "A new fighter at the gym challenges you.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Spar with him",
+        "effects": {
+          "striking": 2,
+          "grappling": 2
+        }
+      },
+      {
+        "label": "B) Ignore him",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 47,
+    "title": "Fight Week",
+    "description": "It's fight week and you feel great.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {
+      "energy": 10,
+      "confidence": 10
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 48,
+    "title": "Crowd Favorite",
+    "description": "The crowd is behind you.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {
+      "fame": 5,
+      "confidence": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 49,
+    "title": "Upset Alert",
+    "description": "You're warned about a dangerous underdog.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 8
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Take him seriously",
+        "effects": {
+          "discipline": 5
+        }
+      },
+      {
+        "label": "B) Overlook him",
+        "effects": {
+          "confidence": 5
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 50,
+    "title": "Sparring Injury",
+    "description": "You get hurt in sparring.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {
+      "health": -10,
+      "energy": -10
+    },
+    "choices": [
+      {
+        "label": "A) Take time off",
+        "effects": {
+          "health": 5
+        }
+      },
+      {
+        "label": "B) Train around it",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 51,
+    "title": "Rival Accepts Fight",
+    "description": "Your rival accepts your challenge!",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "press_hype": 10,
+      "confidence": 5
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 52,
+    "title": "Weight Cut Specialist",
+    "description": "You hire a weight cut specialist.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "weight_cut_health": 10,
+      "money": -200
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 53,
+    "title": "Sports Psychologist",
+    "description": "You start working with a sports psychologist.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "mental_toughness": 10,
+      "confidence": 10,
+      "money": -150
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 54,
+    "title": "Viral Dance",
+    "description": "Your victory dance goes viral.",
+    "category": "fame",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "fame": 15,
+      "followers": 20
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {
+      "min_wins": 3,
+      "min_fame": 8
+    }
+  },
+  {
+    "id": 55,
+    "title": "Award Nomination",
+    "description": "You're nominated for 'Fight of the Year'!",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 10
+    },
+    "effects": {
+      "fame": 20,
+      "reputation": 20,
+      "confidence": 10
+    },
+    "choices": null,
+    "min_age": 20,
+    "require": {}
+  },
+  {
+    "id": 56,
+    "title": "Fight Week Food Poisoning",
+    "description": "You get food poisoning during fight week.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "energy": -30,
+      "health": -20,
+      "happiness": -15
+    },
+    "choices": [
+      {
+        "label": "A) Fight anyway",
+        "effects": {
+          "health": -10,
+          "confidence": 10
+        }
+      },
+      {
+        "label": "B) Pull out",
+        "effects": {
+          "reputation": -10,
+          "money": -1000
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 57,
+    "title": "Sponsor Demand",
+    "description": "Your sponsor demands more content.",
+    "category": "career",
+    "trigger": {
+      "type": "fame",
+      "min": 40
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Comply",
+        "effects": {
+          "money": 200,
+          "energy": -10
+        }
+      },
+      {
+        "label": "B) Renegotiate",
+        "effects": {
+          "money": -100,
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {
+      "min_wins": 2,
+      "min_fame": 5
+    }
+  },
+  {
+    "id": 58,
+    "title": "Teammate Wins Title",
+    "description": "Your teammate wins a championship.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "happiness": 10,
+      "discipline": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 59,
+    "title": "Minor Training Injury",
+    "description": "You sustain a minor injury in training.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "effects": {
+      "health": -8,
+      "energy": -5
+    },
+    "choices": [
+      {
+        "label": "A) Train through",
+        "effects": {
+          "discipline": 5
+        }
+      },
+      {
+        "label": "B) Rest",
+        "effects": {
+          "health": 3
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 60,
+    "title": "Major Training Injury",
+    "description": "You sustain a major injury in training.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "health": -25,
+      "energy": -20,
+      "happiness": -15
+    },
+    "choices": [
+      {
+        "label": "A) Take time off",
+        "effects": {
+          "health": 10
+        }
+      },
+      {
+        "label": "B) Rush back",
+        "effects": {
+          "health": -10,
+          "discipline": 10
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 61,
+    "title": "Big Sponsor Offer",
+    "description": "A major sponsor offers you a huge deal.",
+    "category": "career",
+    "trigger": {
+      "type": "fame",
+      "min": 70
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Accept",
+        "effects": {
+          "money": 5000,
+          "fame": 10,
+          "energy": -30
+        }
+      },
+      {
+        "label": "B) Negotiate",
+        "effects": {
+          "money": 3000,
+          "fame": 5
+        }
+      }
+    ],
+    "min_age": 20,
+    "require": {
+      "min_wins": 2,
+      "min_fame": 5
+    }
+  },
+  {
+    "id": 62,
+    "title": "Charity Work",
+    "description": "You do charity work and gain respect.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "happiness": 15,
+      "reputation": 10,
+      "fame": 5,
+      "money": -100
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 63,
+    "title": "Family Disagreement",
+    "description": "You have a disagreement with your family.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "happiness": -15,
+      "confidence": -5
+    },
+    "choices": [
+      {
+        "label": "A) Make up",
+        "effects": {
+          "happiness": 10,
+          "family": 10
+        }
+      },
+      {
+        "label": "B) Focus on career",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 64,
+    "title": "Training Partner Quits",
+    "description": "Your main training partner quits the sport.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "happiness": -10,
+      "discipline": 5
+    },
+    "choices": [
+      {
+        "label": "A) Find a new partner",
+        "effects": {
+          "striking": 2,
+          "grappling": 2
+        }
+      },
+      {
+        "label": "B) Train alone",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 65,
+    "title": "Back Injury Scare",
+    "description": "You feel a twinge in your back.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Rest",
+        "effects": {
+          "health": 5,
+          "energy": 5
+        }
+      },
+      {
+        "label": "B) Train light",
+        "effects": {
+          "health": -3,
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 66,
+    "title": "Shoulder Injury Scare",
+    "description": "You feel a twinge in your shoulder.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Rest",
+        "effects": {
+          "health": 5,
+          "energy": 5
+        }
+      },
+      {
+        "label": "B) Train light",
+        "effects": {
+          "health": -3,
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 67,
+    "title": "Ankle Injury Scare",
+    "description": "You roll your ankle.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Rest",
+        "effects": {
+          "health": 5,
+          "energy": 5
+        }
+      },
+      {
+        "label": "B) Train light",
+        "effects": {
+          "health": -3,
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 68,
+    "title": "Magazine Feature",
+    "description": "You're featured in a major magazine.",
+    "category": "career",
+    "trigger": {
+      "type": "fame",
+      "min": 50
+    },
+    "effects": {
+      "fame": 10,
+      "reputation": 5,
+      "followers": 10
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 69,
+    "title": "Podcast Appearance",
+    "description": "You appear on a popular podcast.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "fame": 8,
+      "money": 100,
+      "followers": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {
+      "min_wins": 4,
+      "min_fame": 8
+    }
+  },
+  {
+    "id": 70,
+    "title": "New Gym Offer",
+    "description": "A new gym offers you a sponsorship.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Switch gyms",
+        "effects": {
+          "team": "New Gym",
+          "strength": 2,
+          "speed": 2
+        }
+      },
+      {
+        "label": "B) Stay",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 71,
+    "title": "Rival Gets Injured",
+    "description": "Your rival gets injured.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "confidence": 10,
+      "rival": -10
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 72,
+    "title": "Rival Wins Title",
+    "description": "Your rival wins a championship.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "rival": 15,
+      "confidence": -5,
+      "happiness": -5
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 73,
+    "title": "Rival Loses",
+    "description": "Your rival loses a fight.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "confidence": 5,
+      "happiness": 5
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 74,
+    "title": "Fight Purse Increase",
+    "description": "Your next fight purse is increased.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 8
+    },
+    "effects": {
+      "money": 1000,
+      "fame": 5
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 75,
+    "title": "TV Appearance",
+    "description": "You appear on a local TV show.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "fame": 5,
+      "reputation": 5,
+      "followers": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 76,
+    "title": "Fight Week Motivation",
+    "description": "You feel extra motivated for fight week.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "confidence": 10,
+      "energy": 10
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 77,
+    "title": "Overtraining",
+    "description": "You've been overtraining and feel worn out.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "energy": -15,
+      "health": -10
+    },
+    "choices": [
+      {
+        "label": "A) Take a week off",
+        "effects": {
+          "energy": 10,
+          "health": 5
+        }
+      },
+      {
+        "label": "B) Train lighter",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 78,
+    "title": "Training Partner Wins",
+    "description": "Your training partner has a big win.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "happiness": 10,
+      "discipline": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 79,
+    "title": "Sponsor Termination",
+    "description": "Your sponsor terminates the contract early.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "money": -500,
+      "fame": -5,
+      "happiness": -10
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {
+      "min_wins": 2,
+      "min_fame": 5
+    }
+  },
+  {
+    "id": 80,
+    "title": "New Gym Equipment",
+    "description": "Your gym buys new equipment.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "strength": 2,
+      "speed": 2
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 81,
+    "title": "Private Coach",
+    "description": "You hire a private coach.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "striking": 3,
+      "grappling": 3,
+      "money": -500
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 82,
+    "title": "Live Sparring Success",
+    "description": "You have a live sparring session that goes well.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "striking": 2,
+      "grappling": 2,
+      "cardio": 2
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 83,
+    "title": "Bad Sparring Session",
+    "description": "You have a bad sparring session.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "confidence": -5,
+      "happiness": -5
+    },
+    "choices": [
+      {
+        "label": "A) Shake it off",
+        "effects": {
+          "mental_toughness": 5
+        }
+      },
+      {
+        "label": "B) Get extra work",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 84,
+    "title": "Fight Month",
+    "description": "It's the month of your fight.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "energy": 5,
+      "confidence": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 85,
+    "title": "Fight Day",
+    "description": "It's fight day!",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "energy": 10,
+      "confidence": 10,
+      "health": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 86,
+    "title": "Post-Fight Celebration",
+    "description": "You celebrate your win.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "happiness": 15,
+      "energy": -10,
+      "fame": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 87,
+    "title": "Post-Fight Depression",
+    "description": "You feel down after a loss.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "happiness": -20,
+      "confidence": -15
+    },
+    "choices": [
+      {
+        "label": "A) Talk to someone",
+        "effects": {
+          "happiness": 10,
+          "mental_toughness": 10
+        }
+      },
+      {
+        "label": "B) Train harder",
+        "effects": {
+          "discipline": 10
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 88,
+    "title": "New Rival Emerges",
+    "description": "A new fighter calls you out.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "rival": 20,
+      "press_hype": 10
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 89,
+    "title": "Old Rival Retires",
+    "description": "Your old rival retires.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "happiness": 10,
+      "rival": -10
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 90,
+    "title": "Media Blackout",
+    "description": "You decide to avoid all media.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "happiness": 5,
+      "fame": -5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 91,
+    "title": "Media Overload",
+    "description": "You're overwhelmed by media requests.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "energy": -10,
+      "happiness": -5
+    },
+    "choices": [
+      {
+        "label": "A) Handle it",
+        "effects": {
+          "fame": 5,
+          "discipline": 5
+        }
+      },
+      {
+        "label": "B) Take a break",
+        "effects": {
+          "happiness": 5,
+          "energy": 5
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 92,
+    "title": "Sponsor Bonus",
+    "description": "Your sponsor gives you a performance bonus.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 5
+    },
+    "effects": {
+      "money": 200,
+      "fame": 5
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {
+      "min_wins": 2,
+      "min_fame": 5
+    }
+  },
+  {
+    "id": 93,
+    "title": "Talented New Fighter",
+    "description": "A talented new fighter joins your gym.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "striking": 2,
+      "grappling": 2
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 94,
+    "title": "Fighter Leaves Gym",
+    "description": "A talented fighter leaves your gym.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "happiness": -5,
+      "discipline": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 95,
+    "title": "Training Camp Travel",
+    "description": "You travel to a different city for training camp.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "cardio": 3,
+      "strength": 2,
+      "money": -300
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 96,
+    "title": "Altitude Training",
+    "description": "You train at altitude.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "cardio": 5,
+      "strength": 2
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 97,
+    "title": "Heat Training",
+    "description": "You train in extreme heat.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "cardio": 3,
+      "durability": 2
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 98,
+    "title": "Sponsor Product Launch",
+    "description": "You help launch a sponsor's new product.",
+    "category": "career",
+    "trigger": {
+      "type": "fame",
+      "min": 40
+    },
+    "effects": {
+      "money": 300,
+      "fame": 5,
+      "energy": -10
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {
+      "min_wins": 2,
+      "min_fame": 5
+    }
+  },
+  {
+    "id": 99,
+    "title": "Sponsor Event",
+    "description": "You attend a sponsor event.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "money": 100,
+      "fame": 3,
+      "energy": -5
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {
+      "min_wins": 2,
+      "min_fame": 5
+    }
+  },
+  {
+    "id": 100,
+    "title": "Great Final Training",
+    "description": "You have a great final training session before the fight.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "confidence": 10,
+      "energy": 10
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 101,
+    "title": "Fight Week Anxiety",
+    "description": "You feel anxious before the fight.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "confidence": -10,
+      "mental_toughness": 5
+    },
+    "choices": [
+      {
+        "label": "A) Embrace it",
+        "effects": {
+          "confidence": 5
+        }
+      },
+      {
+        "label": "B) Meditate",
+        "effects": {
+          "mental_toughness": 5
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 102,
+    "title": "Fight Week Injury",
+    "description": "You sustain a minor injury during fight week.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "health": -5,
+      "confidence": -5
+    },
+    "choices": [
+      {
+        "label": "A) Fight through",
+        "effects": {
+          "discipline": 5
+        }
+      },
+      {
+        "label": "B) Pull out",
+        "effects": {
+          "reputation": -5,
+          "money": -500
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 103,
+    "title": "Fan Club Meeting",
+    "description": "You meet with a local fan club.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "happiness": 10,
+      "fame": 3
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 104,
+    "title": "Youth Clinic",
+    "description": "You run a youth MMA clinic.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "happiness": 15,
+      "reputation": 10,
+      "money": -50
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 105,
+    "title": "Referee Controversy",
+    "description": "A referee decision angers the crowd.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "fame": 5,
+      "reputation": -5,
+      "happiness": -5
+    },
+    "choices": [
+      {
+        "label": "A) Accept it",
+        "effects": {
+          "mental_toughness": 5
+        }
+      },
+      {
+        "label": "B) Complain",
+        "effects": {
+          "fame": 5,
+          "reputation": -5
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 106,
+    "title": "Fight Purse Negotiation",
+    "description": "Your manager negotiates a better purse.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 6
+    },
+    "effects": {
+      "money": 500,
+      "reputation": 5
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 107,
+    "title": "Doping Test",
+    "description": "You're selected for a random doping test.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "energy": -5,
+      "happiness": -5
+    },
+    "choices": [
+      {
+        "label": "A) Take it clean",
+        "effects": {
+          "reputation": 10
+        }
+      },
+      {
+        "label": "B) Panic",
+        "effects": {
+          "confidence": -5
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 108,
+    "title": "Training Partner Injury",
+    "description": "Your training partner gets injured.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "happiness": -5,
+      "discipline": 5
+    },
+    "choices": [
+      {
+        "label": "A) Help them recover",
+        "effects": {
+          "happiness": 10
+        }
+      },
+      {
+        "label": "B) Focus on yourself",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 109,
+    "title": "Gym Fire",
+    "description": "Your gym catches fire and is damaged.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "money": -500,
+      "happiness": -10
+    },
+    "choices": [
+      {
+        "label": "A) Help rebuild",
+        "effects": {
+          "reputation": 10
+        }
+      },
+      {
+        "label": "B) Find a new gym",
+        "effects": {
+          "money": -200,
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 110,
+    "title": "New Gym Location",
+    "description": "Your gym moves to a new location.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "strength": 2,
+      "cardio": 2,
+      "happiness": -5
+    },
+    "choices": [
+      {
+        "label": "A) Follow the gym",
+        "effects": {
+          "discipline": 5
+        }
+      },
+      {
+        "label": "B) Find a new gym",
+        "effects": {
+          "money": -100,
+          "happiness": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 111,
+    "title": "Mental Health Check",
+    "description": "You prioritise your mental health.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "mental_toughness": 10,
+      "happiness": 10,
+      "energy": -5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 112,
+    "title": "Physical Therapy",
+    "description": "You start physical therapy.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "health": 10,
+      "energy": -5,
+      "money": -200
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 113,
+    "title": "Massage Therapy",
+    "description": "You get regular massages.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "health": 5,
+      "energy": 5,
+      "money": -100
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 114,
+    "title": "Celebrity Fan",
+    "description": "A celebrity fan reaches out to you.",
+    "category": "fame",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "fame": 10,
+      "happiness": 10
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {
+      "min_wins": 3,
+      "min_fame": 8
+    }
+  },
+  {
+    "id": 115,
+    "title": "Documentary Offer",
+    "description": "A documentary wants to feature you.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 10
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Accept",
+        "effects": {
+          "fame": 15,
+          "money": 1000,
+          "energy": -20
+        }
+      },
+      {
+        "label": "B) Decline",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 20,
+    "require": {}
+  },
+  {
+    "id": 116,
+    "title": "Action Figure",
+    "description": "A toy company wants to make an action figure of you.",
+    "category": "fame",
+    "trigger": {
+      "type": "fame",
+      "min": 60
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Accept",
+        "effects": {
+          "money": 2000,
+          "fame": 10
+        }
+      },
+      {
+        "label": "B) Decline",
+        "effects": {
+          "happiness": -5
+        }
+      }
+    ],
+    "min_age": 20,
+    "require": {
+      "min_wins": 3,
+      "min_fame": 8
+    }
+  },
+  {
+    "id": 117,
+    "title": "Video Game Appearance",
+    "description": "You're featured in a video game.",
+    "category": "fame",
+    "trigger": {
+      "type": "fame",
+      "min": 50
+    },
+    "effects": {
+      "money": 1000,
+      "fame": 10,
+      "followers": 10
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {
+      "min_wins": 3,
+      "min_fame": 8
+    }
+  },
+  {
+    "id": 118,
+    "title": "Charity Match",
+    "description": "You participate in a charity MMA match.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "money": -200,
+      "fame": 10,
+      "happiness": 15,
+      "reputation": 10
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 119,
+    "title": "Hall of Fame Invite",
+    "description": "You're invited to a Hall of Fame event.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 20
+    },
+    "effects": {
+      "fame": 20,
+      "happiness": 15
+    },
+    "choices": null,
+    "min_age": 30,
+    "require": {}
+  },
+  {
+    "id": 120,
+    "title": "Keynote Speech",
+    "description": "You give a keynote speech at a sports conference.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 15
+    },
+    "effects": {
+      "fame": 15,
+      "reputation": 15,
+      "money": 500
+    },
+    "choices": null,
+    "min_age": 25,
+    "require": {}
+  },
+  {
+    "id": 121,
+    "title": "Sponsor Renewal (Big)",
+    "description": "Your main sponsor wants to renew with a huge deal.",
+    "category": "career",
+    "trigger": {
+      "type": "fame",
+      "min": 80
+    },
+    "effects": {
+      "money": 5000,
+      "fame": 15,
+      "energy": -20
+    },
+    "choices": [
+      {
+        "label": "A) Accept",
+        "effects": {
+          "money": 5000,
+          "fame": 15
+        }
+      },
+      {
+        "label": "B) Negotiate",
+        "effects": {
+          "money": 3000,
+          "fame": 10,
+          "energy": -10
+        }
+      }
+    ],
+    "min_age": 22,
+    "require": {
+      "min_wins": 2,
+      "min_fame": 5
+    }
+  },
+  {
+    "id": 122,
+    "title": "Olympic Qualifier",
+    "description": "You get a chance to qualify for the Olympics.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 15
+    },
+    "effects": {
+      "fame": 25,
+      "reputation": 25,
+      "happiness": 20
+    },
+    "choices": null,
+    "min_age": 20,
+    "require": {}
+  },
+  {
+    "id": 123,
+    "title": "Sports Award",
+    "description": "You win a major sports award.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 20
+    },
+    "effects": {
+      "fame": 30,
+      "reputation": 30,
+      "confidence": 20,
+      "legacy_score": 10
+    },
+    "choices": null,
+    "min_age": 22,
+    "require": {}
+  },
+  {
+    "id": 124,
+    "title": "Media Mogul",
+    "description": "You start a media company.",
+    "category": "career",
+    "trigger": {
+      "type": "fame",
+      "min": 70
+    },
+    "effects": {
+      "money": 2000,
+      "fame": 10,
+      "energy": -20
+    },
+    "choices": [
+      {
+        "label": "A) Invest heavily",
+        "effects": {
+          "money": -5000,
+          "fame": 20
+        }
+      },
+      {
+        "label": "B) Start small",
+        "effects": {
+          "money": -1000,
+          "fame": 10
+        }
+      }
+    ],
+    "min_age": 25,
+    "require": {}
+  },
+  {
+    "id": 125,
+    "title": "Charity Foundation",
+    "description": "You start a charity foundation.",
+    "category": "life",
+    "trigger": {
+      "type": "fame",
+      "min": 60
+    },
+    "effects": {
+      "money": -1000,
+      "fame": 15,
+      "happiness": 20,
+      "reputation": 20
+    },
+    "choices": null,
+    "min_age": 22,
+    "require": {}
+  },
+  {
+    "id": 126,
+    "title": "Real Estate Investment",
+    "description": "You invest in real estate.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "money": 5000,
+      "fame": 5
+    },
+    "choices": [
+      {
+        "label": "A) Buy property",
+        "effects": {
+          "money": 15000
+        }
+      },
+      {
+        "label": "B) Invest in REITs",
+        "effects": {
+          "money": 7500
+        }
+      }
+    ],
+    "min_age": 25,
+    "require": {}
+  },
+  {
+    "id": 127,
+    "title": "Stock Market Success",
+    "description": "Your stock investments pay off.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "money": 10000,
+      "fame": 5
+    },
+    "choices": null,
+    "min_age": 25,
+    "require": {}
+  },
+  {
+    "id": 128,
+    "title": "Business Venture",
+    "description": "You start a business venture.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "money": 2000,
+      "fame": 5,
+      "energy": -10
+    },
+    "choices": [
+      {
+        "label": "A) Succeed",
+        "effects": {
+          "money": 5000,
+          "fame": 10
+        }
+      },
+      {
+        "label": "B) Fail",
+        "effects": {
+          "money": -2000,
+          "happiness": -10
+        }
+      }
+    ],
+    "min_age": 22,
+    "require": {}
+  },
+  {
+    "id": 129,
+    "title": "Endorsement Empire",
+    "description": "You build a personal brand empire.",
+    "category": "fame",
+    "trigger": {
+      "type": "fame",
+      "min": 90
+    },
+    "effects": {
+      "money": 10000,
+      "fame": 20,
+      "reputation": 20,
+      "followers": 30
+    },
+    "choices": null,
+    "min_age": 28,
+    "require": {
+      "min_wins": 3,
+      "min_fame": 8
+    }
+  },
+  {
+    "id": 130,
+    "title": "Retirement Announcement",
+    "description": "You announce your retirement from MMA.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 25
+    },
+    "effects": {
+      "fame": 25,
+      "legacy_score": 15,
+      "happiness": 10
+    },
+    "choices": [
+      {
+        "label": "A) Retire gracefully",
+        "effects": {
+          "fame": 15,
+          "reputation": 15
+        }
+      },
+      {
+        "label": "B) One last fight",
+        "effects": {
+          "fame": 10,
+          "energy": -30
+        }
+      }
+    ],
+    "min_age": 35,
+    "require": {}
+  },
+  {
+    "id": 131,
+    "title": "Fight Camp",
+    "description": "You join a legendary fight camp.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "striking": 5,
+      "grappling": 5,
+      "cardio": 5,
+      "money": -1000
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 132,
+    "title": "International Travel",
+    "description": "You travel internationally for a fight.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.01
+    },
+    "effects": {
+      "fame": 10,
+      "reputation": 5,
+      "happiness": 5,
+      "money": -500
+    },
+    "choices": null,
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 133,
+    "title": "Fight Night",
+    "description": "You have a great performance on fight night.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "fame": 10,
+      "confidence": 10,
+      "followers": 10
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 134,
+    "title": "Post-Fight Interview",
+    "description": "Your post-fight interview is widely praised.",
+    "category": "fame",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "fame": 5,
+      "reputation": 5,
+      "followers": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {
+      "min_wins": 4,
+      "min_fame": 8
+    }
+  },
+  {
+    "id": 135,
+    "title": "Clean Eating Challenge",
+    "description": "You commit to a week of clean eating.",
+    "category": "nutrition",
+    "trigger": {
+      "type": "nutrition",
+      "min": 0,
+      "max": 40
+    },
+    "effects": {
+      "nutrition": 10,
+      "happiness": -5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {
+      "cooldown": 8
+    }
+  },
+  {
+    "id": 136,
+    "title": "Junk Food Cravings",
+    "description": "You're craving junk food.",
+    "category": "nutrition",
+    "trigger": {
+      "type": "nutrition",
+      "min": 0,
+      "max": 40
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Give in",
+        "effects": {
+          "nutrition": -10,
+          "happiness": 10
+        }
+      },
+      {
+        "label": "B) Resist",
+        "effects": {
+          "nutrition": 5,
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {
+      "cooldown": 8
+    }
+  },
+  {
+    "id": 137,
+    "title": "Nutritionist Check",
+    "description": "Your nutritionist checks your progress.",
+    "category": "nutrition",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Follow the plan",
+        "effects": {
+          "nutrition": 5,
+          "health": 5
+        }
+      },
+      {
+        "label": "B) Ignore advice",
+        "effects": {
+          "nutrition": -5,
+          "happiness": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {
+      "cooldown": 8
+    }
+  },
+  {
+    "id": 138,
+    "title": "Healthy Shopping",
+    "description": "You go grocery shopping and buy healthy food.",
+    "category": "nutrition",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "nutrition": 3,
+      "money": -20
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {
+      "cooldown": 8
+    }
+  },
+  {
+    "id": 139,
+    "title": "Water Intake",
+    "description": "You start tracking your water intake.",
+    "category": "nutrition",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "nutrition": 2,
+      "health": 2
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {
+      "cooldown": 8
+    }
+  },
+  {
+    "id": 140,
+    "title": "Supplements Review",
+    "description": "Your coach reviews your supplement plan.",
+    "category": "nutrition",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Update supplements",
+        "effects": {
+          "nutrition": 5,
+          "money": -50
+        }
+      },
+      {
+        "label": "B) Keep current",
+        "effects": {
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {
+      "cooldown": 8
+    }
+  },
+  {
+    "id": 141,
+    "title": "Balanced Diet Success",
+    "description": "Your balanced diet is paying off.",
+    "category": "nutrition",
+    "trigger": {
+      "type": "nutrition",
+      "min": 80
+    },
+    "effects": {
+      "nutrition": 5,
+      "health": 5,
+      "energy": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {
+      "cooldown": 8
+    }
+  },
+  {
+    "id": 142,
+    "title": "Cheat Day",
+    "description": "You have a planned cheat day.",
+    "category": "nutrition",
+    "trigger": {
+      "type": "nutrition",
+      "min": 40
+    },
+    "effects": {
+      "nutrition": -10,
+      "happiness": 10
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {
+      "cooldown": 8
+    }
+  },
+  {
+    "id": 143,
+    "title": "Bad Nutrition",
+    "description": "Your bad eating habits catch up with you.",
+    "category": "nutrition",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "nutrition": -5,
+      "health": -3,
+      "energy": -5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {
+      "cooldown": 8
+    }
+  },
+  {
+    "id": 144,
+    "title": "Good Nutrition",
+    "description": "Your good eating habits boost your recovery.",
+    "category": "nutrition",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "nutrition": 5,
+      "health": 5,
+      "energy": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {
+      "cooldown": 8
+    }
+  },
+  {
+    "id": 145,
+    "title": "National Team Invitation",
+    "description": "You receive an official invitation to join the National Team!",
+    "category": "national_team",
+    "trigger": {
+      "type": "national_team"
+    },
+    "effects": {
+      "fame": 20,
+      "reputation": 20,
+      "happiness": 20
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {
+      "cooldown": 14
+    }
+  },
+  {
+    "id": 146,
+    "title": "National Team Training Camp",
+    "description": "You attend a National Team training camp.",
+    "category": "national_team",
+    "trigger": {
+      "type": "national_team"
+    },
+    "effects": {
+      "striking": 3,
+      "grappling": 3,
+      "cardio": 3,
+      "energy": -10
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {
+      "cooldown": 14
+    }
+  },
+  {
+    "id": 147,
+    "title": "National Team Tournament",
+    "description": "You represent your country in a National Team tournament.",
+    "category": "national_team",
+    "trigger": {
+      "type": "national_team"
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Win",
+        "effects": {
+          "fame": 30,
+          "reputation": 30,
+          "legacy_score": 10
+        }
+      },
+      {
+        "label": "B) Lose",
+        "effects": {
+          "fame": -5,
+          "happiness": -10
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {
+      "cooldown": 14
+    }
+  },
+  {
+    "id": 148,
+    "title": "National Team Rival",
+    "description": "A rival from the National Team challenges you.",
+    "category": "national_team",
+    "trigger": {
+      "type": "national_team"
+    },
+    "effects": {
+      "rival": 20,
+      "press_hype": 10
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {
+      "cooldown": 14
+    }
+  },
+  {
+    "id": 149,
+    "title": "National Team Media",
+    "description": "You're featured in National Team media.",
+    "category": "national_team",
+    "trigger": {
+      "type": "national_team"
+    },
+    "effects": {
+      "fame": 10,
+      "followers": 15
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {
+      "cooldown": 14
+    }
+  },
+  {
+    "id": 150,
+    "title": "National Team Injury",
+    "description": "You sustain an injury during National Team training.",
+    "category": "national_team",
+    "trigger": {
+      "type": "national_team"
+    },
+    "effects": {
+      "health": -15,
+      "energy": -10
+    },
+    "choices": [
+      {
+        "label": "A) Recover with team",
+        "effects": {
+          "health": 10,
+          "discipline": 5
+        }
+      },
+      {
+        "label": "B) Return to your gym",
+        "effects": {
+          "health": 5,
+          "happiness": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {
+      "cooldown": 14
+    }
+  },
+  {
+    "id": 151,
+    "title": "National Team Coach",
+    "description": "Your National Team coach gives you advice.",
+    "category": "national_team",
+    "trigger": {
+      "type": "national_team"
+    },
+    "effects": {
+      "fight_iq": 5,
+      "confidence": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {
+      "cooldown": 14
+    }
+  },
+  {
+    "id": 152,
+    "title": "Early Bird Session",
+    "description": "You show up before the gym opens and get quality solo work in.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {
+      "discipline": 5,
+      "energy": -5,
+      "cardio": 1
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 153,
+    "title": "Film Study Night",
+    "description": "You stay up watching old title fights and take notes.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {
+      "fight_iq": 3,
+      "energy": -5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 154,
+    "title": "Sparring Invite",
+    "description": "A higher-level gym invites you for open mat.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Go and learn",
+        "effects": {
+          "striking": 2,
+          "grappling": 2,
+          "energy": -15,
+          "money": -50
+        }
+      },
+      {
+        "label": "B) Stay local",
+        "effects": {
+          "discipline": 3
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 155,
+    "title": "Quiet Confidence",
+    "description": "Your coach says your timing is finally showing up in live rounds.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "confidence": 8,
+      "happiness": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 156,
+    "title": "Overtraining Warning",
+    "description": "Your body feels heavy and your sleep is poor.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Deload week",
+        "effects": {
+          "energy": 15,
+          "health": 8,
+          "happiness": 5
+        }
+      },
+      {
+        "label": "B) Push through",
+        "effects": {
+          "discipline": 5,
+          "health": -8,
+          "energy": -10
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 157,
+    "title": "Local Interview",
+    "description": "A community podcast wants 20 minutes with you.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Do it",
+        "effects": {
+          "fame": 4,
+          "followers": 3,
+          "energy": -5
+        }
+      },
+      {
+        "label": "B) Skip",
+        "effects": {
+          "discipline": 2
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {
+      "min_wins": 4
+    }
+  },
+  {
+    "id": 158,
+    "title": "Rival Trash Talk",
+    "description": "Clips of your rival talking about you keep showing up on your feed.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Respond calmly",
+        "effects": {
+          "mental_toughness": 5,
+          "reputation": 3
+        }
+      },
+      {
+        "label": "B) Fire back",
+        "effects": {
+          "press_hype": 10,
+          "rival": 15,
+          "confidence": 5
+        }
+      },
+      {
+        "label": "C) Mute and train",
+        "effects": {
+          "discipline": 8
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 159,
+    "title": "Family Visit",
+    "description": "Relatives come into town and want to spend the weekend with you.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Make time",
+        "effects": {
+          "happiness": 12,
+          "family": 10,
+          "energy": -5
+        }
+      },
+      {
+        "label": "B) Keep training focus",
+        "effects": {
+          "discipline": 5,
+          "happiness": -5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 160,
+    "title": "Side Hustle Offer",
+    "description": "A friend offers cash for helping at their gym for a week.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Take the work",
+        "effects": {
+          "money": 250,
+          "energy": -15
+        }
+      },
+      {
+        "label": "B) Decline",
+        "effects": {
+          "discipline": 3
+        }
+      }
+    ],
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 161,
+    "title": "Good Sleep Streak",
+    "description": "A full week of solid sleep pays off in recovery.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "effects": {
+      "energy": 10,
+      "health": 5,
+      "happiness": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 162,
+    "title": "Technique Seminar",
+    "description": "A visiting coach runs a paid seminar at your gym.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.025
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Attend ($150)",
+        "effects": {
+          "money": -150,
+          "fight_iq": 3,
+          "grappling": 2
+        }
+      },
+      {
+        "label": "B) Skip",
+        "effects": {}
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 163,
+    "title": "Weight Room PR",
+    "description": "You hit a personal best on a big lift.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "strength": 2,
+      "confidence": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 164,
+    "title": "Cardio Test",
+    "description": "Coach runs a brutal conditioning test.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Empty the tank",
+        "effects": {
+          "cardio": 3,
+          "energy": -20,
+          "discipline": 5
+        }
+      },
+      {
+        "label": "B) Pace yourself",
+        "effects": {
+          "cardio": 1,
+          "energy": -8
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 165,
+    "title": "Sponsor Sample Box",
+    "description": "A brand sends free gear and supplements.",
+    "category": "career",
+    "trigger": {
+      "type": "fame",
+      "min": 15
+    },
+    "effects": {
+      "money": 0,
+      "happiness": 8,
+      "nutrition": 3
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {
+      "min_wins": 2,
+      "min_fame": 5
+    }
+  },
+  {
+    "id": 166,
+    "title": "Crowd Chant",
+    "description": "At open workouts the local crowd starts chanting your name.",
+    "category": "fame",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "fame": 5,
+      "confidence": 8,
+      "followers": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {
+      "min_wins": 3,
+      "min_fame": 8
+    }
+  },
+  {
+    "id": 167,
+    "title": "Travel Delay",
+    "description": "A missed connection costs you a day of recovery before a hard week.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "energy": -10,
+      "happiness": -5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 168,
+    "title": "Clean Bill of Health",
+    "description": "A checkup comes back better than expected.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.025
+    },
+    "effects": {
+      "health": 10,
+      "confidence": 5
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 169,
+    "title": "Old Injury Whisper",
+    "description": "Something familiar twinges during warm-ups.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Back off and treat it",
+        "effects": {
+          "health": 5,
+          "energy": 5
+        }
+      },
+      {
+        "label": "B) Tape it and continue",
+        "effects": {
+          "discipline": 5,
+          "health": -5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 170,
+    "title": "Teammate Advice",
+    "description": "A veteran training partner gives you a simple fix for your stance.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {
+      "fight_iq": 2,
+      "striking": 1,
+      "happiness": 4
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 171,
+    "title": "Press Request Flood",
+    "description": "After a strong win, media requests pile up.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 5
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Do a few interviews",
+        "effects": {
+          "fame": 8,
+          "energy": -10,
+          "followers": 5
+        }
+      },
+      {
+        "label": "B) Limit access",
+        "effects": {
+          "discipline": 5,
+          "fame": 2
+        }
+      }
+    ],
+    "min_age": 18,
+    "require": {}
+  },
+  {
+    "id": 172,
+    "title": "Amateur Officials Notice",
+    "description": "Tournament officials quietly mark you as a prospect.",
+    "category": "career",
+    "trigger": {
+      "type": "record",
+      "wins": 4
+    },
+    "effects": {
+      "reputation": 8,
+      "fame": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 173,
+    "title": "Budget Crunch",
+    "description": "Rent and gym fees hit in the same week.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Pick up extra work",
+        "effects": {
+          "money": 200,
+          "energy": -15
+        }
+      },
+      {
+        "label": "B) Tighten spending",
+        "effects": {
+          "money": -80,
+          "discipline": 5
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {}
+  },
+  {
+    "id": 174,
+    "title": "Mentor Call",
+    "description": "An older fighter you respect checks in on your path.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.02
+    },
+    "effects": {
+      "mental_toughness": 6,
+      "confidence": 5,
+      "happiness": 5
+    },
+    "choices": null,
+    "min_age": 16,
+    "require": {}
+  },
+  {
+    "id": 175,
+    "title": "Weight Drift",
+    "description": "Walking weight creeps up after a few soft weeks.",
+    "category": "nutrition",
+    "trigger": {
+      "type": "nutrition",
+      "min": 0,
+      "max": 45
+    },
+    "effects": {},
+    "choices": [
+      {
+        "label": "A) Tighten the diet",
+        "effects": {
+          "nutrition": 8,
+          "happiness": -4
+        }
+      },
+      {
+        "label": "B) Ignore it for now",
+        "effects": {
+          "happiness": 3,
+          "nutrition": -3
+        }
+      }
+    ],
+    "min_age": 0,
+    "require": {
+      "cooldown": 8
+    }
+  },
+  {
+    "id": 176,
+    "title": "Camp Chemistry",
+    "description": "Everyone in the room is locked in this week.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.025
+    },
+    "effects": {
+      "happiness": 6,
+      "discipline": 4,
+      "confidence": 4
+    },
+    "choices": null,
+    "min_age": 0,
+    "require": {}
+  }
+]

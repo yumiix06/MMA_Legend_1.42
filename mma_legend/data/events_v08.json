@@ -1,0 +1,2149 @@
+[
+  {
+    "id": "v8_01",
+    "title": "Gym lockout",
+    "description": "The card reader fails. You wait in the rain.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Wait it out",
+        "effects": {
+          "discipline": 1,
+          "energy": -8
+        }
+      },
+      {
+        "key": "B",
+        "label": "Go home",
+        "effects": {
+          "happiness": -4
+        }
+      },
+      {
+        "key": "C",
+        "label": "Climb in",
+        "effects": {
+          "discipline": -6,
+          "energy": -4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_02",
+    "title": "Coach disappointed",
+    "description": "Pads were lazy. He says so.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stay extra",
+        "effects": {
+          "relationships.coach": 4,
+          "energy": -10,
+          "discipline": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Argue",
+        "effects": {
+          "relationships.coach": -6
+        }
+      },
+      {
+        "key": "C",
+        "label": "Nod and leave",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_03",
+    "title": "Allowance warning",
+    "description": "Parents mention rent when you turn pro.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "amateur": true,
+      "max_wins": 8
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Listen",
+        "effects": {
+          "relationships.family": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Brush it off",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_04",
+    "title": "No-gi invite",
+    "description": "A small room is running matches Saturday.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Note it",
+        "effects": {
+          "happiness": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Too tired",
+        "effects": {
+          "energy": 4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_05",
+    "title": "Belt talk",
+    "description": "Your BJJ coach mentions stripes.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Ask what you need",
+        "effects": {
+          "fight_iq": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Shrug",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_06",
+    "title": "Fake promoter",
+    "description": "A man in a polo offers 'UFC tomorrow' for a fee.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 2
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Walk away",
+        "effects": {
+          "discipline": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Pay $80",
+        "effects": {
+          "money": -80,
+          "fame": -2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_07",
+    "title": "Weight bully",
+    "description": "A bigger amateur wants to run it back at his weight.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "min_wins": 1,
+      "amateur": true,
+      "cutting": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stay at your class",
+        "effects": {
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Accept catch",
+        "effects": {
+          "confidence": 2,
+          "health": -4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_08",
+    "title": "Elbow warning",
+    "description": "Ref reminds the room: no elbows.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Got it",
+        "effects": {
+          "fight_iq": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Roll eyes",
+        "effects": {
+          "discipline": -2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_09",
+    "title": "Visa talk",
+    "description": "Someone mentions papers for Europe.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "min_wins": 6
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Ask federation",
+        "effects": {
+          "fame": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ignore",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_10",
+    "title": "Roommate party",
+    "description": "They want a house party the night before camp.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Leave",
+        "effects": {
+          "energy": 4,
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Stay an hour",
+        "effects": {
+          "happiness": 4,
+          "energy": -8
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_11",
+    "title": "Cheap physio",
+    "description": "A student offers tape for cash.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Pay $25",
+        "effects": {
+          "money": -25,
+          "health": 6
+        }
+      },
+      {
+        "key": "B",
+        "label": "No",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_12",
+    "title": "Extra shift",
+    "description": "Gym door needs a closer.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Take it +$60",
+        "effects": {
+          "money": 60,
+          "energy": -12
+        }
+      },
+      {
+        "key": "B",
+        "label": "Train instead",
+        "effects": {
+          "discipline": 2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_13",
+    "title": "Rival grocery",
+    "description": "You see last month's opponent by the milk.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 1
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Nod",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Stare",
+        "effects": {
+          "confidence": 2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_14",
+    "title": "Scout in seats",
+    "description": "A national coach watches open mat.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 3,
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Sharp rounds",
+        "effects": {
+          "energy": -10,
+          "fame": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Hide",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_15",
+    "title": "Sponsor conflict",
+    "description": "Two local brands want the same sleeve.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "min_fame": 8
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Pick one",
+        "effects": {
+          "money": 40
+        }
+      },
+      {
+        "key": "B",
+        "label": "Refuse both",
+        "effects": {
+          "discipline": 2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_16",
+    "title": "Borrowed rashguard",
+    "description": "Yours is in the wash.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Borrow",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Buy one $20",
+        "effects": {
+          "money": -20
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_17",
+    "title": "Shin guard rental",
+    "description": "Amateur card requires pads you do not own.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Rent $15",
+        "effects": {
+          "money": -15
+        }
+      },
+      {
+        "key": "B",
+        "label": "Skip the card",
+        "effects": {
+          "happiness": -3
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_18",
+    "title": "Same-day cut",
+    "description": "You tried to squeeze a class.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 1
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Drink and abort cut",
+        "effects": {
+          "health": 4,
+          "energy": -4
+        }
+      },
+      {
+        "key": "B",
+        "label": "Push it",
+        "effects": {
+          "health": -8,
+          "weight_cut_health": -10
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_19",
+    "title": "Quiet win",
+    "description": "Nobody filmed it.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 1
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Fine",
+        "effects": {
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Annoyed",
+        "effects": {
+          "happiness": -3,
+          "fame": 0
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_20",
+    "title": "Misspelled name",
+    "description": "Local paper calls you someone else.",
+    "category": "fame",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "min_wins": 2
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Laugh",
+        "effects": {
+          "happiness": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Email them",
+        "effects": {
+          "fame": 1
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_21",
+    "title": "Mat burn",
+    "description": "Open mat takes skin off.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Clean it",
+        "effects": {
+          "health": -3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ignore",
+        "effects": {
+          "health": -6
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_22",
+    "title": "Coach film night",
+    "description": "He has a tape of a wrestler like your next guy.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "min_wins": 1
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Watch",
+        "effects": {
+          "opponent_read": 6,
+          "energy": -4
+        }
+      },
+      {
+        "key": "B",
+        "label": "Skip",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_23",
+    "title": "Family dinner",
+    "description": "They cooked. You have a morning session.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stay short",
+        "effects": {
+          "relationships.family": 3,
+          "happiness": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Skip",
+        "effects": {
+          "relationships.family": -4,
+          "energy": 4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_24",
+    "title": "Late bus",
+    "description": "You miss the first round of drills.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Sprint in",
+        "effects": {
+          "energy": -6,
+          "discipline": -1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Turn around",
+        "effects": {
+          "discipline": -4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_25",
+    "title": "Old gloves",
+    "description": "Wrist is folding.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Tape them",
+        "effects": {}
+      },
+      {
+        "key": "B",
+        "label": "Buy $45",
+        "effects": {
+          "money": -45,
+          "striking": 1
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_26",
+    "title": "Open mat visitor",
+    "description": "A purple belt from another city.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Ask to roll",
+        "effects": {
+          "submissions": 1,
+          "energy": -8
+        }
+      },
+      {
+        "key": "B",
+        "label": "Watch",
+        "effects": {
+          "fight_iq": 1
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_27",
+    "title": "School paper",
+    "description": "Due tomorrow. Camp starts Monday.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Write it",
+        "effects": {
+          "school_grade": 4,
+          "energy": -8
+        }
+      },
+      {
+        "key": "B",
+        "label": "Skip class energy",
+        "effects": {
+          "school_grade": -6,
+          "energy": 4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_28",
+    "title": "Parents ask record",
+    "description": "They want the honest one.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Tell them",
+        "effects": {
+          "relationships.family": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Change subject",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_29",
+    "title": "Ice bath dare",
+    "description": "Team jumps in.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "In",
+        "effects": {
+          "health": 3,
+          "happiness": 2,
+          "energy": -3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Out",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_30",
+    "title": "Wrong weight class chat",
+    "description": "Someone says move up for easy nights.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 2
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stay",
+        "effects": {
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Consider",
+        "effects": {
+          "confidence": -1
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_31",
+    "title": "Pro locker photo",
+    "description": "A local pro posts from the back.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "pro": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Keep walking",
+        "effects": {
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ask for a tag",
+        "effects": {
+          "fame": 2,
+          "happiness": 1
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_32",
+    "title": "Purse delay",
+    "description": "Promoter 'forgot' the envelope.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "pro": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Wait",
+        "effects": {
+          "happiness": -3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Make a scene",
+        "effects": {
+          "fame": 1,
+          "reputation": -2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_33",
+    "title": "Corners clash",
+    "description": "Two coaches talk over each other.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "pro": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Pick MMA coach",
+        "effects": {
+          "relationships.coach": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Pick BJJ coach",
+        "effects": {
+          "submissions": 1
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_34",
+    "title": "Hotel weigh-in",
+    "description": "Same-day amateur scale in a hallway.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "amateur": true,
+      "min_wins": 1
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Make weight clean",
+        "effects": {
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Spit and panic",
+        "effects": {
+          "health": -5
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_35",
+    "title": "Tape on the shin",
+    "description": "Amateur pads leave a bruise map.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Rest it",
+        "effects": {
+          "health": 3,
+          "energy": -2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Train anyway",
+        "effects": {
+          "health": -4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_36",
+    "title": "Small sponsor cash",
+    "description": "A kebab shop wants a photo.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 2,
+      "min_fame": 3
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Take $70",
+        "effects": {
+          "money": 70,
+          "fame": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "No",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_37",
+    "title": "Friend wants tickets",
+    "description": "They expect free ones you do not have.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 1
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Explain",
+        "effects": {
+          "relationships.friends": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Buy two $30",
+        "effects": {
+          "money": -30,
+          "relationships.friends": 4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_38",
+    "title": "Rain run",
+    "description": "Coach says road work anyway.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Run",
+        "effects": {
+          "cardio": 1,
+          "energy": -10
+        }
+      },
+      {
+        "key": "B",
+        "label": "Treadmill $5",
+        "effects": {
+          "money": -5,
+          "cardio": 1
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_39",
+    "title": "Silent treatment",
+    "description": "Coach ignores you after a lazy week.",
+    "category": "drama",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Show early",
+        "effects": {
+          "relationships.coach": 5,
+          "energy": -6
+        }
+      },
+      {
+        "key": "B",
+        "label": "Wait it out",
+        "effects": {
+          "happiness": -4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_40",
+    "title": "Used mouthguard",
+    "description": "You left yours. Someone offers a spare.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Refuse",
+        "effects": {
+          "discipline": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Use it",
+        "effects": {
+          "health": -2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_41",
+    "title": "National poster",
+    "description": "Your face is tiny in the corner.",
+    "category": "fame",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "min_wins": 4,
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Keep it",
+        "effects": {
+          "happiness": 4,
+          "fame": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Shrug",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_42",
+    "title": "Travel bag lost",
+    "description": "Shin guards in the other bag.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "min_wins": 3
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Borrow",
+        "effects": {
+          "happiness": -2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Buy emergency $40",
+        "effects": {
+          "money": -40
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_43",
+    "title": "Early morning weights",
+    "description": "Empty gym at 6.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Lift",
+        "effects": {
+          "strength": 1,
+          "energy": -8
+        }
+      },
+      {
+        "key": "B",
+        "label": "Sleep",
+        "effects": {
+          "energy": 8
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_44",
+    "title": "Comment section",
+    "description": "A stranger rates your last fight.",
+    "category": "fame",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "min_wins": 2
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Mute",
+        "effects": {
+          "mental_toughness": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Reply",
+        "effects": {
+          "happiness": -3,
+          "fame": 1
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_45",
+    "title": "Physio waitlist",
+    "description": "Two weeks for a real slot.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Book $60",
+        "effects": {
+          "money": -60,
+          "health": 10
+        }
+      },
+      {
+        "key": "B",
+        "label": "Home ice",
+        "effects": {
+          "health": 3
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_46",
+    "title": "Teammate birthday",
+    "description": "Drinks after light rounds.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Soda",
+        "effects": {
+          "relationships.friends": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Two beers",
+        "effects": {
+          "happiness": 5,
+          "energy": -10
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_47",
+    "title": "Scale obsession",
+    "description": "You weigh four times a day.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 1,
+      "cutting": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stop",
+        "effects": {
+          "happiness": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep cutting",
+        "effects": {
+          "health": -4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_48",
+    "title": "Old injury twinge",
+    "description": "Same ankle from last winter.",
+    "category": "health",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 2
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Tape and go",
+        "effects": {
+          "health": -3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Week off drills",
+        "effects": {
+          "energy": 4,
+          "health": 4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_49",
+    "title": "Coach technique hour",
+    "description": "He will show one move properly.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Stay",
+        "effects": {
+          "fight_iq": 2,
+          "energy": -6
+        }
+      },
+      {
+        "key": "B",
+        "label": "Can't",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_50",
+    "title": "Local radio",
+    "description": "They want a 3-minute call.",
+    "category": "fame",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "require": {
+      "min_wins": 5,
+      "min_fame": 10
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Do it",
+        "effects": {
+          "fame": 4,
+          "energy": -4
+        }
+      },
+      {
+        "key": "B",
+        "label": "No",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_51",
+    "title": "Border bus",
+    "description": "Europe talk on a long ride.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.03
+    },
+    "require": {
+      "min_wins": 8,
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Ask NT contact",
+        "effects": {
+          "fame": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Sleep",
+        "effects": {
+          "energy": 4
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_52",
+    "title": "Secondhand gi",
+    "description": "Smells like a locker.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Wash twice",
+        "effects": {
+          "happiness": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "Buy $55",
+        "effects": {
+          "money": -55
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_53",
+    "title": "Sparring too hard",
+    "description": "Partner does not hear tap pace.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Reset the pace",
+        "effects": {
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Match him",
+        "effects": {
+          "health": -8,
+          "confidence": 2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_54",
+    "title": "Promoter handshake",
+    "description": "Local night wants a name on the poster.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "min_wins": 3
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Take the date",
+        "effects": {
+          "fame": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Need more time",
+        "effects": {}
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_55",
+    "title": "Sleep on the floor",
+    "description": "Travel night, no hotel.",
+    "category": "life",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "min_wins": 4
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Deal",
+        "effects": {
+          "mental_toughness": 2,
+          "energy": -6
+        }
+      },
+      {
+        "key": "B",
+        "label": "Pay $35 room",
+        "effects": {
+          "money": -35,
+          "energy": 2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_56",
+    "title": "Quiet open mat",
+    "description": "Only you and a hobbyist.",
+    "category": "training",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {},
+    "choices": [
+      {
+        "key": "A",
+        "label": "Drill",
+        "effects": {
+          "discipline": 2,
+          "energy": -5
+        }
+      },
+      {
+        "key": "B",
+        "label": "Go home",
+        "effects": {
+          "happiness": -1
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8_57",
+    "title": "Rainy weigh-in",
+    "description": "Scale in a leaking tent.",
+    "category": "career",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "min_wins": 2,
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Make it",
+        "effects": {
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Complain",
+        "effects": {
+          "happiness": -2
+        }
+      }
+    ],
+    "conditional": false
+  },
+  {
+    "id": "v8c_01",
+    "title": "Federation letter",
+    "description": "They write after your National medal.",
+    "category": "career",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.9
+    },
+    "require": {
+      "once": true,
+      "flag": "need_nt_letter"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Join NT",
+        "effects": {
+          "national_team": true,
+          "fame": 4
+        }
+      },
+      {
+        "key": "B",
+        "label": "Not now",
+        "effects": {}
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_02",
+    "title": "NT kit",
+    "description": "A bag with the flag on it.",
+    "category": "career",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.8
+    },
+    "require": {
+      "once": true,
+      "nt": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Wear it",
+        "effects": {
+          "happiness": 5,
+          "fame": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep it in the bag",
+        "effects": {}
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_03",
+    "title": "Partner talks",
+    "description": "He heard you said no to turning pro.",
+    "category": "drama",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.7
+    },
+    "require": {
+      "flag": "declined_pro"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "I know the clock",
+        "effects": {
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Get off my case",
+        "effects": {
+          "relationships.friends": -3
+        }
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_04",
+    "title": "First pro locker",
+    "description": "The room is quieter than amateur.",
+    "category": "career",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.85
+    },
+    "require": {
+      "pro": true,
+      "once": true,
+      "max_am": 9
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Breathe",
+        "effects": {
+          "mental_toughness": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Fake it",
+        "effects": {
+          "confidence": 2,
+          "happiness": -2
+        }
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_05",
+    "title": "Blue belt test",
+    "description": "Coach puts a date on the board.",
+    "category": "training",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.8
+    },
+    "require": {
+      "flag": "belt_ready"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Pay $40 and test",
+        "effects": {
+          "money": -40,
+          "bjj_belt": "blue"
+        }
+      },
+      {
+        "key": "B",
+        "label": "Wait",
+        "effects": {}
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_06",
+    "title": "Parents cut off",
+    "description": "The transfer stops. You are pro now.",
+    "category": "life",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.8
+    },
+    "require": {
+      "pro": true,
+      "once": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Thank them",
+        "effects": {
+          "relationships.family": 4
+        }
+      },
+      {
+        "key": "B",
+        "label": "Panic",
+        "effects": {
+          "happiness": -6
+        }
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_07",
+    "title": "Showcase look",
+    "description": "A booker wants you on a contender night.",
+    "category": "career",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.5
+    },
+    "require": {
+      "pro": true,
+      "min_pro_wins": 4,
+      "min_fame": 10
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Take the look",
+        "effects": {
+          "fame": 5
+        }
+      },
+      {
+        "key": "B",
+        "label": "Not yet",
+        "effects": {}
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_08",
+    "title": "Same-country rematch",
+    "description": "He wants it back on a local card.",
+    "category": "drama",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.4
+    },
+    "require": {
+      "min_wins": 2
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Book it later",
+        "effects": {
+          "press_hype": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Ignore",
+        "effects": {}
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_09",
+    "title": "Failed weight follow-up",
+    "description": "The last cut still shows.",
+    "category": "health",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.6
+    },
+    "require": {
+      "flag": "weight_trouble"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Eat up",
+        "effects": {
+          "health": 6
+        }
+      },
+      {
+        "key": "B",
+        "label": "Cut again",
+        "effects": {
+          "health": -6
+        }
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_10",
+    "title": "Eye check",
+    "description": "Doctor wants a look after the stoppage.",
+    "category": "health",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.7
+    },
+    "require": {
+      "flag": "doctor_stop"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Sit a week",
+        "effects": {
+          "health": 8,
+          "energy": 6
+        }
+      },
+      {
+        "key": "B",
+        "label": "I'm fine",
+        "effects": {
+          "health": -4
+        }
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_11",
+    "title": "No-gi streak",
+    "description": "Three no-gi nights in a row.",
+    "category": "career",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.5
+    },
+    "require": {
+      "flag": "nogi_hot"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Keep rolling",
+        "effects": {
+          "submissions": 2,
+          "energy": -6
+        }
+      },
+      {
+        "key": "B",
+        "label": "Rest the joints",
+        "effects": {
+          "health": 4
+        }
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_12",
+    "title": "Exam vs camp",
+    "description": "Paper is this week. Camp is this week.",
+    "category": "life",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.6
+    },
+    "require": {
+      "amateur": true,
+      "flag": "school"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Exam",
+        "effects": {
+          "school_grade": 6,
+          "energy": -4
+        }
+      },
+      {
+        "key": "B",
+        "label": "Camp",
+        "effects": {
+          "camp_bonus": 2,
+          "school_grade": -8
+        }
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_13",
+    "title": "Coach gift",
+    "description": "He walks you through a real move.",
+    "category": "training",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.5
+    },
+    "require": {
+      "min_rel_coach": 70
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Learn",
+        "effects": {
+          "fight_iq": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "Film it later",
+        "effects": {
+          "opponent_read": 3
+        }
+      }
+    ],
+    "conditional": true
+  },
+  {
+    "id": "v8c_14",
+    "title": "ADCC poster",
+    "description": "A trials poster is on the wall. Not this year.",
+    "category": "life",
+    "trigger": {
+      "type": "conditional",
+      "chance": 0.3
+    },
+    "require": {
+      "once": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "Look at it",
+        "effects": {
+          "happiness": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "Keep walking",
+        "effects": {}
+      }
+    ],
+    "conditional": true
+  }
+]

@@ -1,0 +1,1234 @@
+[
+  {
+    "id": "v6_gym_open",
+    "title": "Open Mat",
+    "description": "Your gym is short on bodies. Coach asks {name} to help newer kids.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.12
+    },
+    "require": {
+      "amateur": true,
+      "max_wins": 8
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Help them",
+        "effects": {
+          "happiness": 5,
+          "reputation": 2,
+          "energy": -6
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Train alone",
+        "effects": {
+          "discipline": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_local_radio",
+    "title": "Local Radio",
+    "description": "A small station wants 10 minutes after your last win.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "require": {
+      "min_wins": 3,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Do it",
+        "effects": {
+          "fame": 3,
+          "followers": 1,
+          "energy": -4
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Skip",
+        "effects": {
+          "discipline": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_podcast_pro",
+    "title": "Podcast Invite",
+    "description": "A real show wants {name} on. You have {wins} wins.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "min_wins": 6,
+      "min_fame": 8,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Go on",
+        "effects": {
+          "fame": 6,
+          "press_hype": 8,
+          "energy": -8
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Too busy",
+        "effects": {
+          "discipline": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_party_invite",
+    "title": "Teammate Party",
+    "description": "The team is going out. Fight week energy matters.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.1
+    },
+    "require": {
+      "min_week": 3
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Go hard",
+        "effects": {
+          "happiness": 10,
+          "energy": -18,
+          "nutrition": -8,
+          "discipline": -6,
+          "hangover": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) One drink",
+        "effects": {
+          "happiness": 4,
+          "energy": -6
+        }
+      },
+      {
+        "key": "C",
+        "label": "C) Stay in",
+        "effects": {
+          "discipline": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_rent",
+    "title": "Rent Due",
+    "description": "The room costs money even if you didn't fight.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.14
+    },
+    "require": {
+      "min_week": 4,
+      "cooldown": 8
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Pay ($80)",
+        "effects": {
+          "money": -80,
+          "happiness": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Short the landlord",
+        "effects": {
+          "money": -20,
+          "reputation": -3,
+          "happiness": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_gear",
+    "title": "Gloves Are Shot",
+    "description": "Coach points at your tape-wrapped gloves.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "require": {
+      "max_wins": 12
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Buy new ($60)",
+        "effects": {
+          "money": -60,
+          "striking": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Keep taping",
+        "effects": {
+          "money": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_family_dinner",
+    "title": "Family Dinner",
+    "description": "{country} at the table. They ask if this fighting thing is real.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.1
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Eat and listen",
+        "effects": {
+          "family": 8,
+          "happiness": 6,
+          "nutrition": 4,
+          "energy": -3
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Cut it short",
+        "effects": {
+          "family": -4,
+          "discipline": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_side_bjj",
+    "title": "Grappling Open",
+    "description": "A local BJJ open is this weekend. Amateur only.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "amateur": true,
+      "min_wins": 1
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Enter ($40)",
+        "effects": {
+          "money": -40,
+          "grappling": 1,
+          "submissions": 1,
+          "energy": -12
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Skip",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "v6_side_box",
+    "title": "Novice Boxing Night",
+    "description": "Three-round novice boxing. Pays little, teaches a lot.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "amateur": true,
+      "min_wins": 2
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Take it",
+        "effects": {
+          "money": 50,
+          "striking": 1,
+          "health": -6,
+          "energy": -14
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Stay MMA",
+        "effects": {
+          "discipline": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_scout_look",
+    "title": "Scout in the Stands",
+    "description": "Someone with a notebook watched you warm up. You have {wins} wins.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 5,
+      "cooldown": 18
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Stay composed",
+        "effects": {
+          "confidence": 4,
+          "fame": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Show off",
+        "effects": {
+          "press_hype": 5,
+          "discipline": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_weight_scale",
+    "title": "Kitchen Scale",
+    "description": "You're {money} in the bank and the cut starts in your head.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "require": {
+      "min_week": 6
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Tight week",
+        "effects": {
+          "nutrition": 6,
+          "happiness": -3
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Eat like a person",
+        "effects": {
+          "nutrition": -4,
+          "happiness": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_coach_film",
+    "title": "Coach Puts On Film",
+    "description": "He wants a quiet night. No phones.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Watch",
+        "effects": {
+          "fight_iq": 1,
+          "coach": 5,
+          "energy": -4
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Scroll instead",
+        "effects": {
+          "coach": -3,
+          "followers": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_bus",
+    "title": "Missed Bus",
+    "description": "You are late to practice.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Run it",
+        "effects": {
+          "energy": -8,
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Skip session",
+        "effects": {
+          "energy": 4,
+          "coach": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_job",
+    "title": "Shift Offered",
+    "description": "Warehouse wants a Saturday. Pays cash.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "require": {
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Work ($90)",
+        "effects": {
+          "money": 90,
+          "energy": -16,
+          "happiness": -2
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Train",
+        "effects": {
+          "discipline": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_date",
+    "title": "Someone Asks You Out",
+    "description": "Just a person. Not a headline.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Go ($25)",
+        "effects": {
+          "money": -25,
+          "happiness": 8,
+          "energy": -6,
+          "partner": 6
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Not now",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "v6_sponsor_local",
+    "title": "Gym Shop Deal",
+    "description": "Shop offers gloves if you tag them.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_wins": 2,
+      "cooldown": 20
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Take it",
+        "effects": {
+          "money": 40,
+          "fame": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Pass",
+        "effects": {
+          "reputation": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_brand_pro",
+    "title": "Regional Brand",
+    "description": "A small brand emails.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 8,
+      "min_fame": 10
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Sign",
+        "effects": {
+          "money": 200,
+          "fame": 4
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Hold out",
+        "effects": {
+          "reputation": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_nt_camp",
+    "title": "NT Camp Slot",
+    "description": "National team camp week.",
+    "trigger": {
+      "type": "national_team",
+      "chance": 0.2
+    },
+    "require": {
+      "national_team": true,
+      "cooldown": 16
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Go",
+        "effects": {
+          "discipline": 6,
+          "energy": -10,
+          "reputation": 4
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Stay home",
+        "effects": {
+          "happiness": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_injury_tape",
+    "title": "Ankle Tape Talk",
+    "description": "Physio says rest or film.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "require": {
+      "min_week": 5
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Rest",
+        "effects": {
+          "health": 8,
+          "energy": 6
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Push",
+        "effects": {
+          "health": -6,
+          "confidence": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_social_drama",
+    "title": "Comment Section",
+    "description": "Someone from last week talks nonsense.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "min_wins": 3,
+      "min_fame": 4
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Reply",
+        "effects": {
+          "press_hype": 5,
+          "reputation": -2
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Mute",
+        "effects": {
+          "discipline": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_travel",
+    "title": "Away Show Fare",
+    "description": "A card two cities over.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "min_wins": 2,
+      "amateur": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Go ($35)",
+        "effects": {
+          "money": -35,
+          "fame": 2,
+          "energy": -8
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Stay local",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "v6_food",
+    "title": "Meal Prep or Garbage",
+    "description": "Fridge is a choice.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.1
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Cook ($20)",
+        "effects": {
+          "money": -20,
+          "nutrition": 8
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Cheap takeout",
+        "effects": {
+          "money": -8,
+          "nutrition": -4,
+          "happiness": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_friend",
+    "title": "Old Friend",
+    "description": "They do not get the 5am runs.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Explain",
+        "effects": {
+          "friends": 6,
+          "happiness": 4
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Let it drift",
+        "effects": {
+          "friends": -3,
+          "discipline": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_kick_smoker",
+    "title": "Kickboxing Smoker",
+    "description": "Amateur kick rules, headgear.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "amateur": true,
+      "min_wins": 1
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Fight",
+        "effects": {
+          "kicks": 1,
+          "money": 30,
+          "energy": -12
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Pass",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "v6_press_pro",
+    "title": "Scrum After Weigh-in",
+    "description": "Pros get mics in their face.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "pro": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Humble",
+        "effects": {
+          "reputation": 4
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Fire",
+        "effects": {
+          "press_hype": 8,
+          "fame": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_ufc_nibble",
+    "title": "Matchmaker Text",
+    "description": "Not a contract. A question.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "pro": true,
+      "min_wins": 4,
+      "min_fame": 12,
+      "once": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Stay ready",
+        "effects": {
+          "confidence": 5,
+          "fame": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Demand money",
+        "effects": {
+          "press_hype": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_camp_quiet",
+    "title": "Camp Curfew",
+    "description": "Coach locks the socials.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Respect it",
+        "effects": {
+          "coach": 6,
+          "discipline": 4
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Sneak out",
+        "effects": {
+          "happiness": 5,
+          "coach": -6,
+          "hangover": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_charity",
+    "title": "Kids Clinic",
+    "description": "Saturday pads with kids.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "min_wins": 4
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Show up",
+        "effects": {
+          "reputation": 4,
+          "happiness": 5,
+          "energy": -6
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Recover",
+        "effects": {
+          "energy": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_loan",
+    "title": "Cousin Wants Cash",
+    "description": "Family politics.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_week": 8
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Lend $50",
+        "effects": {
+          "money": -50,
+          "family": 6
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Cannot",
+        "effects": {
+          "family": -2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_sleep",
+    "title": "2am Phone",
+    "description": "Scroll or sleep.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.09
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Sleep",
+        "effects": {
+          "energy": 6,
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Scroll",
+        "effects": {
+          "followers": 1,
+          "energy": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_spar_hard",
+    "title": "Hard Spar Invite",
+    "description": "A better guy is in town.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "require": {
+      "min_wins": 2
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Spar",
+        "effects": {
+          "health": -5,
+          "confidence": 3
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Smart rest",
+        "effects": {
+          "health": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_fan",
+    "title": "Kid Wants a Photo",
+    "description": "Only if anyone knows you.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "require": {
+      "min_fame": 5,
+      "min_wins": 3
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Photo",
+        "effects": {
+          "happiness": 4,
+          "fame": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Headphones",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "v6_club_pro",
+    "title": "Bottle Service Invite",
+    "description": "Not for 0-0 kids.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 5,
+      "min_fame": 8
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Stay out",
+        "effects": {
+          "fame": 3,
+          "energy": -16,
+          "hangover": 2,
+          "discipline": -5
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Leave early",
+        "effects": {
+          "fame": 1,
+          "energy": -6
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_teammate_spar",
+    "title": "Teammate Wants Rounds",
+    "description": "Salty or hungry.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Give rounds",
+        "effects": {
+          "energy": -8,
+          "friends": 4
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Not today",
+        "effects": {
+          "energy": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_win_bonus_am",
+    "title": "Gate Cut",
+    "description": "Tiny amateur bonus.",
+    "trigger": {
+      "type": "record",
+      "wins": 2
+    },
+    "require": {
+      "amateur": true,
+      "once": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Take $70",
+        "effects": {
+          "money": 70
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Leave it with gym",
+        "effects": {
+          "coach": 6,
+          "reputation": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_pro_purse_talk",
+    "title": "Purse Talk",
+    "description": "Someone wants a cut.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "pro": true
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Keep simple",
+        "effects": {
+          "money": -40,
+          "reputation": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) No deal",
+        "effects": {
+          "press_hype": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_vitamin",
+    "title": "Pharmacy Run",
+    "description": "Fish oil and ego.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.06
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Buy ($15)",
+        "effects": {
+          "money": -15,
+          "health": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Skip",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "v6_mentor",
+    "title": "Old Pro Talks",
+    "description": "He retired broke. He still knows things.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.05
+    },
+    "require": {
+      "min_wins": 3
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Listen",
+        "effects": {
+          "happiness": -1,
+          "discipline": 2
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Brush off",
+        "effects": {
+          "confidence": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_rain",
+    "title": "Road Work in Rain",
+    "description": "Just weather.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.08
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Run anyway",
+        "effects": {
+          "energy": -8,
+          "cardio": 1
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Treadmill",
+        "effects": {
+          "energy": -4
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_sleepover",
+    "title": "Couch at the Gym",
+    "description": "Pads room is free.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "max_wins": 6
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Sleep there",
+        "effects": {
+          "money": 20,
+          "happiness": -3
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Go home",
+        "effects": {
+          "family": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "v6_ice",
+    "title": "Ice Bath Dare",
+    "description": "Recovery or theater.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.07
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Do it",
+        "effects": {
+          "health": 4,
+          "happiness": -2
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Shower",
+        "effects": {}
+      }
+    ]
+  },
+  {
+    "id": "v6_fine",
+    "title": "Late Weigh-in Fine",
+    "description": "Amateur show still fines you.",
+    "trigger": {
+      "type": "random",
+      "chance": 0.04
+    },
+    "require": {
+      "min_wins": 1
+    },
+    "choices": [
+      {
+        "key": "A",
+        "label": "A) Pay $30",
+        "effects": {
+          "money": -30
+        }
+      },
+      {
+        "key": "B",
+        "label": "B) Argue",
+        "effects": {
+          "reputation": -4
+        }
+      }
+    ]
+  }
+]

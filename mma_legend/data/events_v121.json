@@ -1,0 +1,266 @@
+[
+  {
+    "id": "v121_01", "title": "Coach rewatches the loss", "category": "coach",
+    "description": "The room is empty. Your coach freezes the tape at the exact mistake that changed the fight.",
+    "trigger": {"chance": 0.12}, "require": {"last": "L", "cooldown": 14},
+    "choices": [
+      {"key": "A", "label": "Study the mistake", "effects": {"fight_iq": 2, "confidence": -1}},
+      {"key": "B", "label": "Ask to drill the position", "effects": {"grappling": 1, "takedown_def": 1, "energy": -5}}
+    ]
+  },
+  {
+    "id": "v121_02", "title": "A quiet win on Monday", "category": "life",
+    "description": "The noise is gone. At breakfast, the win finally feels real.",
+    "trigger": {"chance": 0.10}, "require": {"last": "W", "cooldown": 12},
+    "choices": [
+      {"key": "A", "label": "Enjoy it with the family", "effects": {"happiness": 5, "relationships.family": 3}},
+      {"key": "B", "label": "Go straight back to work", "effects": {"discipline": 2, "energy": -3}}
+    ]
+  },
+  {
+    "id": "v121_03", "title": "The hand still throbs", "category": "health",
+    "description": "You cannot close the fist without feeling the last fight.",
+    "trigger": {"chance": 0.13}, "require": {"injured": true, "cooldown": 10},
+    "choices": [
+      {"key": "A", "label": "Respect the recovery plan", "effects": {"discipline": 2, "happiness": -1}},
+      {"key": "B", "label": "Shadowbox around it", "effects": {"fight_iq": 1, "energy": -4}}
+    ]
+  },
+  {
+    "id": "v121_04", "title": "Old damage shows in the mirror", "category": "health",
+    "description": "The swelling is down, but your face and ribs still tell the story.",
+    "trigger": {"chance": 0.11}, "require": {"min_damage": 35, "cooldown": 12},
+    "choices": [
+      {"key": "A", "label": "Book recovery work", "effects": {"money": -100, "health": 5}},
+      {"key": "B", "label": "Let time handle it", "effects": {"happiness": -1}}
+    ]
+  },
+  {
+    "id": "v121_05", "title": "Foreign room tests the newcomer", "category": "camp",
+    "description": "Nobody gives you an easy round. The local prospect points at the mat.",
+    "trigger": {"chance": 0.14}, "require": {"cooldown": 8},
+    "choices": [
+      {"key": "A", "label": "Take every hard round", "effects": {"grappling": 1, "durability": 1, "energy": -8}},
+      {"key": "B", "label": "Choose technical rounds", "effects": {"fight_iq": 1, "adaptability": 1, "energy": -3}}
+    ]
+  },
+  {
+    "id": "v121_06", "title": "A local coach stays late", "category": "camp",
+    "description": "He fixes one detail and makes you repeat it until the lights go out.",
+    "trigger": {"chance": 0.12}, "require": {"cooldown": 9},
+    "effects": {"fight_iq": 1, "adaptability": 1, "energy": -4}
+  },
+  {
+    "id": "v121_07", "title": "Travel food fights back", "category": "camp",
+    "description": "The scale is up and the morning session starts in twenty minutes.",
+    "trigger": {"chance": 0.10}, "require": {"cooldown": 10},
+    "choices": [
+      {"key": "A", "label": "Simplify every meal", "effects": {"nutrition": 3, "happiness": -2}},
+      {"key": "B", "label": "Eat with the team", "effects": {"happiness": 3, "bodyfat": 0.3}}
+    ]
+  },
+  {
+    "id": "v121_08", "title": "Gym rent increases", "category": "money",
+    "description": "The owner shows you the new monthly number. Nobody in the room is happy.",
+    "trigger": {"chance": 0.08}, "require": {"pro": true, "min_money": 600, "cooldown": 24},
+    "choices": [
+      {"key": "A", "label": "Pay your share", "effects": {"money": -180, "relationships.coach": 3}},
+      {"key": "B", "label": "Help clean the gym instead", "effects": {"energy": -6, "relationships.coach": 2}}
+    ]
+  },
+  {
+    "id": "v121_09", "title": "Used gloves split at the seam", "category": "money",
+    "description": "One more hard bag round and the padding will be on the floor.",
+    "trigger": {"chance": 0.09}, "require": {"max_money": 700, "cooldown": 18},
+    "choices": [
+      {"key": "A", "label": "Buy a safe pair", "effects": {"money": -90, "happiness": 2}},
+      {"key": "B", "label": "Tape them again", "effects": {"money": -8, "happiness": -1}}
+    ]
+  },
+  {
+    "id": "v121_10", "title": "A teammate needs corner help", "category": "gym",
+    "description": "His amateur bout is across town. He asks whether you will make the walk with him.",
+    "trigger": {"chance": 0.11}, "require": {"min_wins": 2, "cooldown": 14},
+    "choices": [
+      {"key": "A", "label": "Work his corner", "effects": {"fight_iq": 1, "relationships.coach": 2, "energy": -4}},
+      {"key": "B", "label": "Stay home and recover", "effects": {"energy": 3}}
+    ]
+  },
+  {
+    "id": "v121_11", "title": "The prospect copies your combination", "category": "gym",
+    "description": "A younger fighter repeats the same body-head sequence you used last week.",
+    "trigger": {"chance": 0.09}, "require": {"min_wins": 5, "cooldown": 16},
+    "choices": [
+      {"key": "A", "label": "Show him the details", "effects": {"reputation": 2, "fight_iq": 1}},
+      {"key": "B", "label": "Make him earn the lesson", "effects": {"confidence": 2, "relationships.coach": -1}}
+    ]
+  },
+  {
+    "id": "v121_12", "title": "Local wrestler asks for rounds", "category": "training",
+    "description": "He is heavier, relentless, and exactly the look you normally avoid.",
+    "trigger": {"chance": 0.10}, "require": {"max_energy": 85, "cooldown": 12},
+    "choices": [
+      {"key": "A", "label": "Take the rounds", "effects": {"takedown_def": 1, "cardio": 1, "energy": -7}},
+      {"key": "B", "label": "Keep today light", "effects": {"energy": 4, "discipline": -1}}
+    ]
+  },
+  {
+    "id": "v121_13", "title": "Southpaw gives you problems", "category": "training",
+    "description": "The rear hand keeps finding the lane and your lead foot is always late.",
+    "trigger": {"chance": 0.10}, "require": {"cooldown": 13},
+    "choices": [
+      {"key": "A", "label": "Drill the outside step", "effects": {"striking": 1, "fight_iq": 1, "energy": -5}},
+      {"key": "B", "label": "Turn it into wrestling", "effects": {"grappling": 1, "energy": -4}}
+    ]
+  },
+  {
+    "id": "v121_14", "title": "Body-shot round", "category": "training",
+    "description": "Coach bans head shots and tells everyone to work under the elbows.",
+    "trigger": {"chance": 0.11}, "require": {"min_health": 50, "cooldown": 12},
+    "choices": [
+      {"key": "A", "label": "Dig the liver all round", "effects": {"ko_power": 1, "striking": 1, "health": -3}},
+      {"key": "B", "label": "Focus on defending the body", "effects": {"durability": 1, "fight_iq": 1}}
+    ]
+  },
+  {
+    "id": "v121_15", "title": "Calf-kick study", "category": "training",
+    "description": "The coach shows where the nerve sits and why chasing the leg ruins the angle.",
+    "trigger": {"chance": 0.10}, "require": {"min_wins": 1, "cooldown": 14},
+    "choices": [
+      {"key": "A", "label": "Drill the kick", "effects": {"kicks": 1, "fight_iq": 1, "energy": -4}},
+      {"key": "B", "label": "Drill checking and returning", "effects": {"takedown_def": 1, "durability": 1}}
+    ]
+  },
+  {
+    "id": "v121_16", "title": "Family watches the replay", "category": "life",
+    "description": "They celebrate the result. You notice every mistake.",
+    "trigger": {"chance": 0.09}, "require": {"last": "W", "max_age": 24, "cooldown": 18},
+    "choices": [
+      {"key": "A", "label": "Let them enjoy it", "effects": {"happiness": 4, "relationships.family": 2}},
+      {"key": "B", "label": "Explain what went wrong", "effects": {"fight_iq": 1, "happiness": -1}}
+    ]
+  },
+  {
+    "id": "v121_17", "title": "School deadline after sparring", "category": "school",
+    "description": "Your hands are shaking from rounds and the assignment is still blank.",
+    "trigger": {"chance": 0.11}, "require": {"max_age": 19, "cooldown": 12},
+    "choices": [
+      {"key": "A", "label": "Stay up and finish it", "effects": {"school_grade": 5, "energy": -8}},
+      {"key": "B", "label": "Submit what you have", "effects": {"school_grade": -3, "energy": 2}}
+    ]
+  },
+  {
+    "id": "v121_18", "title": "An amateur rival changes gyms", "category": "rivalry",
+    "description": "He joins the best room in the region and posts the first session.",
+    "trigger": {"chance": 0.08}, "require": {"amateur": true, "min_wins": 4, "cooldown": 20},
+    "choices": [
+      {"key": "A", "label": "Use it as motivation", "effects": {"discipline": 2, "confidence": 1}},
+      {"key": "B", "label": "Reply to the post", "effects": {"fame": 1, "press_hype": 3}}
+    ]
+  },
+  {
+    "id": "v121_19", "title": "Promoter remembers the boring win", "category": "career",
+    "description": "He says you are reliable, then asks whether you can make people care.",
+    "trigger": {"chance": 0.09}, "require": {"pro": true, "last": "W", "min_pro_wins": 2, "cooldown": 18},
+    "choices": [
+      {"key": "A", "label": "Promise a finish next time", "effects": {"press_hype": 5, "confidence": 2}},
+      {"key": "B", "label": "Tell him winning is the job", "effects": {"reputation": 2, "fight_iq": 1}}
+    ]
+  },
+  {
+    "id": "v121_20", "title": "Sponsor asks for training footage", "category": "sponsor",
+    "description": "They want a clean clip today, but today is supposed to be recovery.",
+    "trigger": {"chance": 0.10}, "require": {"pro": true, "min_fame": 8, "cooldown": 16},
+    "choices": [
+      {"key": "A", "label": "Film a real session", "effects": {"money": 180, "fame": 2, "energy": -6}},
+      {"key": "B", "label": "Send light pad work", "effects": {"money": 100, "energy": -2}}
+    ]
+  },
+  {
+    "id": "v121_21", "title": "Manager suggests a new team", "category": "career",
+    "description": "The new room has better bodies and no loyalty to your old coach.",
+    "trigger": {"chance": 0.07}, "require": {"pro": true, "min_pro_wins": 3, "min_money": 1000, "cooldown": 30},
+    "choices": [
+      {"key": "A", "label": "Make the move", "effects": {"team": "Elite MMA", "money": -350, "adaptability": 2, "relationships.coach": -8}},
+      {"key": "B", "label": "Stay loyal", "effects": {"relationships.coach": 5, "reputation": 1}}
+    ]
+  },
+  {
+    "id": "v121_22", "title": "Two losses change the room", "category": "story",
+    "description": "Nobody says you are finished. They simply stop asking when the next fight is.",
+    "trigger": {"chance": 0.12}, "require": {"last": "L", "min_losses": 2, "cooldown": 16},
+    "choices": [
+      {"key": "A", "label": "Ask coach for the honest answer", "effects": {"fight_iq": 2, "confidence": -3, "relationships.coach": 3}},
+      {"key": "B", "label": "Work without talking", "effects": {"discipline": 2, "energy": -5}}
+    ]
+  },
+  {
+    "id": "v121_23", "title": "Recovery day feels too easy", "category": "health",
+    "description": "Your body needs rest. Your mind keeps inventing work.",
+    "trigger": {"chance": 0.10}, "require": {"max_energy": 45, "injured": false, "cooldown": 12},
+    "choices": [
+      {"key": "A", "label": "Actually recover", "effects": {"energy": 7, "health": 4, "discipline": 1}},
+      {"key": "B", "label": "Add a conditioning session", "effects": {"cardio": 1, "energy": -5}}
+    ]
+  },
+  {
+    "id": "v121_24", "title": "Cutman checks the scar", "category": "health",
+    "description": "He presses the old line above your eye and tells you exactly how it will reopen.",
+    "trigger": {"chance": 0.08}, "require": {"min_damage": 20, "min_wins": 2, "cooldown": 18},
+    "effects": {"fight_iq": 1, "durability": 1}
+  },
+  {
+    "id": "v121_25", "title": "National-team room is watching", "category": "competition",
+    "description": "The coaches say nothing, but every hard exchange gets written down.",
+    "trigger": {"chance": 0.10}, "require": {"nt": true, "amateur": true, "cooldown": 14},
+    "choices": [
+      {"key": "A", "label": "Push the pace", "effects": {"reputation": 2, "cardio": 1, "energy": -7}},
+      {"key": "B", "label": "Show clean technique", "effects": {"fight_iq": 1, "confidence": 2}}
+    ]
+  },
+  {
+    "id": "v121_26", "title": "A veteran offers one round", "category": "training",
+    "description": "He says you get five minutes and no second chance.",
+    "trigger": {"chance": 0.08}, "require": {"pro": true, "min_pro_wins": 1, "min_energy": 35, "cooldown": 18},
+    "choices": [
+      {"key": "A", "label": "Take the round standing", "effects": {"striking": 1, "fight_iq": 1, "energy": -6}},
+      {"key": "B", "label": "Ask to start on the fence", "effects": {"grappling": 1, "takedown_def": 1, "energy": -6}}
+    ]
+  },
+  {
+    "id": "v121_27", "title": "Tax receipt box", "category": "money",
+    "description": "Your manager asks for every travel, medical and gym receipt you forgot to keep.",
+    "trigger": {"chance": 0.07}, "require": {"pro": true, "min_money": 1500, "cooldown": 26},
+    "choices": [
+      {"key": "A", "label": "Spend the night organizing it", "effects": {"money": 220, "energy": -5, "discipline": 1}},
+      {"key": "B", "label": "Ignore it", "effects": {"money": -120, "happiness": 1}}
+    ]
+  },
+  {
+    "id": "v121_28", "title": "The gym needs a new mat", "category": "gym",
+    "description": "Everyone contributes or everyone keeps training over the torn corner.",
+    "trigger": {"chance": 0.07}, "require": {"min_money": 500, "cooldown": 30},
+    "choices": [
+      {"key": "A", "label": "Contribute", "effects": {"money": -150, "relationships.coach": 4, "reputation": 1}},
+      {"key": "B", "label": "You cannot afford charity", "effects": {"relationships.coach": -2}}
+    ]
+  },
+  {
+    "id": "v121_29", "title": "Fans notice the leg kicks", "category": "media",
+    "description": "A short edit counts every kick from your last win and gives each one a number.",
+    "trigger": {"chance": 0.08}, "require": {"pro": true, "last": "W", "min_fame": 10, "cooldown": 16},
+    "choices": [
+      {"key": "A", "label": "Share the clip", "effects": {"fame": 2, "press_hype": 3}},
+      {"key": "B", "label": "Post a checking tutorial", "effects": {"reputation": 2, "fight_iq": 1}}
+    ]
+  },
+  {
+    "id": "v121_30", "title": "A contender studies your hurt side", "category": "rivalry",
+    "description": "In an interview he mentions the old injury without being asked.",
+    "trigger": {"chance": 0.08}, "require": {"pro": true, "injured": true, "min_fame": 14, "cooldown": 20},
+    "choices": [
+      {"key": "A", "label": "Tell him to come test it", "effects": {"press_hype": 5, "confidence": 3}},
+      {"key": "B", "label": "Give him nothing", "effects": {"fight_iq": 2, "reputation": 1}}
+    ]
+  }
+]

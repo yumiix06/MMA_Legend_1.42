@@ -1,0 +1,436 @@
+[
+  {
+    "name": "USA",
+    "flag": "🇺🇸",
+    "bonus": {
+      "grappling": 3,
+      "striking": 1
+    }
+  },
+  {
+    "name": "Brazil",
+    "flag": "🇧🇷",
+    "bonus": {
+      "submissions": 5
+    }
+  },
+  {
+    "name": "Russia",
+    "flag": "🇷🇺",
+    "bonus": {
+      "grappling": 2
+    }
+  },
+  {
+    "name": "Netherlands",
+    "flag": "🇳🇱",
+    "bonus": {
+      "kicks": 2
+    }
+  },
+  {
+    "name": "Thailand",
+    "flag": "🇹🇭",
+    "bonus": {
+      "kicks": 2
+    }
+  },
+  {
+    "name": "Japan",
+    "flag": "🇯🇵",
+    "bonus": {}
+  },
+  {
+    "name": "UK",
+    "flag": "🇬🇧",
+    "bonus": {
+      "fight_iq": 1
+    }
+  },
+  {
+    "name": "France",
+    "flag": "🇫🇷",
+    "bonus": {}
+  },
+  {
+    "name": "Cuba",
+    "flag": "🇨🇺",
+    "bonus": {
+      "speed": 2
+    }
+  },
+  {
+    "name": "Mexico",
+    "flag": "🇲🇽",
+    "bonus": {
+      "durability": 2
+    }
+  },
+  {
+    "name": "Germany",
+    "flag": "🇩🇪",
+    "bonus": {
+      "grappling": 2,
+      "strength": 2
+    }
+  },
+  {
+    "name": "China",
+    "flag": "🇨🇳",
+    "bonus": {
+      "kicks": 2
+    }
+  },
+  {
+    "name": "Australia",
+    "flag": "🇦🇺",
+    "bonus": {
+      "cardio": 2,
+      "durability": 2
+    }
+  },
+  {
+    "name": "Canada",
+    "flag": "🇨🇦",
+    "bonus": {
+      "grappling": 2,
+      "cardio": 2
+    }
+  },
+  {
+    "name": "Sweden",
+    "flag": "🇸🇪",
+    "bonus": {
+      "fight_iq": 2
+    }
+  },
+  {
+    "name": "Poland",
+    "flag": "🇵🇱",
+    "bonus": {
+      "grappling": 2,
+      "strength": 2
+    }
+  },
+  {
+    "name": "Iran",
+    "flag": "🇮🇷",
+    "bonus": {
+      "grappling": 4
+    }
+  },
+  {
+    "name": "Turkey",
+    "flag": "🇹🇷",
+    "bonus": {
+      "grappling": 2,
+      "strength": 2
+    }
+  },
+  {
+    "name": "South Korea",
+    "flag": "🇰🇷",
+    "bonus": {
+      "kicks": 2
+    }
+  },
+  {
+    "name": "Nigeria",
+    "flag": "🇳🇬",
+    "bonus": {
+      "grappling": 2,
+      "speed": 2
+    }
+  },
+  {
+    "name": "New Zealand",
+    "flag": "🇳🇿",
+    "bonus": {
+      "cardio": 2
+    }
+  },
+  {
+    "name": "Ireland",
+    "flag": "🇮🇪",
+    "bonus": {}
+  },
+  {
+    "name": "Italy",
+    "flag": "🇮🇹",
+    "bonus": {
+      "striking": 2
+    }
+  },
+  {
+    "name": "Spain",
+    "flag": "🇪🇸",
+    "bonus": {
+      "striking": 2,
+      "cardio": 2
+    }
+  },
+  {
+    "name": "Ukraine",
+    "flag": "🇺🇦",
+    "bonus": {
+      "grappling": 2,
+      "strength": 2
+    }
+  },
+  {
+    "name": "Colombia",
+    "flag": "🇨🇴",
+    "bonus": {
+      "striking": 2,
+      "speed": 2
+    }
+  },
+  {
+    "name": "Argentina",
+    "flag": "🇦🇷",
+    "bonus": {
+      "submissions": 4
+    }
+  },
+  {
+    "name": "Egypt",
+    "flag": "🇪🇬",
+    "bonus": {
+      "grappling": 2,
+      "durability": 2
+    }
+  },
+  {
+    "name": "South Africa",
+    "flag": "🇿🇦",
+    "bonus": {
+      "striking": 2,
+      "cardio": 2
+    }
+  },
+  {
+    "name": "India",
+    "flag": "🇮🇳",
+    "bonus": {
+      "grappling": 2
+    }
+  },
+  {
+    "name": "Norway",
+    "flag": "🇳🇴",
+    "bonus": {
+      "grappling": 2,
+      "durability": 2
+    }
+  },
+  {
+    "name": "Czech Republic",
+    "flag": "🇨🇿",
+    "bonus": {
+      "striking": 2,
+      "strength": 2
+    }
+  },
+  {
+    "name": "Kazakhstan",
+    "flag": "🇰🇿",
+    "bonus": {
+      "grappling": 5,
+      "strength": 1
+    }
+  },
+  {
+    "name": "Georgia",
+    "flag": "🇬🇪",
+    "bonus": {
+      "grappling": 4,
+      "strength": 2
+    }
+  },
+  {
+    "name": "Armenia",
+    "flag": "🇦🇲",
+    "bonus": {
+      "grappling": 3,
+      "strength": 2
+    }
+  },
+  {
+    "name": "Philippines",
+    "flag": "🇵🇭",
+    "bonus": {
+      "speed": 2,
+      "striking": 2
+    }
+  },
+  {
+    "name": "Indonesia",
+    "flag": "🇮🇩",
+    "bonus": {
+      "striking": 1,
+      "cardio": 2
+    }
+  },
+  {
+    "name": "Peru",
+    "flag": "🇵🇪",
+    "bonus": {
+      "cardio": 2,
+      "durability": 1
+    }
+  },
+  {
+    "name": "Morocco",
+    "flag": "🇲🇦",
+    "bonus": {
+      "striking": 1,
+      "cardio": 2
+    }
+  },
+  {
+    "name": "Ghana",
+    "flag": "🇬🇭",
+    "bonus": {
+      "speed": 2,
+      "cardio": 1
+    }
+  },
+  {
+    "name": "Senegal",
+    "flag": "🇸🇳",
+    "bonus": {
+      "wrestling": 3
+    }
+  },
+  {
+    "name": "Cameroon",
+    "flag": "🇨🇲",
+    "bonus": {
+      "strength": 2,
+      "durability": 1
+    }
+  },
+  {
+    "name": "Belarus",
+    "flag": "🇧🇾",
+    "bonus": {
+      "grappling": 2
+    }
+  },
+  {
+    "name": "Serbia",
+    "flag": "🇷🇸",
+    "bonus": {
+      "wrestling": 2,
+      "strength": 1
+    }
+  },
+  {
+    "name": "Croatia",
+    "flag": "🇭🇷",
+    "bonus": {
+      "striking": 2
+    }
+  },
+  {
+    "name": "Finland",
+    "flag": "🇫🇮",
+    "bonus": {
+      "durability": 2
+    }
+  },
+  {
+    "name": "Mongolia",
+    "flag": "🇲🇳",
+    "bonus": {
+      "wrestling": 3,
+      "strength": 1
+    }
+  },
+  {
+    "name": "Uzbekistan",
+    "flag": "🇺🇿",
+    "bonus": {
+      "grappling": 2,
+      "kicks": 1
+    }
+  },
+  {
+    "name": "Chile",
+    "flag": "🇨🇱",
+    "bonus": {
+      "cardio": 2
+    }
+  },
+  {
+    "name": "Venezuela",
+    "flag": "🇻🇪",
+    "bonus": {
+      "speed": 2,
+      "boxing": 1
+    }
+  },
+  {
+    "name": "Denmark",
+    "flag": "🇩🇰",
+    "bonus": {
+      "fight_iq": 2
+    }
+  },
+  {
+    "name": "Iceland",
+    "flag": "🇮🇸",
+    "bonus": {
+      "wrestling": 3,
+      "durability": 2
+    }
+  },
+  {
+    "name": "Bulgaria",
+    "flag": "🇧🇬",
+    "bonus": {
+      "wrestling": 4,
+      "strength": 2
+    }
+  },
+  {
+    "name": "Romania",
+    "flag": "🇷🇴",
+    "bonus": {
+      "grappling": 3,
+      "submissions": 2
+    }
+  },
+  {
+    "name": "Hungary",
+    "flag": "🇭🇺",
+    "bonus": {
+      "wrestling": 3,
+      "striking": 2
+    }
+  },
+  {
+    "name": "Greece",
+    "flag": "🇬🇷",
+    "bonus": {
+      "wrestling": 4,
+      "durability": 1
+    }
+  },
+  {
+    "name": "Portugal",
+    "flag": "🇵🇹",
+    "bonus": {
+      "kicks": 3,
+      "speed": 2
+    }
+  },
+  {
+    "name": "Austria",
+    "flag": "🇦🇹",
+    "bonus": {
+      "striking": 2,
+      "fight_iq": 3
+    }
+  }
+]

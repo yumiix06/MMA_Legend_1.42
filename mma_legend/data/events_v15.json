@@ -1,0 +1,57 @@
+[
+  {
+    "id": "v15_adcc_invite",
+    "title": "ADCC trials flyer",
+    "description": "A no-gi flyer is taped to the gym door. Nationals in a few weeks.",
+    "category": "grappling",
+    "require": {"amateur": true},
+    "choices": [
+      {"label": "A) Ask the coach", "effects": {"grappling": 1}},
+      {"label": "B) Ignore", "effects": {}}
+    ]
+  },
+  {
+    "id": "v15_purple_chat",
+    "title": "Purple belt rolls",
+    "description": "A visiting purple belt wants extra rounds after class.",
+    "category": "grappling",
+    "require": {"flag": "bjj_blue"},
+    "choices": [
+      {"label": "A) Roll", "effects": {"energy": -8, "submissions": 1, "ground_control": 1}},
+      {"label": "B) Rest", "effects": {"energy": 4}}
+    ]
+  },
+  {
+    "id": "v15_camp_tea",
+    "title": "Camp kitchen",
+    "description": "Someone at the international camp invites you to eat with the team.",
+    "category": "camp",
+    "require": {},
+    "choices": [
+      {"label": "A) Sit down", "effects": {"happiness": 4}},
+      {"label": "B) Train instead", "effects": {"energy": -4}}
+    ]
+  },
+  {
+    "id": "v15_aca_scout",
+    "title": "ACA scout",
+    "description": "A Russian matchmaker is in town looking at regional records.",
+    "category": "booking",
+    "require": {"pro": true, "min_pro_wins": 3},
+    "choices": [
+      {"label": "A) Leave a tape", "effects": {"fame": 1}},
+      {"label": "B) Pass", "effects": {}}
+    ]
+  },
+  {
+    "id": "v15_efc_joburg",
+    "title": "EFC card talk",
+    "description": "Johannesburg wants African regional names.",
+    "category": "booking",
+    "require": {"pro": true},
+    "choices": [
+      {"label": "A) Stay in touch", "effects": {"fame": 1}},
+      {"label": "B) Not my scene", "effects": {}}
+    ]
+  }
+]

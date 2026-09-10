@@ -1,0 +1,148 @@
+{
+  "focuses": [
+    {
+      "id": 1,
+      "name": "Striking Camp",
+      "bonus": {
+        "striking": 4,
+        "kicks": 4,
+        "speed": 4,
+        "ko_power": 4
+      }
+    },
+    {
+      "id": 2,
+      "name": "Wrestling Camp",
+      "bonus": {
+        "grappling": 4,
+        "takedown_def": 4,
+        "strength": 4,
+        "cardio": 4
+      }
+    },
+    {
+      "id": 3,
+      "name": "Submission Camp",
+      "bonus": {
+        "submissions": 4,
+        "ground_control": 4,
+        "fight_iq": 4,
+        "adaptability": 4
+      }
+    },
+    {
+      "id": 4,
+      "name": "Complete MMA",
+      "bonus": {
+        "striking": 3,
+        "grappling": 3,
+        "cardio": 3,
+        "fight_iq": 3
+      }
+    },
+    {
+      "id": 5,
+      "name": "Anti-Power / Defense",
+      "bonus": {
+        "takedown_def": 3,
+        "durability": 3,
+        "speed": 3,
+        "fight_iq": 3
+      }
+    },
+    {
+      "id": 6,
+      "name": "Weight-Cut Camp",
+      "bonus": {
+        "cardio": 3,
+        "speed": 2,
+        "discipline": 3
+      }
+    },
+    {
+      "id": 7,
+      "name": "Rehab Camp",
+      "bonus": {
+        "durability": 3,
+        "health": 0
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Breakthrough",
+      "description": "A technique clicks during sparring.",
+      "effects": {
+        "technique_xp": 2,
+        "confidence": 3
+      }
+    },
+    {
+      "id": 2,
+      "title": "Hard Sparring",
+      "description": "A brutal sparring session exposes weaknesses.",
+      "effects": {
+        "energy": -10,
+        "fight_iq": 2,
+        "confidence": -2
+      }
+    },
+    {
+      "id": 3,
+      "title": "Confidence Surge",
+      "description": "Your coach tells you the game plan is working.",
+      "effects": {
+        "confidence": 7,
+        "happiness": 3
+      }
+    },
+    {
+      "id": 4,
+      "title": "Minor Injury",
+      "description": "You pick up a small knock and have to modify camp.",
+      "effects": {
+        "health": -8,
+        "energy": -5
+      }
+    },
+    {
+      "id": 5,
+      "title": "Perfect Session",
+      "description": "Everything feels sharp today.",
+      "effects": {
+        "energy": -4,
+        "technique_xp": 3,
+        "confidence": 5
+      }
+    },
+    {
+      "id": 6,
+      "title": "Weight Trouble",
+      "description": "Your weight is moving slower than expected.",
+      "effects": {
+        "nutrition": -3,
+        "weight_cut_health": -5,
+        "confidence": -3
+      }
+    },
+    {
+      "id": 7,
+      "title": "Opponent Film",
+      "description": "You spot a repeatable pattern in your opponent's game.",
+      "effects": {
+        "fight_iq": 3,
+        "opponent_read": 5
+      }
+    },
+    {
+      "id": 8,
+      "title": "Camp Fatigue",
+      "description": "Four weeks of work are starting to catch up with you.",
+      "effects": {
+        "energy": -12,
+        "happiness": -3
+      }
+    }
+  ]
+}

@@ -1,0 +1,2018 @@
+[
+  {
+    "id": 1,
+    "name": "Jab",
+    "discipline": "Boxing",
+    "prerequisite": null,
+    "bonus": {
+      "striking": 2,
+      "speed": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 2,
+    "name": "Cross",
+    "discipline": "Boxing",
+    "prerequisite": "Jab",
+    "bonus": {
+      "striking": 3,
+      "ko_power": 2
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 3,
+    "name": "Hook",
+    "discipline": "Boxing",
+    "prerequisite": "Cross",
+    "bonus": {
+      "striking": 3,
+      "ko_power": 3
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 4,
+    "name": "Uppercut",
+    "discipline": "Boxing",
+    "prerequisite": "Hook",
+    "bonus": {
+      "striking": 4,
+      "ko_power": 4
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 5,
+    "name": "Combination",
+    "discipline": "Boxing",
+    "prerequisite": "Uppercut",
+    "bonus": {
+      "striking": 5,
+      "speed": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 6,
+    "name": "Double Leg",
+    "discipline": "Wrestling",
+    "prerequisite": null,
+    "bonus": {
+      "grappling": 3,
+      "takedown_def": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 7,
+    "name": "Single Leg",
+    "discipline": "Wrestling",
+    "prerequisite": "Double Leg",
+    "bonus": {
+      "grappling": 3,
+      "speed": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 8,
+    "name": "Sprawl",
+    "discipline": "Wrestling",
+    "prerequisite": null,
+    "bonus": {
+      "takedown_def": 4
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 11,
+    "name": "Armbar",
+    "discipline": "BJJ",
+    "prerequisite": "Scissor Sweep",
+    "bonus": {
+      "submissions": 4
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 12,
+    "name": "Rear Naked Choke",
+    "discipline": "BJJ",
+    "prerequisite": "Armbar",
+    "bonus": {
+      "submissions": 5
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 13,
+    "name": "Leg Kick",
+    "discipline": "Kickboxing",
+    "prerequisite": null,
+    "bonus": {
+      "kicks": 3
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 14,
+    "name": "Body Kick",
+    "discipline": "Kickboxing",
+    "prerequisite": "Leg Kick",
+    "bonus": {
+      "kicks": 3,
+      "striking": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 15,
+    "name": "Head Kick",
+    "discipline": "Kickboxing",
+    "prerequisite": "Body Kick",
+    "bonus": {
+      "kicks": 4,
+      "ko_power": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 16,
+    "name": "Clinch",
+    "discipline": "Muay Thai",
+    "prerequisite": null,
+    "bonus": {
+      "grappling": 2,
+      "kicks": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 17,
+    "name": "Elbow",
+    "discipline": "Muay Thai",
+    "prerequisite": "Clinch",
+    "bonus": {
+      "striking": 3,
+      "durability": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": true,
+    "amateur_ok": false
+  },
+  {
+    "id": 18,
+    "name": "Knee",
+    "discipline": "Muay Thai",
+    "prerequisite": "Clinch",
+    "bonus": {
+      "striking": 3,
+      "ko_power": 2
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 23,
+    "name": "Side Kick",
+    "discipline": "Taekwondo",
+    "prerequisite": null,
+    "bonus": {
+      "kicks": 3,
+      "distance_management": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 24,
+    "name": "Spinning Back Kick",
+    "discipline": "Taekwondo",
+    "prerequisite": "Side Kick",
+    "bonus": {
+      "kicks": 4,
+      "ko_power": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 25,
+    "name": "Kung Fu Strike",
+    "discipline": "Kung Fu",
+    "prerequisite": null,
+    "bonus": {
+      "striking": 3,
+      "adaptability": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 26,
+    "name": "Kung Fu Kick",
+    "discipline": "Kung Fu",
+    "prerequisite": "Kung Fu Strike",
+    "bonus": {
+      "kicks": 3,
+      "speed": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 27,
+    "name": "Wrestling Takedown",
+    "discipline": "Wrestling",
+    "prerequisite": "Double Leg",
+    "bonus": {
+      "grappling": 4,
+      "strength": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 29,
+    "name": "Muay Thai Clinch",
+    "discipline": "Muay Thai",
+    "prerequisite": "Clinch",
+    "bonus": {
+      "grappling": 3,
+      "kicks": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 30,
+    "name": "Boxing Defense",
+    "discipline": "Boxing",
+    "prerequisite": "Jab",
+    "bonus": {
+      "durability": 2,
+      "speed": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 31,
+    "name": "Kickboxing Defense",
+    "discipline": "Kickboxing",
+    "prerequisite": "Leg Kick",
+    "bonus": {
+      "durability": 2,
+      "kicks": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 33,
+    "name": "Counter Punch",
+    "discipline": "Boxing",
+    "prerequisite": "Cross",
+    "bonus": {
+      "striking": 4,
+      "fight_iq": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 34,
+    "name": "Teep",
+    "discipline": "Muay Thai",
+    "prerequisite": null,
+    "bonus": {
+      "kicks": 2,
+      "takedown_def": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 35,
+    "name": "Switch Kick",
+    "discipline": "Kickboxing",
+    "prerequisite": "Leg Kick",
+    "bonus": {
+      "kicks": 3,
+      "speed": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 36,
+    "name": "Guillotine",
+    "discipline": "BJJ",
+    "prerequisite": "Scissor Sweep",
+    "bonus": {
+      "submissions": 4,
+      "takedown_def": 1
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 37,
+    "name": "Kimura",
+    "discipline": "BJJ",
+    "prerequisite": "Armbar",
+    "bonus": {
+      "submissions": 4,
+      "strength": 1
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 38,
+    "name": "Heel Hook",
+    "discipline": "BJJ",
+    "prerequisite": "Kimura",
+    "bonus": {
+      "submissions": 5,
+      "ground_control": 1
+    },
+    "cost": 3,
+    "tags": [],
+    "pro_only": true,
+    "amateur_ok": false
+  },
+  {
+    "id": 39,
+    "name": "Body Jab",
+    "discipline": "Boxing",
+    "prerequisite": "Jab",
+    "bonus": {
+      "striking": 2,
+      "cardio": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 40,
+    "name": "Overhand Right",
+    "discipline": "Boxing",
+    "prerequisite": "Hook",
+    "bonus": {
+      "ko_power": 5,
+      "striking": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 41,
+    "name": "Front Kick",
+    "discipline": "Kickboxing",
+    "prerequisite": null,
+    "bonus": {
+      "kicks": 2,
+      "speed": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 42,
+    "name": "Roundhouse Kick",
+    "discipline": "Muay Thai",
+    "prerequisite": "Leg Kick",
+    "bonus": {
+      "kicks": 4,
+      "ko_power": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 43,
+    "name": "Ankle Pick",
+    "discipline": "Wrestling",
+    "prerequisite": "Single Leg",
+    "bonus": {
+      "grappling": 2,
+      "speed": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 44,
+    "name": "Body Lock",
+    "discipline": "Wrestling",
+    "prerequisite": "Double Leg",
+    "bonus": {
+      "grappling": 3,
+      "strength": 2
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 45,
+    "name": "Crucifix",
+    "discipline": "BJJ",
+    "prerequisite": "Knee Slice Pass",
+    "bonus": {
+      "ground_control": 4,
+      "submissions": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 46,
+    "name": "Darce Choke",
+    "discipline": "BJJ",
+    "prerequisite": "Rear Naked Choke",
+    "bonus": {
+      "submissions": 5,
+      "ground_control": 1
+    },
+    "cost": 3,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 47,
+    "name": "Lead Hook",
+    "discipline": "Boxing",
+    "prerequisite": "Hook",
+    "bonus": {
+      "striking": 3,
+      "speed": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 48,
+    "name": "Leg Kick Check",
+    "discipline": "Muay Thai",
+    "prerequisite": null,
+    "bonus": {
+      "durability": 3,
+      "takedown_def": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 49,
+    "name": "Sweep Single",
+    "discipline": "Wrestling",
+    "prerequisite": "Single Leg",
+    "bonus": {
+      "grappling": 3,
+      "speed": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 50,
+    "name": "Arm Triangle",
+    "discipline": "BJJ",
+    "prerequisite": "Armbar",
+    "bonus": {
+      "submissions": 4,
+      "ground_control": 1
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 51,
+    "name": "Triangle Choke",
+    "discipline": "BJJ",
+    "prerequisite": "Rear Naked Choke",
+    "bonus": {
+      "submissions": 4,
+      "fight_iq": 1
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 52,
+    "name": "Omoplata",
+    "discipline": "BJJ",
+    "prerequisite": "Scissor Sweep",
+    "bonus": {
+      "submissions": 3,
+      "ground_control": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 53,
+    "name": "North-South Choke",
+    "discipline": "BJJ",
+    "prerequisite": "Arm Triangle",
+    "bonus": {
+      "submissions": 4
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 54,
+    "name": "High Crotch",
+    "discipline": "Wrestling",
+    "prerequisite": "Single Leg",
+    "bonus": {
+      "grappling": 4,
+      "strength": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 55,
+    "name": "Fireman's Carry",
+    "discipline": "Wrestling",
+    "prerequisite": "High Crotch",
+    "bonus": {
+      "grappling": 3,
+      "takedown_def": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 56,
+    "name": "Axe Kick",
+    "discipline": "Taekwondo",
+    "prerequisite": "Side Kick",
+    "bonus": {
+      "kicks": 4,
+      "speed": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 57,
+    "name": "Superman Punch",
+    "discipline": "Muay Thai",
+    "prerequisite": "Knee",
+    "bonus": {
+      "striking": 4,
+      "speed": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 58,
+    "name": "Check Hook",
+    "discipline": "Boxing",
+    "prerequisite": "Hook",
+    "bonus": {
+      "striking": 3,
+      "fight_iq": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 59,
+    "name": "Philly Shell",
+    "discipline": "Boxing",
+    "prerequisite": "Boxing Defense",
+    "bonus": {
+      "durability": 3,
+      "speed": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 60,
+    "name": "Liver Shot",
+    "discipline": "Boxing",
+    "prerequisite": "Body Jab",
+    "bonus": {
+      "striking": 3,
+      "ko_power": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 61,
+    "name": "Spinning Elbow",
+    "discipline": "Muay Thai",
+    "prerequisite": "Elbow",
+    "bonus": {
+      "striking": 4,
+      "ko_power": 3
+    },
+    "cost": 3,
+    "tags": [],
+    "pro_only": true,
+    "amateur_ok": false
+  },
+  {
+    "id": 62,
+    "name": "Wall Knee",
+    "discipline": "Muay Thai",
+    "prerequisite": "Knee",
+    "bonus": {
+      "striking": 3,
+      "grappling": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 63,
+    "name": "Calf Kick",
+    "discipline": "Kickboxing",
+    "prerequisite": "Leg Kick",
+    "bonus": {
+      "kicks": 3,
+      "speed": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 64,
+    "name": "Switch Stance",
+    "discipline": "Kickboxing",
+    "prerequisite": "Switch Kick",
+    "bonus": {
+      "adaptability": 3,
+      "speed": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 65,
+    "name": "Blast Double",
+    "discipline": "Wrestling",
+    "prerequisite": "Double Leg",
+    "bonus": {
+      "grappling": 4,
+      "strength": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 66,
+    "name": "Chain Wrestling",
+    "discipline": "Wrestling",
+    "prerequisite": "Wrestling Takedown",
+    "bonus": {
+      "grappling": 4,
+      "cardio": 2
+    },
+    "cost": 3,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 67,
+    "name": "Front Headlock",
+    "discipline": "Wrestling",
+    "prerequisite": "Sprawl",
+    "bonus": {
+      "takedown_def": 3,
+      "submissions": 2
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 69,
+    "name": "Berimbolo",
+    "discipline": "BJJ",
+    "prerequisite": "Knee Slice Pass",
+    "bonus": {
+      "ground_control": 4,
+      "submissions": 2
+    },
+    "cost": 3,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 70,
+    "name": "Anaconda Choke",
+    "discipline": "BJJ",
+    "prerequisite": "Darce Choke",
+    "bonus": {
+      "submissions": 5
+    },
+    "cost": 3,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 71,
+    "name": "Rolling Kneebar Entry",
+    "discipline": "Combat Sambo",
+    "prerequisite": "Straight Ankle Lock",
+    "bonus": {
+      "submissions": 4,
+      "strength": 1
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 72,
+    "name": "Uchi Mata",
+    "discipline": "Judo",
+    "prerequisite": "Ouchi Gari",
+    "bonus": {
+      "grappling": 4,
+      "strength": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 73,
+    "name": "Inside Trip",
+    "discipline": "Wrestling",
+    "prerequisite": "Body Lock",
+    "bonus": {
+      "grappling": 3,
+      "speed": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 74,
+    "name": "Oblique Kick",
+    "discipline": "Kickboxing",
+    "prerequisite": "Front Kick",
+    "bonus": {
+      "kicks": 2,
+      "takedown_def": 2
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 75,
+    "name": "Elbow From Mount",
+    "discipline": "MMA",
+    "prerequisite": null,
+    "bonus": {
+      "striking": 3,
+      "ground_control": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": true,
+    "amateur_ok": false
+  },
+  {
+    "id": 76,
+    "name": "Cage Wrestling",
+    "discipline": "MMA",
+    "prerequisite": null,
+    "bonus": {
+      "grappling": 3,
+      "strength": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 77,
+    "name": "Distance Management",
+    "discipline": "MMA",
+    "prerequisite": null,
+    "bonus": {
+      "fight_iq": 4,
+      "cardio": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 78,
+    "name": "Feint Entry",
+    "discipline": "Boxing",
+    "prerequisite": "Jab",
+    "bonus": {
+      "fight_iq": 3,
+      "speed": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 79,
+    "name": "Level Change Strike",
+    "discipline": "MMA",
+    "prerequisite": null,
+    "bonus": {
+      "striking": 2,
+      "grappling": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 80,
+    "name": "Back Take",
+    "discipline": "BJJ",
+    "prerequisite": "Knee Slice Pass",
+    "bonus": {
+      "ground_control": 4,
+      "submissions": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 81,
+    "name": "Shoulder Roll",
+    "discipline": "Boxing",
+    "prerequisite": "Philly Shell",
+    "bonus": {
+      "durability": 2,
+      "fight_iq": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 83,
+    "name": "Teep Kick",
+    "discipline": "Muay Thai",
+    "prerequisite": "Front Kick",
+    "bonus": {
+      "kicks": 2,
+      "takedown_def": 2
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 84,
+    "name": "Clinched Elbow",
+    "discipline": "Muay Thai",
+    "prerequisite": "Elbow",
+    "bonus": {
+      "striking": 3,
+      "grappling": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": true,
+    "amateur_ok": false
+  },
+  {
+    "id": 89,
+    "name": "Knee Tap",
+    "discipline": "Wrestling",
+    "prerequisite": "Body Lock",
+    "bonus": {
+      "grappling": 3
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 91,
+    "name": "Body Lock Pass",
+    "discipline": "BJJ",
+    "prerequisite": "Knee Slice Pass",
+    "bonus": {
+      "ground_control": 3,
+      "strength": 1
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 92,
+    "name": "Cage Cutoff",
+    "discipline": "MMA",
+    "prerequisite": null,
+    "bonus": {
+      "fight_iq": 3,
+      "striking": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 93,
+    "name": "Mat Return",
+    "discipline": "Wrestling",
+    "prerequisite": "Front Headlock",
+    "bonus": {
+      "grappling": 3,
+      "ground_control": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 94,
+    "name": "Low Calf Kick",
+    "discipline": "Kickboxing",
+    "prerequisite": "Calf Kick",
+    "bonus": {
+      "kicks": 3,
+      "speed": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 95,
+    "name": "Pressure Walking",
+    "discipline": "MMA",
+    "prerequisite": null,
+    "bonus": {
+      "cardio": 2,
+      "fight_iq": 2
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 103,
+    "name": "Wristlock",
+    "discipline": "BJJ",
+    "prerequisite": null,
+    "bonus": {
+      "submissions": 2,
+      "fight_iq": 1
+    },
+    "cost": 1,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "sub"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Butterfly Sweep",
+    "discipline": "BJJ",
+    "prerequisite": null,
+    "bonus": {
+      "grappling": 3,
+      "ground_control": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "nogi"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Knee Slice Pass",
+    "discipline": "BJJ",
+    "prerequisite": "Knee Slice Pass",
+    "bonus": {
+      "ground_control": 4,
+      "grappling": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "nogi"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Long Step Pass",
+    "discipline": "BJJ",
+    "prerequisite": "Knee Slice Pass",
+    "bonus": {
+      "ground_control": 3,
+      "speed": 1
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "nogi"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Body Lock to Back",
+    "discipline": "BJJ",
+    "prerequisite": "Double Leg",
+    "bonus": {
+      "grappling": 3,
+      "submissions": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "nogi"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Truck",
+    "discipline": "BJJ",
+    "prerequisite": "Body Lock to Back",
+    "bonus": {
+      "submissions": 3
+    },
+    "cost": 3,
+    "amateur_ok": false,
+    "pro_only": true,
+    "tags": [
+      "sub",
+      "pro"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Inside Heel Hook",
+    "discipline": "BJJ",
+    "prerequisite": null,
+    "bonus": {
+      "submissions": 5
+    },
+    "cost": 3,
+    "amateur_ok": false,
+    "pro_only": true,
+    "tags": [
+      "sub"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Outside Heel Hook",
+    "discipline": "BJJ",
+    "prerequisite": "Inside Heel Hook",
+    "bonus": {
+      "submissions": 5
+    },
+    "cost": 3,
+    "amateur_ok": false,
+    "pro_only": true,
+    "tags": [
+      "sub"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Kneebar",
+    "discipline": "BJJ",
+    "prerequisite": null,
+    "bonus": {
+      "submissions": 4
+    },
+    "cost": 3,
+    "amateur_ok": false,
+    "pro_only": true,
+    "tags": [
+      "sub"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Calf Slicer",
+    "discipline": "BJJ",
+    "prerequisite": "Kneebar",
+    "bonus": {
+      "submissions": 3
+    },
+    "cost": 3,
+    "amateur_ok": false,
+    "pro_only": true,
+    "tags": [
+      "sub"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Suloev Stretch",
+    "discipline": "BJJ",
+    "prerequisite": "Rear Naked Choke",
+    "bonus": {
+      "submissions": 3
+    },
+    "cost": 3,
+    "amateur_ok": false,
+    "pro_only": true,
+    "tags": [
+      "sub"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Kiss of the Dragon",
+    "discipline": "BJJ",
+    "prerequisite": "Body Lock to Back",
+    "bonus": {
+      "grappling": 3,
+      "submissions": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "nogi"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Wrist Ride",
+    "discipline": "Wrestling",
+    "prerequisite": "Sprawl",
+    "bonus": {
+      "ground_control": 3,
+      "grappling": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "clinch"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Stack Pass",
+    "discipline": "BJJ",
+    "prerequisite": "Knee Slice Pass",
+    "bonus": {
+      "ground_control": 3,
+      "strength": 1
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "nogi"
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Ride Flatten",
+    "discipline": "Wrestling",
+    "prerequisite": "Mat Return",
+    "bonus": {
+      "ground_control": 4,
+      "strength": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": []
+  },
+  {
+    "id": 121,
+    "name": "Wrist Control Chain",
+    "discipline": "Wrestling",
+    "prerequisite": "Sprawl",
+    "bonus": {
+      "grappling": 2,
+      "fight_iq": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "clinch"
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Front Headlock Snap",
+    "discipline": "Wrestling",
+    "prerequisite": "Sprawl",
+    "bonus": {
+      "grappling": 3,
+      "submissions": 1
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": []
+  },
+  {
+    "id": 123,
+    "name": "Peel the Hands",
+    "discipline": "Wrestling",
+    "prerequisite": "Sprawl",
+    "bonus": {
+      "takedown_def": 4
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": []
+  },
+  {
+    "id": 124,
+    "name": "Re-shot",
+    "discipline": "Wrestling",
+    "prerequisite": "Single Leg",
+    "bonus": {
+      "grappling": 3,
+      "cardio": 1
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": []
+  },
+  {
+    "id": 128,
+    "name": "Uppercut Through Guard",
+    "discipline": "Boxing",
+    "prerequisite": "Uppercut",
+    "bonus": {
+      "striking": 3,
+      "ko_power": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "ko_setup"
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Frame and Post",
+    "discipline": "Boxing",
+    "prerequisite": "Jab",
+    "bonus": {
+      "takedown_def": 2,
+      "fight_iq": 2
+    },
+    "cost": 1,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "clinch"
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Long Guard",
+    "discipline": "Muay Thai",
+    "prerequisite": "Teep",
+    "bonus": {
+      "kicks": 2,
+      "takedown_def": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "clinch"
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Teep to Body",
+    "discipline": "Muay Thai",
+    "prerequisite": "Teep",
+    "bonus": {
+      "kicks": 3,
+      "cardio": 1
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": []
+  },
+  {
+    "id": 134,
+    "name": "Catch and Dump",
+    "discipline": "Muay Thai",
+    "prerequisite": "Teep",
+    "bonus": {
+      "grappling": 2,
+      "kicks": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "clinch"
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Elbow Spike",
+    "discipline": "Muay Thai",
+    "prerequisite": "Elbow",
+    "bonus": {
+      "striking": 4,
+      "ko_power": 3
+    },
+    "cost": 3,
+    "amateur_ok": false,
+    "pro_only": true,
+    "tags": [
+      "ko_setup"
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Knee to Head Clinch",
+    "discipline": "Muay Thai",
+    "prerequisite": "Knee",
+    "bonus": {
+      "kicks": 4,
+      "ko_power": 3
+    },
+    "cost": 3,
+    "amateur_ok": false,
+    "pro_only": true,
+    "tags": [
+      "ko_setup",
+      "clinch"
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Low Kick Accumulation",
+    "discipline": "Kickboxing",
+    "prerequisite": null,
+    "bonus": {
+      "kicks": 3,
+      "cardio": 1
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "leg"
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Question Mark Kick",
+    "discipline": "Kickboxing",
+    "prerequisite": "Switch Kick",
+    "bonus": {
+      "kicks": 4,
+      "speed": 2
+    },
+    "cost": 3,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "ko_setup"
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Ground Hammerfist",
+    "discipline": "MMA",
+    "prerequisite": null,
+    "bonus": {
+      "striking": 3,
+      "ground_control": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "brawl"
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Ground Elbow",
+    "discipline": "MMA",
+    "prerequisite": "Ground Hammerfist",
+    "bonus": {
+      "striking": 4,
+      "ko_power": 2
+    },
+    "cost": 3,
+    "amateur_ok": false,
+    "pro_only": true,
+    "tags": [
+      "brawl"
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Fence Stall Break",
+    "discipline": "MMA",
+    "prerequisite": "Sprawl",
+    "bonus": {
+      "grappling": 2,
+      "fight_iq": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": [
+      "clinch",
+      "brawl"
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Sprawl to Front Headlock",
+    "discipline": "MMA",
+    "prerequisite": "Sprawl",
+    "bonus": {
+      "takedown_def": 3,
+      "submissions": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": []
+  },
+  {
+    "id": 143,
+    "name": "Rolling Kneebar",
+    "discipline": "Combat Sambo",
+    "prerequisite": "Kneebar",
+    "bonus": {
+      "submissions": 4
+    },
+    "cost": 3,
+    "amateur_ok": false,
+    "pro_only": true,
+    "tags": [
+      "sub"
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Hip Toss to Mount",
+    "discipline": "Judo",
+    "prerequisite": null,
+    "bonus": {
+      "grappling": 3,
+      "ground_control": 3
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": []
+  },
+  {
+    "id": 145,
+    "name": "Sacrifice Throw Pin",
+    "discipline": "Judo",
+    "prerequisite": null,
+    "bonus": {
+      "grappling": 3,
+      "ground_control": 2
+    },
+    "cost": 2,
+    "amateur_ok": true,
+    "pro_only": false,
+    "tags": []
+  },
+  {
+    "id": 146,
+    "name": "Ouchi Gari",
+    "discipline": "Combat Sambo",
+    "prerequisite": null,
+    "bonus": {
+      "grappling": 3,
+      "adaptability": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 147,
+    "name": "Osoto Gari",
+    "discipline": "Combat Sambo",
+    "prerequisite": "Ouchi Gari",
+    "bonus": {
+      "grappling": 3,
+      "strength": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 148,
+    "name": "Sumi Gaeshi",
+    "discipline": "Combat Sambo",
+    "prerequisite": "Ouchi Gari",
+    "bonus": {
+      "grappling": 3,
+      "adaptability": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 149,
+    "name": "Straight Ankle Lock",
+    "discipline": "Combat Sambo",
+    "prerequisite": null,
+    "bonus": {
+      "submissions": 4,
+      "ground_control": 1
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 150,
+    "name": "Achilles Lock",
+    "discipline": "Combat Sambo",
+    "prerequisite": "Straight Ankle Lock",
+    "bonus": {
+      "submissions": 4,
+      "strength": 1
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 151,
+    "name": "Belt-Grip O-Goshi",
+    "discipline": "Combat Sambo",
+    "prerequisite": "Ouchi Gari",
+    "bonus": {
+      "grappling": 4,
+      "strength": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 154,
+    "name": "Seoi Nage",
+    "discipline": "Judo",
+    "prerequisite": "Ouchi Gari",
+    "bonus": {
+      "grappling": 4,
+      "speed": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 155,
+    "name": "Tai Otoshi",
+    "discipline": "Judo",
+    "prerequisite": "Ouchi Gari",
+    "bonus": {
+      "grappling": 4,
+      "adaptability": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 156,
+    "name": "Harai Goshi",
+    "discipline": "Judo",
+    "prerequisite": "Uchi Mata",
+    "bonus": {
+      "grappling": 4,
+      "strength": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 157,
+    "name": "Sasae Tsurikomi Ashi",
+    "discipline": "Judo",
+    "prerequisite": "Ouchi Gari",
+    "bonus": {
+      "grappling": 3,
+      "speed": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 158,
+    "name": "Juji Gatame",
+    "discipline": "Judo",
+    "prerequisite": null,
+    "bonus": {
+      "submissions": 4,
+      "ground_control": 2
+    },
+    "cost": 2,
+    "tags": [
+      "sub"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 159,
+    "name": "Kesa Gatame",
+    "discipline": "Judo",
+    "prerequisite": "Ouchi Gari",
+    "bonus": {
+      "ground_control": 4,
+      "grappling": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 160,
+    "name": "Scissor Sweep",
+    "discipline": "BJJ",
+    "prerequisite": null,
+    "bonus": {
+      "grappling": 3,
+      "adaptability": 2
+    },
+    "cost": 1,
+    "tags": [
+      "nogi"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 161,
+    "name": "Elbow-Knee Escape",
+    "discipline": "BJJ",
+    "prerequisite": null,
+    "bonus": {
+      "grappling": 2,
+      "submission_def": 3
+    },
+    "cost": 1,
+    "tags": [
+      "nogi"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 162,
+    "name": "Toreando Pass",
+    "discipline": "BJJ",
+    "prerequisite": "Knee Slice Pass",
+    "bonus": {
+      "ground_control": 3,
+      "speed": 2
+    },
+    "cost": 2,
+    "tags": [
+      "nogi"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 163,
+    "name": "Arm Drag to Back",
+    "discipline": "BJJ",
+    "prerequisite": null,
+    "bonus": {
+      "grappling": 3,
+      "ground_control": 2
+    },
+    "cost": 2,
+    "tags": [
+      "nogi"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 164,
+    "name": "Tripod Sweep",
+    "discipline": "BJJ",
+    "prerequisite": "Scissor Sweep",
+    "bonus": {
+      "grappling": 3,
+      "adaptability": 1
+    },
+    "cost": 2,
+    "tags": [
+      "nogi"
+    ],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 165,
+    "name": "Roundhouse to Body",
+    "discipline": "Taekwondo",
+    "prerequisite": "Side Kick",
+    "bonus": {
+      "kicks": 3,
+      "speed": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 166,
+    "name": "Roundhouse to Head",
+    "discipline": "Taekwondo",
+    "prerequisite": "Roundhouse to Body",
+    "bonus": {
+      "kicks": 4,
+      "distance_management": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 167,
+    "name": "Back Kick",
+    "discipline": "Taekwondo",
+    "prerequisite": "Side Kick",
+    "bonus": {
+      "kicks": 3,
+      "ko_power": 1
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 168,
+    "name": "Spinning Hook Kick",
+    "discipline": "Taekwondo",
+    "prerequisite": "Roundhouse to Head",
+    "bonus": {
+      "kicks": 5,
+      "speed": 1
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 169,
+    "name": "Cut Kick",
+    "discipline": "Taekwondo",
+    "prerequisite": "Side Kick",
+    "bonus": {
+      "kicks": 3,
+      "distance_management": 2
+    },
+    "cost": 1,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  },
+  {
+    "id": 170,
+    "name": "Tornado Kick",
+    "discipline": "Taekwondo",
+    "prerequisite": "Roundhouse to Head",
+    "bonus": {
+      "kicks": 5,
+      "speed": 2
+    },
+    "cost": 2,
+    "tags": [],
+    "pro_only": false,
+    "amateur_ok": true
+  }
+]
